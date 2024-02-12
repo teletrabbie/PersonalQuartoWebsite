@@ -1,0 +1,5 @@
+---
+title: "Frühere Projekte"
+---
+
+Bevor ich mit Quarto begann, hatte ich andere kleine Projekte ausprobiert.

@@ -1,0 +1,7 @@
+---
+title: "Grüessech, hallo, salut and hello"
+---
+
+Willkommen zu meiner Quarto Website.
+
+Weitere Informationen über Quarto Websites findet Ihr unter <https://quarto.org/docs/websites>.

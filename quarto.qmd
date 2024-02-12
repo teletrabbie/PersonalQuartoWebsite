@@ -1,0 +1,5 @@
+---
+title: "Quarto-Projekte"
+---
+
+Hier findet ihr die seit 2024 erstellten Quarto-Projekte.

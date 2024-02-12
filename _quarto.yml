@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Knoppers"
+  navbar:
+    background: secondary
+    title: false
+    left:
+      - href: index.qmd
+        text: Home
+      - href: quarto.qmd
+        text: Quarto-Projekte
+      - href: old.qmd
+        text: Frühere Projekte
+    right: 
+      - about.qmd
+      - href: https://github.com/teletrabbie
+        icon: github
+  page-footer:
+    background: secondary
+    left: "Created in 2024 by Christian Franke"
+    right:
+      - href: https://github.com/teletrabbie
+        icon: github
+      - href: https://open.spotify.com/playlist/5uOdtjw9CCVf5dfX6kLa9y?si=9b11daf398e84c66
+        icon: spotify
+      - href: https://flyingangels.ch/
+        icon: person-arms-up
+        
+format:
+  html:
+    theme: sandstorm
+    css: styles.css
+    toc: true
+
+
+
