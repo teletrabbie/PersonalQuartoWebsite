@@ -1,8 +1,4 @@
 - source: project
   quarto-pub:
-    - id: 57356d33-1b5d-407f-99c2-96e6980ae66a
-      url: 'https://christianfranke.quarto.pub/personalquartowebsite'
-    - id: 2f004d8a-6a8f-4d84-ba28-0db758814e57
+    - id: 045da605-ba56-463a-bba4-79b6589e49d8
       url: 'https://christianfranke.quarto.pub/knoppers'
-    - id: b46291ff-96cb-4669-a30e-5d7df7f1c227
-      url: 'https://christianfranke.quarto.pub/exit'
