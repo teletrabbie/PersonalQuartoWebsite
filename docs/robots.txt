@@ -1,1 +1,1 @@
-Sitemap: https://045da605-ba56-463a-bba4-79b6589e49d8.netlify.app/sitemap.xml
+Sitemap: https://christianfranke.quarto.pub/knoppers/sitemap.xml

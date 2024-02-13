@@ -4,21 +4,7 @@
     "href": "quarto.html",
     "title": "Quarto-Projekte",
     "section": "",
-    "text": "Hier findet ihr die seit 2024 erstellten Quarto-Projekte."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Grüessech, hallo, salut and hello",
-    "section": "",
-    "text": "Willkommen zu meiner Quarto Website.\nWeitere Informationen über Quarto Websites findet Ihr unter https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Christian Franke"
+    "text": "Hier findet ihr die seit 2024 erstellten Quarto-Projekte. Bei dieser Quarto-Seite handelt es sich um ein “listing”, das auch für einen Quarto-Blog verwendet wird. Die einzelnen Blog-Einträge sind separate qmd-Files, die automatisch in diese Liste hinzugefügt werden.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEs kann losgehen\n\n\n\n\n\n\n\n\n\n\n\nFeb 13, 2024\n\n\nChristian Franke\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "old.html",
@@ -26,5 +12,47 @@
     "title": "Frühere Projekte",
     "section": "",
     "text": "Bevor ich mit Quarto begann, hatte ich andere kleine Projekte ausprobiert."
+  },
+  {
+    "objectID": "old.html#living-case-eyewin-interfaces",
+    "href": "old.html#living-case-eyewin-interfaces",
+    "title": "Frühere Projekte",
+    "section": "Living Case: EyeWin Interfaces",
+    "text": "Living Case: EyeWin Interfaces\n\n\nSchnittstelle von der Patientenverwaltung Eyewin zu drei Diagnostikgeräten: diese Arbeit wurde im Studienmodul «Living Case 1» während des Herbstsemesters 2023/24 erstellt. Projektpartner und Auftraggeberin war die Firma Eschmann Contactlinsen AG in Bern, die optometrische Dienstleistungen anbietet.\nDetails"
+  },
+  {
+    "objectID": "old.html#analyse-von-sensordaten-über-stürze",
+    "href": "old.html#analyse-von-sensordaten-über-stürze",
+    "title": "Frühere Projekte",
+    "section": "Analyse von Sensordaten über Stürze",
+    "text": "Analyse von Sensordaten über Stürze\n\n\n\n\n\n\nIm vierten Semester besuchten wir das Modul “R”. Dort durften wir ein R Markdown Dokument zum Thema “Simulated Falls and Daily Living Activities” erstellen. Der Datensatz wurde von A.T. Özdemir und B. Barshan erstellt.\nDetails"
+  },
+  {
+    "objectID": "old.html#bi-in-healthcare",
+    "href": "old.html#bi-in-healthcare",
+    "title": "Frühere Projekte",
+    "section": "BI in Healthcare",
+    "text": "BI in Healthcare\n\n\nIm fünften Semester lernen wir weiteres über den Einsatz von R im Bereich Business Intelligence. Der Dozent führte den Unterricht als Flipped Classroom durch, sodass wir viele Haus- und Übungsaufgaben sowie Selbststudium absolvierten. Die erarbeiteten Ergebnisse habe ich als R Markdown zusammengefasst.\nDetails"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Christian Franke",
+    "section": "",
+    "text": "Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant, weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich ein Studium für Medizin-Informatik begann.\n\nAus- und Weiterbildung\nSeit 2021: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (Teilzeit)\n2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg\n\n\nBerufliche Tätigkeit\nSeit 2021: SwissDRG AG, Bern\n2020/2021: Valiant-Bank AG, Bern\n2016-2019: Sanitas Krankenversicherung AG, Zürich\n2013-2015: Basler Versicherungen AG, Basel\n2009-2015: Berufsgenossenschaft Holz und Metall, Mainz"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Grüessech, hallo, salut & hello",
+    "section": "",
+    "text": "Für die meisten Menschen ist Programmieren kein “Hobby”. Und auch ich verbringe meine Zeit lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen: ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig. Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am meisten Rendite eingebracht.\nDeshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: eine kleine Website auf der ich einige meiner Projekte präsentieren kann.\nViel Spass beim Stöbern."
+  },
+  {
+    "objectID": "projects/es kann losgehen/es kann losgehen.html",
+    "href": "projects/es kann losgehen/es kann losgehen.html",
+    "title": "Es kann losgehen",
+    "section": "",
+    "text": "Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt. Ursprünglich wollte ich es im sechsten Semester nur “nebenbei” ausprobieren und ein paar Erfahrungen sammeln. Aus dieser Idee ist ein kleines Projekt entstanden. So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es …\n\n\n\nAdobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter"
   }
 ]

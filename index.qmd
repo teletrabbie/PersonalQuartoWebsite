@@ -1,7 +1,18 @@
 ---
-title: "Grüessech, hallo, salut and hello"
+title: "Grüessech, hallo, salut & hello"
+toc: false
+about:
+  template: jolla
+  image: pictures/foil.jpg
 ---
 
-Willkommen zu meiner Quarto Website.
+Für die meisten Menschen ist Programmieren kein "Hobby". Und auch ich verbringe meine Zeit
+lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen:
+ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig.
+Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am 
+meisten Rendite eingebracht.
 
-Weitere Informationen über Quarto Websites findet Ihr unter <https://quarto.org/docs/websites>.
+Deshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: 
+eine kleine Website auf der ich einige meiner Projekte präsentieren kann.
+
+Viel Spass beim Stöbern.

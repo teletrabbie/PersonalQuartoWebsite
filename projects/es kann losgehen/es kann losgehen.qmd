@@ -1,0 +1,14 @@
+---
+title: "Es kann losgehen"
+author: "Christian Franke"
+date: "2024-02-13"
+image: "FireflyFirstPost.jpg"
+---
+
+Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt.
+Ursprünglich wollte ich es im sechsten Semester nur "nebenbei" ausprobieren 
+und ein paar Erfahrungen sammeln. Aus dieser Idee ist ein kleines Projekt entstanden.
+So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten 
+Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es ...
+
+![Adobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter](FireflyFirstPost.jpg)

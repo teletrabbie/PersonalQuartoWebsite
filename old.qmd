@@ -3,3 +3,66 @@ title: "Frühere Projekte"
 ---
 
 Bevor ich mit Quarto begann, hatte ich andere kleine Projekte ausprobiert.
+
+## Living Case: EyeWin Interfaces
+
+:::: columns
+
+::: {.column width="55%"}
+Schnittstelle von der Patientenverwaltung Eyewin zu drei Diagnostikgeräten: diese Arbeit wurde im Studienmodul «Living Case 1» während des Herbstsemesters 2023/24 erstellt. Projektpartner und Auftraggeberin war die Firma Eschmann Contactlinsen AG in Bern, die optometrische Dienstleistungen anbietet.
+
+
+[Details](https://teletrabbie.github.io/livingcase01/eyewininterfaces.html)
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+![](pictures/Screenshot 02 Suche.png)
+:::
+
+::::
+
+
+## Analyse von Sensordaten über Stürze
+
+:::: columns
+
+::: {.column width="40%"}
+![](pictures/stürze.png)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+Im vierten Semester besuchten wir das Modul "R". Dort durften wir ein R Markdown Dokument zum Thema "Simulated Falls and Daily Living Activities" erstellen. Der Datensatz wurde von A.T. Özdemir und B. Barshan erstellt.
+
+[Details](https://teletrabbie.github.io/R_project_semester_04.html)
+:::
+
+::::
+
+
+## BI in Healthcare
+
+:::: columns
+
+::: {.column width="55%"}
+Im fünften Semester lernen wir weiteres über den Einsatz von R im Bereich Business Intelligence. Der Dozent führte den Unterricht als Flipped Classroom durch, sodass wir viele Haus- und Übungsaufgaben sowie Selbststudium absolvierten. Die erarbeiteten Ergebnisse habe ich als R Markdown zusammengefasst.
+
+
+[Details](https://teletrabbie.github.io/BI_Healthcare_Flipped.html)
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+![](pictures/k-means.png)
+:::
+
+::::

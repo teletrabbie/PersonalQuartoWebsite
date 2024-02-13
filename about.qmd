@@ -1,7 +1,31 @@
 ---
-title: "About"
+title: "Christian Franke"
 toc: false
-about: broadside
+about:
+  template: solana
+  image: pictures/portrait.jpg
 ---
 
-Christian Franke
+Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich 
+der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant,
+weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. 
+Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich 
+ein Studium für Medizin-Informatik begann.
+
+# Aus- und Weiterbildung
+
+Seit 2021: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (Teilzeit)
+
+2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg
+
+# Berufliche Tätigkeit
+
+Seit 2021: SwissDRG AG, Bern
+
+2020/2021: Valiant-Bank AG, Bern
+
+2016-2019: Sanitas Krankenversicherung AG, Zürich
+
+2013-2015: Basler Versicherungen AG, Basel
+
+2009-2015: Berufsgenossenschaft Holz und Metall, Mainz

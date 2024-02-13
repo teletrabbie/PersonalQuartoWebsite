@@ -5,7 +5,7 @@ project:
 website:
   title: "Knoppers"
   navbar:
-    background: secondary
+    background: primary
     title: false
     left:
       - href: index.qmd
@@ -15,11 +15,12 @@ website:
       - href: old.qmd
         text: Frühere Projekte
     right: 
-      - about.qmd
+      - href: about.qmd
+        text: Über mich
       - href: https://github.com/teletrabbie
         icon: github
   page-footer:
-    background: secondary
+    background: primary
     left: "Created in 2024 by Christian Franke"
     right:
       - href: https://github.com/teletrabbie
@@ -31,9 +32,9 @@ website:
         
 format:
   html:
-    theme: sandstorm
+    theme: lux
     css: styles.css
-    toc: true
+    toc: false
 
 
 

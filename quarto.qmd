@@ -1,5 +1,16 @@
 ---
 title: "Quarto-Projekte"
+listing:
+  contents: projects
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+title-block-banner: false
 ---
 
-Hier findet ihr die seit 2024 erstellten Quarto-Projekte.
+Hier findet ihr die seit 2024 erstellten Quarto-Projekte. 
+Bei dieser Quarto-Seite handelt es sich um ein "listing", das auch für einen
+Quarto-Blog verwendet wird. Die einzelnen Blog-Einträge sind separate qmd-Files,
+die automatisch in diese Liste hinzugefügt werden.

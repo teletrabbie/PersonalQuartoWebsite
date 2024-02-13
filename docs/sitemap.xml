@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://045da605-ba56-463a-bba4-79b6589e49d8.netlify.app/quarto.html</loc>
-    <lastmod>2024-02-12T21:22:29.461Z</lastmod>
+    <loc>https://christianfranke.quarto.pub/knoppers/quarto.html</loc>
+    <lastmod>2024-02-13T20:38:54.095Z</lastmod>
   </url>
   <url>
-    <loc>https://045da605-ba56-463a-bba4-79b6589e49d8.netlify.app/index.html</loc>
-    <lastmod>2024-02-12T21:09:35.971Z</lastmod>
+    <loc>https://christianfranke.quarto.pub/knoppers/old.html</loc>
+    <lastmod>2024-02-13T21:32:28.807Z</lastmod>
   </url>
   <url>
-    <loc>https://045da605-ba56-463a-bba4-79b6589e49d8.netlify.app/about.html</loc>
-    <lastmod>2024-02-12T21:24:08.999Z</lastmod>
+    <loc>https://christianfranke.quarto.pub/knoppers/about.html</loc>
+    <lastmod>2024-02-13T21:44:39.057Z</lastmod>
   </url>
   <url>
-    <loc>https://045da605-ba56-463a-bba4-79b6589e49d8.netlify.app/old.html</loc>
-    <lastmod>2024-02-12T21:35:07.870Z</lastmod>
+    <loc>https://christianfranke.quarto.pub/knoppers/index.html</loc>
+    <lastmod>2024-02-13T21:43:51.554Z</lastmod>
+  </url>
+  <url>
+    <loc>https://christianfranke.quarto.pub/knoppers/projects/es kann losgehen/es kann losgehen.html</loc>
+    <lastmod>2024-02-13T20:41:15.869Z</lastmod>
   </url>
 </urlset>
