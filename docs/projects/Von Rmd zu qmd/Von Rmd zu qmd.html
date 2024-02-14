@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Christian Franke">
-<meta name="dcterms.date" content="2024-02-13">
+<meta name="dcterms.date" content="2024-02-14">
 
-<title>Knoppers - Es kann losgehen</title>
+<title>Knoppers - Von .Rmd zu .qmd</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -69,11 +103,40 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -119,13 +182,37 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#statistik-projekt-bzg1185ab" id="toc-statistik-projekt-bzg1185ab" class="nav-link active" data-scroll-target="#statistik-projekt-bzg1185ab">Statistik Projekt (BZG1185ab)</a></li>
+  <li><a href="#datengrundlage" id="toc-datengrundlage" class="nav-link" data-scroll-target="#datengrundlage">Datengrundlage</a>
+  <ul class="collapse">
+  <li><a href="#umfrage" id="toc-umfrage" class="nav-link" data-scroll-target="#umfrage">Umfrage</a></li>
+  <li><a href="#deskriptive-datenanalyse" id="toc-deskriptive-datenanalyse" class="nav-link" data-scroll-target="#deskriptive-datenanalyse">Deskriptive Datenanalyse</a></li>
+  </ul></li>
+  <li><a href="#hypothesen-und-methoden" id="toc-hypothesen-und-methoden" class="nav-link" data-scroll-target="#hypothesen-und-methoden">Hypothesen und Methoden</a>
+  <ul class="collapse">
+  <li><a href="#hypothesen" id="toc-hypothesen" class="nav-link" data-scroll-target="#hypothesen">Hypothesen</a></li>
+  <li><a href="#methoden" id="toc-methoden" class="nav-link" data-scroll-target="#methoden">Methoden</a></li>
+  </ul></li>
+  <li><a href="#berechnungen-und-interpretation" id="toc-berechnungen-und-interpretation" class="nav-link" data-scroll-target="#berechnungen-und-interpretation">Berechnungen und Interpretation</a>
+  <ul class="collapse">
+  <li><a href="#t-test" id="toc-t-test" class="nav-link" data-scroll-target="#t-test">t-Test</a></li>
+  <li><a href="#t-test-ohne-vegetarier-ausreisser-nach-unten" id="toc-t-test-ohne-vegetarier-ausreisser-nach-unten" class="nav-link" data-scroll-target="#t-test-ohne-vegetarier-ausreisser-nach-unten">t-Test ohne Vegetarier (Ausreisser nach unten)</a></li>
+  </ul></li>
+  <li><a href="#fazit-und-ausblick" id="toc-fazit-und-ausblick" class="nav-link" data-scroll-target="#fazit-und-ausblick">Fazit und Ausblick</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Es kann losgehen</h1>
+<h1 class="title">Von .Rmd zu .qmd</h1>
 </div>
 
 
@@ -142,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 13, 2024</p>
+      <p class="date">February 14, 2024</p>
     </div>
   </div>
   
@@ -154,16 +241,165 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt. Ursprünglich wollte ich es im sechsten Semester nur “nebenbei” ausprobieren und ein paar Erfahrungen sammeln. Aus dieser Idee ist ein kleines Projekt entstanden. So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es …</p>
-<div class="quarto-figure quarto-figure-center">
+<p>Ist es einfach, eine R Markdown Datei als Quarto Datei zu ersetzen? Man sagt: ja. Und ich habe es ausprobiert.</p>
+<p>Ich habe ein altes, kleines Statistik-Projekt aus dem zweiten Semester genutzt und den R Markdown Code in die Quarto Datei hineinkopiert. Das Ergebnis war sehr gut! Nur zwei Unterschiede sind dabei aufgefallen:</p>
+<ul>
+<li>die zentrierte Formatierung der mathematischen Formeln im Abschnitt Hypothesen wurden nicht korrekt umgesetzt. Grund: gewisse Markdown-Formatierungsanweisungen funktionieren offenbar leicht anders, weil wir das ursüngliche Markdown Dokument als PDF-Output optimiert hatten.</li>
+<li>fett dargestellter Markdown-Text wurde nicht fett ausgegeben: Grund: das verwendete Quarto HTML Theme (hier: lux) resp. dessen Schriftart stellt keinen fett geschriebenen Text dar. Das hat mich zunächst verwirrt, aber ist überhaupt kein Problem.</li>
+</ul>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Fazit">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Fazit
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Der Aufwand, um R Markdown in Quarto zu überführen, liegt nur bei sehr wenigen Minuten. Cool!</p>
+</div>
+</div>
+<hr>
+<section id="statistik-projekt-bzg1185ab" class="level1">
+<h1>Statistik Projekt (BZG1185ab)</h1>
+<p>Aufgabe 6: Männer essen Fleisch öfter als Frauen.</p>
+<p>Von Claudio Comazzi, Omer Abdallah und Christian Franke (Klasse X1r)</p>
+<p>Erstellt am 5. Mai 2022</p>
+</section>
+<section id="datengrundlage" class="level1">
+<h1>Datengrundlage</h1>
+<section id="umfrage" class="level2">
+<h2 class="anchored" data-anchor-id="umfrage">Umfrage</h2>
+<ul>
+<li>Die Aufgabenstellung “Männer essen Fleisch öfter als Frauen” haben wir präzisiert, um die Datenqualität zu erhöhen.</li>
+<li>Frage: “An wie vielen Tagen pro Woche essen Sie Fleisch?”</li>
+<li>Umfrage in Bern Bümpliz vor einem Coop am 23.02.2022.</li>
+<li>Umfrage in Bern Länggasse vor einer Migros am 26.02.2022.</li>
+<li>Ganzzahlige Antworten zwischen 0 bis 7 waren möglich.</li>
+<li>Es wurden das Geschlecht (m/w) sowie die Altersgruppe erfasst.</li>
+<li>Es wurden insgesamt 75 Datenpunkte gesammelt.</li>
+<li>Aufgrund der Umfrageorte und Umfragezeiten repräsentieren die Daten nur zum Teil die gesamte Bevölkerung (Details siehe im Ausblick).</li>
+<li>Zusammenfassung der Datensätze in einer gemeinsamen csv-Datei und Analyse in R (Markdown).</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"input_data_fleisch.csv"</span>, <span class="at">sep =</span> <span class="st">";"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> AnzTageFleisch  Geschlecht        Altersgruppe      
+ Min.   :0.00   Length:75          Length:75         
+ 1st Qu.:1.00   Class :character   Class :character  
+ Median :3.00   Mode  :character   Mode  :character  
+ Mean   :2.84                                        
+ 3rd Qu.:4.00                                        
+ Max.   :7.00                                        </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> data[data<span class="sc">$</span>Geschlecht<span class="sc">==</span><span class="st">"m"</span>, <span class="fu">c</span>(<span class="st">"AnzTageFleisch"</span>)]   <span class="co">#length(m); mean(m); sd(m)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>w <span class="ot">&lt;-</span> data[data<span class="sc">$</span>Geschlecht<span class="sc">==</span><span class="st">"w"</span>, <span class="fu">c</span>(<span class="st">"AnzTageFleisch"</span>)]   <span class="co">#length(w); mean(w); sd(w)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="deskriptive-datenanalyse" class="level2">
+<h2 class="anchored" data-anchor-id="deskriptive-datenanalyse">Deskriptive Datenanalyse</h2>
+<p>Für Männer (n=43) liegt der Mittelwert bei 3.67 und die Standardabweichung bei 1.95.</p>
+<p>Für Frauen (n=32) liegt der Mittelwert bei 1.72 und die Standardabweichung bei 1.82.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(AnzTageFleisch <span class="sc">~</span> Geschlecht, <span class="at">data =</span> data</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>        , <span class="at">main=</span><span class="st">"Anzahl Tage mit Fleischkonsum pro Woche je Geschlecht"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
 <figure class="figure">
-<p><img src="FireflyFirstPost.jpg" class="img-fluid figure-img"></p>
-<figcaption>Adobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter</figcaption>
+<p><img src="Von-Rmd-zu-qmd_files/figure-html/Deskriptive Analysen-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
-<p>Weitere Infos findet Ihr auf der <a href="https://quarto.org/docs/websites/">offiziellen Quarto-Seite</a></p>
+</div>
+</div>
+<p>Die Verteilung der Frauen ist eher tiefer im Vergleich zu den Männern. Dies ist ein Hinweis, dass Männer öfters Fleisch essen, aber noch kein “Beweis”. Es müssen zunächst statistische Tests durchgeführt werden.</p>
+<hr>
+</section>
+</section>
+<section id="hypothesen-und-methoden" class="level1">
+<h1>Hypothesen und Methoden</h1>
+<section id="hypothesen" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesen">Hypothesen</h2>
+<p>Als Mittelwert verstehen wir hier das arithmetische Mittel aus der “Anzahl Tage mit Fleischkonsum pro Woche” (AnzTageFleisch). Die Nullhypothese lautet: der Mittelwert der Männer ist gleich gross wie der Mittelwert der Frauen. Als alternative Hypothese können wir schreiben: der Mittelwert der Männer ist grösser als der Mittelwert Frauen. Formal:</p>
+<center>
+<p><span class="math inline">\(H_{0}: \mu_{m} = \mu_{w}\)</span></p>
+<span class="math inline">\(H_{1}: \mu_{m} &gt; \mu_{w}\)</span>
+</center>
+</section>
+<section id="methoden" class="level2">
+<h2 class="anchored" data-anchor-id="methoden">Methoden</h2>
+<p>Bei den Stichproben für Männer und Frauen handelt es sich um ungepaarte Stichproben, da die beiden Gruppen unabhängig voneinander sind. Weil deutlich mehr als 30 Datenpunkte vorliegen, könnten wir einen z-Test durchführen. Allerdings kennen wir die nicht die exakten Varianzen, sodass wir den t-Test verwenden. Da sich die Standardabweichungen von Frauen und Männer in unserer Umfrage nicht zu sehr unterscheiden, dürfen wir annehmen, dass die unbekannten Varianzen etwa gleich gross sind. Der t-Test ist eine sehr gute Approximation. Da n&gt;30, müssen wir nicht die Voraussetzung auf Normalverteilung prüfen. Das Signifikanzniveau unseres t-Tests beträgt 5%.</p>
+<hr>
+</section>
+</section>
+<section id="berechnungen-und-interpretation" class="level1">
+<h1>Berechnungen und Interpretation</h1>
+<section id="t-test" class="level2">
+<h2 class="anchored" data-anchor-id="t-test">t-Test</h2>
+<p>Wir führen einen einseitigen t-Test in R durch.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">x =</span> m,</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> w,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">alternative =</span> <span class="fu">c</span>(<span class="st">"greater"</span>),</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">paired =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  m and w
+t = 4.4681, df = 69.281, p-value = 1.499e-05
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ 1.225962      Inf
+sample estimates:
+mean of x mean of y 
+ 3.674419  1.718750 </code></pre>
+</div>
+</div>
+<p>Die Teststatistik ist mit 4.47 sehr gross. Der p-Wert liegt deutlich unter dem Signifikanzniveau von 5% und sogar deutlich unter 1%. <strong>Die Nullhypothese kann mit diesem kleinen p-Wert verworfen werden. Die alternative Hypothese wird nicht verworfen.</strong> Der Mittelwert der Männer scheint somit signifikant grösser zu sein als der Mittelwert der Frauen, d.h. Männer essen offenbar häufiger Fleisch als Frauen.</p>
+</section>
+<section id="t-test-ohne-vegetarier-ausreisser-nach-unten" class="level2">
+<h2 class="anchored" data-anchor-id="t-test-ohne-vegetarier-ausreisser-nach-unten">t-Test ohne Vegetarier (Ausreisser nach unten)</h2>
+<p>Problematisch ist möglicherweise die rechtsschiefe Verteilung bei den Frauen. In der Umfrage hatten 11 Frauen angegeben, dass sie vegetarisch sind und somit an 0 Tagen je Woche Fleisch essen (im Vergleich zu nur 4 vegetarischen Männern). Diese Frauen könnten einen grossen Einfluss auf das Ergebnis haben (ca. ein Drittel der weiblichen Beobachtungspunkte). Deshalb haben wir zusätzlich die Vegetarier aus dem Datensatz ausgeschlossen und den t-Test wiederholt.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>m0 <span class="ot">&lt;-</span> m[m<span class="sc">&gt;</span><span class="dv">0</span>]</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>w0 <span class="ot">&lt;-</span> w[w<span class="sc">&gt;</span><span class="dv">0</span>]</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(<span class="at">x =</span> m0,</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> w0,</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">alternative =</span> <span class="fu">c</span>(<span class="st">"greater"</span>),</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">paired =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  m0 and w0
+t = 3.2561, df = 40.943, p-value = 0.001136
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ 0.6919657       Inf
+sample estimates:
+mean of x mean of y 
+ 4.051282  2.619048 </code></pre>
+</div>
+</div>
+<p>Es fliessen nur noch 21 Frauen und 39 Männer in den Test ohne Ausreisser ein. Dies ist gross genug, um die gleiche Test-Methode durchzuführen. Die Mittelwerte sind erwartungsgemäss höher, aber der p-Wert liegt mit 0.1% noch immer deutlich unter unserem Signifikanznieau. <strong>Auch hier wird die Nullhypothese verworfen.</strong> Falls wir “alle Ausreisser” (AnzTageFleisch=7) entfernen, wäre der p-Wert weiterhin unter 1%.</p>
+<hr>
+</section>
+</section>
+<section id="fazit-und-ausblick" class="level1">
+<h1>Fazit und Ausblick</h1>
+<p>Man könnte in Zukunft z.B. das Alter oder weitere sozio-demographische Faktoren berücksichtigen. Dies hätte eine andere Fragestellung resp. ein anderes Studiendesign zur Folge. Jedes zusätzlich erfasste Merkmal steigert zudem den Aufwand bei den Umfragen. Man benötigt pro Altersgruppe genügend Daten und müsste mehr Zeit in die Datenerfassung investieren. In unserer Umfrage sind beispielsweise über die Hälfte der befragten Personen im Alter zwischen 30 und 39 Jahren gewesen. Dies repräsentiert die Schweizer Bevölkerung nur mässig.</p>
+<p>Auf unsere Fragestellung, ob Männer häufiger Fleisch essen als Frauen, hat diese Besonderheit nur einen kleinen Einfluss. Insgesamt scheint es so zu sein, dass Männer häufiger Fleisch essen als Frauen.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(data, m, w)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

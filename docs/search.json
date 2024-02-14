@@ -4,7 +4,28 @@
     "href": "quarto.html",
     "title": "Quarto-Projekte",
     "section": "",
-    "text": "Hier findet ihr die seit 2024 erstellten Quarto-Projekte. Bei dieser Quarto-Seite handelt es sich um ein “listing”, das auch für einen Quarto-Blog verwendet wird. Die einzelnen Blog-Einträge sind separate qmd-Files, die automatisch in diese Liste hinzugefügt werden.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEs kann losgehen\n\n\n\n\n\n\n\n\n\n\n\nFeb 13, 2024\n\n\nChristian Franke\n\n\n\n\n\n\nNo matching items"
+    "text": "Hier findet ihr die seit 2024 erstellten Quarto-Projekte. Bei dieser Quarto-Seite handelt es sich um ein “listing”, das auch für einen Quarto-Blog verwendet wird. Die einzelnen Blog-Einträge sind separate qmd-Files, die automatisch in diese Liste hinzugefügt werden.\nWeitere Infos findet Ihr auf quarto.org.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVon .Rmd zu .qmd\n\n\n\n\n\n\n\n\n\n\n\nFeb 14, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nEs kann losgehen\n\n\n\n\n\n\n\n\n\n\n\nFeb 13, 2024\n\n\nChristian Franke\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/es kann losgehen/es kann losgehen.html",
+    "href": "projects/es kann losgehen/es kann losgehen.html",
+    "title": "Es kann losgehen",
+    "section": "",
+    "text": "Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt. Ursprünglich wollte ich es im sechsten Semester nur “nebenbei” ausprobieren und ein paar Erfahrungen sammeln. Aus dieser Idee ist ein kleines Projekt entstanden. So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es …\n\n\n\nAdobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter\n\n\nWeitere Infos findet Ihr auf der offiziellen Quarto-Seite"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Grüessech, hallo, salut & hello",
+    "section": "",
+    "text": "Für die meisten Menschen ist Programmieren kein “Hobby”. Und auch ich verbringe meine Zeit lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen: ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig. Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am meisten Rendite eingebracht.\nDeshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: eine kleine Website auf der ich einige meiner Projekte präsentieren kann.\nViel Spass beim Stöbern."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Christian Franke",
+    "section": "",
+    "text": "Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant, weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich ein Studium für Medizin-Informatik begann.\n\nAus- und Weiterbildungen\nSeit 2021: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (Teilzeit)\n2018: CAS in Gesundheitsökonomie und gesundheitsökonomische Evaluation (Public Health Weiterbildung der Universitäten Basel, Bern und Zürich)\n2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg\n\n\nBerufliche Tätigkeiten\nSeit 2021: SwissDRG AG, Bern\n2020/2021: Valiant Bank AG, Bern\n2016-2019: Sanitas Krankenversicherung AG, Zürich\n2013-2015: Basler Versicherungen AG, Basel\n2009-2015: Berufsgenossenschaft Holz und Metall, Mainz"
   },
   {
     "objectID": "old.html",
@@ -35,24 +56,59 @@
     "text": "BI in Healthcare\n\n\nIm fünften Semester lernen wir weiteres über den Einsatz von R im Bereich Business Intelligence. Der Dozent führte den Unterricht als Flipped Classroom durch, sodass wir viele Haus- und Übungsaufgaben sowie Selbststudium absolvierten. Die erarbeiteten Ergebnisse habe ich als R Markdown zusammengefasst.\nDetails"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Christian Franke",
-    "section": "",
-    "text": "Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant, weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich ein Studium für Medizin-Informatik begann.\n\nAus- und Weiterbildung\nSeit 2021: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (Teilzeit)\n2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg\n\n\nBerufliche Tätigkeit\nSeit 2021: SwissDRG AG, Bern\n2020/2021: Valiant-Bank AG, Bern\n2016-2019: Sanitas Krankenversicherung AG, Zürich\n2013-2015: Basler Versicherungen AG, Basel\n2009-2015: Berufsgenossenschaft Holz und Metall, Mainz"
+    "objectID": "old.html#swissdrg-wordcloud",
+    "href": "old.html#swissdrg-wordcloud",
+    "title": "Frühere Projekte",
+    "section": "SwissDRG Wordcloud",
+    "text": "SwissDRG Wordcloud\n\n\n\n\n\n\nAls Teil des Moduls BI In Healthcare hatten wir uns mit Word-Clouds beschäftigt. Für meine Arbeitskollegen habe ich nun eine Wortcloud mit den Bewgriffen des Definitionshandbuch der SwissDRG Version 13.0 erstellt.\nDetails"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Grüessech, hallo, salut & hello",
+    "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html",
+    "href": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html",
+    "title": "Von .Rmd zu .qmd",
     "section": "",
-    "text": "Für die meisten Menschen ist Programmieren kein “Hobby”. Und auch ich verbringe meine Zeit lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen: ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig. Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am meisten Rendite eingebracht.\nDeshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: eine kleine Website auf der ich einige meiner Projekte präsentieren kann.\nViel Spass beim Stöbern."
+    "text": "Ist es einfach, eine R Markdown Datei als Quarto Datei zu ersetzen? Man sagt: ja. Und ich habe es ausprobiert.\nIch habe ein altes, kleines Statistik-Projekt aus dem zweiten Semester genutzt und den R Markdown Code in die Quarto Datei hineinkopiert. Das Ergebnis war sehr gut! Nur zwei Unterschiede sind dabei aufgefallen:"
   },
   {
-    "objectID": "projects/es kann losgehen/es kann losgehen.html",
-    "href": "projects/es kann losgehen/es kann losgehen.html",
-    "title": "Es kann losgehen",
-    "section": "",
-    "text": "Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt. Ursprünglich wollte ich es im sechsten Semester nur “nebenbei” ausprobieren und ein paar Erfahrungen sammeln. Aus dieser Idee ist ein kleines Projekt entstanden. So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es …\n\n\n\nAdobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter"
+    "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#umfrage",
+    "href": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#umfrage",
+    "title": "Von .Rmd zu .qmd",
+    "section": "Umfrage",
+    "text": "Umfrage\n\nDie Aufgabenstellung “Männer essen Fleisch öfter als Frauen” haben wir präzisiert, um die Datenqualität zu erhöhen.\nFrage: “An wie vielen Tagen pro Woche essen Sie Fleisch?”\nUmfrage in Bern Bümpliz vor einem Coop am 23.02.2022.\nUmfrage in Bern Länggasse vor einer Migros am 26.02.2022.\nGanzzahlige Antworten zwischen 0 bis 7 waren möglich.\nEs wurden das Geschlecht (m/w) sowie die Altersgruppe erfasst.\nEs wurden insgesamt 75 Datenpunkte gesammelt.\nAufgrund der Umfrageorte und Umfragezeiten repräsentieren die Daten nur zum Teil die gesamte Bevölkerung (Details siehe im Ausblick).\nZusammenfassung der Datensätze in einer gemeinsamen csv-Datei und Analyse in R (Markdown).\n\n\ndata &lt;- read.csv(\"input_data_fleisch.csv\", sep = \";\")\nsummary(data)\n\n AnzTageFleisch  Geschlecht        Altersgruppe      \n Min.   :0.00   Length:75          Length:75         \n 1st Qu.:1.00   Class :character   Class :character  \n Median :3.00   Mode  :character   Mode  :character  \n Mean   :2.84                                        \n 3rd Qu.:4.00                                        \n Max.   :7.00                                        \n\nm &lt;- data[data$Geschlecht==\"m\", c(\"AnzTageFleisch\")]   #length(m); mean(m); sd(m)\nw &lt;- data[data$Geschlecht==\"w\", c(\"AnzTageFleisch\")]   #length(w); mean(w); sd(w)"
+  },
+  {
+    "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#deskriptive-datenanalyse",
+    "href": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#deskriptive-datenanalyse",
+    "title": "Von .Rmd zu .qmd",
+    "section": "Deskriptive Datenanalyse",
+    "text": "Deskriptive Datenanalyse\nFür Männer (n=43) liegt der Mittelwert bei 3.67 und die Standardabweichung bei 1.95.\nFür Frauen (n=32) liegt der Mittelwert bei 1.72 und die Standardabweichung bei 1.82.\n\nboxplot(AnzTageFleisch ~ Geschlecht, data = data\n        , main=\"Anzahl Tage mit Fleischkonsum pro Woche je Geschlecht\")\n\n\n\n\n\n\n\n\nDie Verteilung der Frauen ist eher tiefer im Vergleich zu den Männern. Dies ist ein Hinweis, dass Männer öfters Fleisch essen, aber noch kein “Beweis”. Es müssen zunächst statistische Tests durchgeführt werden."
+  },
+  {
+    "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#hypothesen",
+    "href": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#hypothesen",
+    "title": "Von .Rmd zu .qmd",
+    "section": "Hypothesen",
+    "text": "Hypothesen\nAls Mittelwert verstehen wir hier das arithmetische Mittel aus der “Anzahl Tage mit Fleischkonsum pro Woche” (AnzTageFleisch). Die Nullhypothese lautet: der Mittelwert der Männer ist gleich gross wie der Mittelwert der Frauen. Als alternative Hypothese können wir schreiben: der Mittelwert der Männer ist grösser als der Mittelwert Frauen. Formal:\n\n\\(H_{0}: \\mu_{m} = \\mu_{w}\\)\n\\(H_{1}: \\mu_{m} &gt; \\mu_{w}\\)"
+  },
+  {
+    "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#methoden",
+    "href": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#methoden",
+    "title": "Von .Rmd zu .qmd",
+    "section": "Methoden",
+    "text": "Methoden\nBei den Stichproben für Männer und Frauen handelt es sich um ungepaarte Stichproben, da die beiden Gruppen unabhängig voneinander sind. Weil deutlich mehr als 30 Datenpunkte vorliegen, könnten wir einen z-Test durchführen. Allerdings kennen wir die nicht die exakten Varianzen, sodass wir den t-Test verwenden. Da sich die Standardabweichungen von Frauen und Männer in unserer Umfrage nicht zu sehr unterscheiden, dürfen wir annehmen, dass die unbekannten Varianzen etwa gleich gross sind. Der t-Test ist eine sehr gute Approximation. Da n&gt;30, müssen wir nicht die Voraussetzung auf Normalverteilung prüfen. Das Signifikanzniveau unseres t-Tests beträgt 5%."
+  },
+  {
+    "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#t-test",
+    "href": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#t-test",
+    "title": "Von .Rmd zu .qmd",
+    "section": "t-Test",
+    "text": "t-Test\nWir führen einen einseitigen t-Test in R durch.\n\nt.test(x = m,\n       y = w,\n       alternative = c(\"greater\"),\n       paired = FALSE,\n       conf.level = 0.95)\n\n\n    Welch Two Sample t-test\n\ndata:  m and w\nt = 4.4681, df = 69.281, p-value = 1.499e-05\nalternative hypothesis: true difference in means is greater than 0\n95 percent confidence interval:\n 1.225962      Inf\nsample estimates:\nmean of x mean of y \n 3.674419  1.718750 \n\n\nDie Teststatistik ist mit 4.47 sehr gross. Der p-Wert liegt deutlich unter dem Signifikanzniveau von 5% und sogar deutlich unter 1%. Die Nullhypothese kann mit diesem kleinen p-Wert verworfen werden. Die alternative Hypothese wird nicht verworfen. Der Mittelwert der Männer scheint somit signifikant grösser zu sein als der Mittelwert der Frauen, d.h. Männer essen offenbar häufiger Fleisch als Frauen."
+  },
+  {
+    "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#t-test-ohne-vegetarier-ausreisser-nach-unten",
+    "href": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#t-test-ohne-vegetarier-ausreisser-nach-unten",
+    "title": "Von .Rmd zu .qmd",
+    "section": "t-Test ohne Vegetarier (Ausreisser nach unten)",
+    "text": "t-Test ohne Vegetarier (Ausreisser nach unten)\nProblematisch ist möglicherweise die rechtsschiefe Verteilung bei den Frauen. In der Umfrage hatten 11 Frauen angegeben, dass sie vegetarisch sind und somit an 0 Tagen je Woche Fleisch essen (im Vergleich zu nur 4 vegetarischen Männern). Diese Frauen könnten einen grossen Einfluss auf das Ergebnis haben (ca. ein Drittel der weiblichen Beobachtungspunkte). Deshalb haben wir zusätzlich die Vegetarier aus dem Datensatz ausgeschlossen und den t-Test wiederholt.\n\nm0 &lt;- m[m&gt;0]\nw0 &lt;- w[w&gt;0]\n\nt.test(x = m0,\n       y = w0,\n       alternative = c(\"greater\"),\n       paired = FALSE,\n       conf.level = 0.95)\n\n\n    Welch Two Sample t-test\n\ndata:  m0 and w0\nt = 3.2561, df = 40.943, p-value = 0.001136\nalternative hypothesis: true difference in means is greater than 0\n95 percent confidence interval:\n 0.6919657       Inf\nsample estimates:\nmean of x mean of y \n 4.051282  2.619048 \n\n\nEs fliessen nur noch 21 Frauen und 39 Männer in den Test ohne Ausreisser ein. Dies ist gross genug, um die gleiche Test-Methode durchzuführen. Die Mittelwerte sind erwartungsgemäss höher, aber der p-Wert liegt mit 0.1% noch immer deutlich unter unserem Signifikanznieau. Auch hier wird die Nullhypothese verworfen. Falls wir “alle Ausreisser” (AnzTageFleisch=7) entfernen, wäre der p-Wert weiterhin unter 1%."
   }
 ]

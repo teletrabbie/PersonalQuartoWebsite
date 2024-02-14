@@ -12,3 +12,5 @@ So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten
 Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es ...
 
 ![Adobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter](FireflyFirstPost.jpg)
+
+Weitere Infos findet Ihr auf der [offiziellen Quarto-Seite](https://quarto.org/docs/websites/)

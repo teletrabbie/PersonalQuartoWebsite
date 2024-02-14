@@ -66,3 +66,23 @@ Im fünften Semester lernen wir weiteres über den Einsatz von R im Bereich Busi
 :::
 
 ::::
+
+
+## SwissDRG Wordcloud
+
+:::: columns
+
+::: {.column width="55%"}
+![](pictures/drg wordcloud.png)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+Als Teil des Moduls BI In Healthcare hatten wir uns mit Word-Clouds beschäftigt. Für meine Arbeitskollegen habe ich nun eine Wortcloud mit den Bewgriffen des Definitionshandbuch der SwissDRG Version 13.0 erstellt.
+
+[Details](https://teletrabbie.github.io/word_cloud_drg.html)
+:::
+
+::::

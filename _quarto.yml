@@ -21,15 +21,18 @@ website:
         icon: github
   page-footer:
     background: primary
-    left: "Created in 2024 by Christian Franke"
-    right:
+    left: "Created in 2024"
+    center:
       - href: https://github.com/teletrabbie
         icon: github
       - href: https://open.spotify.com/playlist/5uOdtjw9CCVf5dfX6kLa9y?si=9b11daf398e84c66
         icon: spotify
       - href: https://flyingangels.ch/
         icon: person-arms-up
-        
+    right:
+      - href: https://quarto.org/docs/websites/
+        text: "Made with Quarto"
+
 format:
   html:
     theme: lux
