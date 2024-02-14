@@ -1,0 +1,39 @@
+---
+title: "Poster"
+---
+
+Zugegeben, diese Poster wurden bei keiner einzigen Konferenz präsentiert. 
+Wir dürften sie "nur" unseren Dozenten und Kommilitonen erläutern. 
+Aber was nicht ist, kann ja noch werden...
+
+:::: columns
+::: {.column width="30%"}
+::: {.card}
+<center>Schnittstellen</center>
+
+[![ ](pictures/poster_lc1.png)](https://teletrabbie.github.io/poster/lc1.pdf)
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.card}
+<center>Telemedizin</center>
+
+[![ ](pictures/poster_sem2.png)](https://teletrabbie.github.io/poster/seminar2.pdf)
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%"}
+::: {.card}
+<center>Virtual Reality</center>
+
+[![ ](pictures/poster_sem1.png)](https://teletrabbie.github.io/poster/seminar1.pdf)
+:::
+:::
+::::

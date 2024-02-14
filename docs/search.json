@@ -14,20 +14,6 @@
     "text": "Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt. Ursprünglich wollte ich es im sechsten Semester nur “nebenbei” ausprobieren und ein paar Erfahrungen sammeln. Aus dieser Idee ist ein kleines Projekt entstanden. So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es …\n\n\n\nAdobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter\n\n\nWeitere Infos findet Ihr auf der offiziellen Quarto-Seite"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Grüessech, hallo, salut & hello",
-    "section": "",
-    "text": "Für die meisten Menschen ist Programmieren kein “Hobby”. Und auch ich verbringe meine Zeit lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen: ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig. Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am meisten Rendite eingebracht.\nDeshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: eine kleine Website auf der ich einige meiner Projekte präsentieren kann.\nViel Spass beim Stöbern."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Christian Franke",
-    "section": "",
-    "text": "Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant, weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich ein Studium für Medizin-Informatik begann.\n\nAus- und Weiterbildungen\nSeit 2021: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (Teilzeit)\n2018: CAS in Gesundheitsökonomie und gesundheitsökonomische Evaluation (Public Health Weiterbildung der Universitäten Basel, Bern und Zürich)\n2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg\n\n\nBerufliche Tätigkeiten\nSeit 2021: SwissDRG AG, Bern\n2020/2021: Valiant Bank AG, Bern\n2016-2019: Sanitas Krankenversicherung AG, Zürich\n2013-2015: Basler Versicherungen AG, Basel\n2009-2015: Berufsgenossenschaft Holz und Metall, Mainz"
-  },
-  {
     "objectID": "old.html",
     "href": "old.html",
     "title": "Frühere Projekte",
@@ -61,6 +47,27 @@
     "title": "Frühere Projekte",
     "section": "SwissDRG Wordcloud",
     "text": "SwissDRG Wordcloud\n\n\n\n\n\n\nAls Teil des Moduls BI In Healthcare hatten wir uns mit Word-Clouds beschäftigt. Für meine Arbeitskollegen habe ich nun eine Wortcloud mit den Bewgriffen des Definitionshandbuch der SwissDRG Version 13.0 erstellt.\nDetails"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Christian Franke",
+    "section": "",
+    "text": "Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant, weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich ein Studium für Medizin-Informatik begann.\n\nAus- und Weiterbildungen\nSeit 2021: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (Teilzeit)\n2018: CAS in Gesundheitsökonomie und gesundheitsökonomische Evaluation (Public Health Weiterbildung der Universitäten Basel, Bern und Zürich)\n2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg\n\n\nBerufliche Tätigkeiten\nSeit 2021: SwissDRG AG, Bern\n2020/2021: Valiant Bank AG, Bern\n2016-2019: Sanitas Krankenversicherung AG, Zürich\n2013-2015: Basler Versicherungen AG, Basel\n2009-2015: Berufsgenossenschaft Holz und Metall, Mainz\n\n\nTechnische Skills\n\nMS Excel (Experte)\nSQL (sehr fortgeschritten)\nBI Tools (umfangreich)\n\nMicroStrategy\nPower BI\n\nR, Quarto, Shiny (regelmässiger Einsatz)\nJava, Python (praktische Erfahrung)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Grüessech, hallo, salut & hello",
+    "section": "",
+    "text": "Für die meisten Menschen ist Programmieren kein “Hobby”. Und auch ich verbringe meine Zeit lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen: ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig. Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am meisten Rendite eingebracht.\nDeshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: eine kleine Website auf der ich einige meiner Projekte präsentieren kann.\nViel Spass beim Stöbern."
+  },
+  {
+    "objectID": "poster.html",
+    "href": "poster.html",
+    "title": "Poster",
+    "section": "",
+    "text": "Zugegeben, diese Poster wurden bei keiner einzigen Konferenz präsentiert. Wir dürften sie “nur” unseren Dozenten und Kommilitonen erläutern. Aber was nicht ist, kann ja noch werden…\n\n\n\n\nSchnittstellen\n\n\n\n\n\n\n\n\nTelemedizin\n\n\n\n\n\n\n\n\nVirtual Reality"
   },
   {
     "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html",

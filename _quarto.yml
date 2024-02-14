@@ -3,7 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "Knoppers"
+  title: "CF"
+  favicon: pictures/foil_kreis.png
   navbar:
     background: primary
     title: false
@@ -14,11 +15,11 @@ website:
         text: Quarto-Projekte
       - href: old.qmd
         text: Frühere Projekte
+      - href: poster.qmd
+        text: Poster
     right: 
       - href: about.qmd
         text: Über mich
-      - href: https://github.com/teletrabbie
-        icon: github
   page-footer:
     background: primary
     left: "Created in 2024"

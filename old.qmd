@@ -20,7 +20,7 @@ Schnittstelle von der Patientenverwaltung Eyewin zu drei Diagnostikgeräten: die
 :::
 
 ::: {.column width="40%"}
-![](pictures/Screenshot 02 Suche.png)
+[![](pictures/Screenshot 02 Suche.png)](https://teletrabbie.github.io/livingcase01/eyewininterfaces.html)
 :::
 
 ::::
@@ -31,7 +31,7 @@ Schnittstelle von der Patientenverwaltung Eyewin zu drei Diagnostikgeräten: die
 :::: columns
 
 ::: {.column width="40%"}
-![](pictures/stürze.png)
+[![](pictures/stürze.png)](https://teletrabbie.github.io/R_project_semester_04.html)
 :::
 
 ::: {.column width="5%"}
@@ -62,7 +62,7 @@ Im fünften Semester lernen wir weiteres über den Einsatz von R im Bereich Busi
 :::
 
 ::: {.column width="40%"}
-![](pictures/k-means.png)
+[![](pictures/k-means.png)](https://teletrabbie.github.io/BI_Healthcare_Flipped.html)
 :::
 
 ::::
@@ -73,7 +73,7 @@ Im fünften Semester lernen wir weiteres über den Einsatz von R im Bereich Busi
 :::: columns
 
 ::: {.column width="55%"}
-![](pictures/drg wordcloud.png)
+[![](pictures/drg wordcloud.png)](https://teletrabbie.github.io/word_cloud_drg.html)
 :::
 
 ::: {.column width="5%"}

@@ -4,6 +4,16 @@ toc: false
 about:
   template: solana
   image: pictures/portrait.jpg
+  links: 
+    - icon: github
+      text: GitHub
+      href: https://github.com/teletrabbie
+    - icon: spotify
+      text: Favorits
+      href: https://open.spotify.com/playlist/5uOdtjw9CCVf5dfX6kLa9y?si=9b11daf398e84c66
+    - icon: person-square
+      text: CV
+      href: https://teletrabbie.github.io/cv.html
 ---
 
 Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich 
@@ -31,3 +41,14 @@ Seit 2021: [SwissDRG](https://www.swissdrg.org) AG, Bern
 2013-2015: [Basler](https://www.baloise.ch) Versicherungen AG, Basel
 
 2009-2015: [Berufsgenossenschaft Holz und Metall](https://www.bghm.de), Mainz
+
+# Technische Skills
+
+* MS Excel (Experte)
+* SQL (sehr fortgeschritten)
+* BI Tools (umfangreich)
+  + MicroStrategy
+  + Power BI
+* R, Quarto, Shiny (regelmässiger Einsatz)
+* Java, Python (praktische Erfahrung)
+
