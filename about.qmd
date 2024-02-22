@@ -9,7 +9,7 @@ about:
       text: GitHub
       href: https://github.com/teletrabbie
     - icon: spotify
-      text: Favorits
+      text: Favorites
       href: https://open.spotify.com/playlist/5uOdtjw9CCVf5dfX6kLa9y?si=9b11daf398e84c66
     - icon: person-square
       text: CV
@@ -24,11 +24,13 @@ ein Studium für Medizin-Informatik begann.
 
 # Aus- und Weiterbildungen
 
-Seit 2021: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (Teilzeit)
+Seit 2021: Bachelor-Studium für 
+[Medizin-Informatik](https://www.bfh.ch/de/studium/bachelor/medizininformatik/) 
+an der Berner Fachhochschule (Teilzeit)
 
-2018: CAS in Gesundheitsökonomie und gesundheitsökonomische Evaluation (Public Health Weiterbildung der Universitäten Basel, Bern und Zürich)
+2018: CAS in Gesundheitsökonomie und gesundheitsökonomische Evaluation ([Public Health Weiterbildung](https://www.public-health-edu.ch/) der Universitäten Basel, Bern und Zürich)
 
-2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg
+2004-2009: Diplom-Studium für Volkswirtschafslehre an der [Julius-Maximilians-Universität Würzburg](https://www.uni-wuerzburg.de/)
 
 # Berufliche Tätigkeiten
 
@@ -51,4 +53,7 @@ Seit 2021: [SwissDRG](https://www.swissdrg.org) AG, Bern
   + Power BI
 * R, Quarto, Shiny (regelmässiger Einsatz)
 * Java, Python (praktische Erfahrung)
+* ausserdem
+  + Datenvisualisierung
+  + Projektmanagement
 

@@ -9,8 +9,8 @@ Bevor ich mit Quarto begann, hatte ich andere kleine Projekte ausprobiert.
 :::: columns
 
 ::: {.column width="55%"}
-Schnittstelle von der Patientenverwaltung Eyewin zu drei Diagnostikgeräten: diese Arbeit wurde im Studienmodul «Living Case 1» während des Herbstsemesters 2023/24 erstellt. Projektpartner und Auftraggeberin war die Firma Eschmann Contactlinsen AG in Bern, die optometrische Dienstleistungen anbietet.
-
+Schnittstelle von der Patientenverwaltung Eyewin zu drei Diagnostikgeräten: diese 
+[Arbeit](https://teletrabbie.github.io/poster/lc1.pdf) wurde im Studienmodul «Living Case 1» während des Herbstsemesters 2023/24 erstellt. Projektpartner und Auftraggeberin war die Firma Eschmann Contactlinsen AG in Bern, die optometrische Dienstleistungen anbietet.
 
 [Details](https://teletrabbie.github.io/livingcase01/eyewininterfaces.html)
 

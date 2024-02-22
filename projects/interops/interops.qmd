@@ -1,0 +1,60 @@
+---
+title: "Interoperabilität"
+author: "Christian Franke"
+date: "2024-02-21"
+image: "mindmap.png"
+format:
+  html:
+    mermaid:
+      theme: forest
+---
+
+..[DER Podcast rund um Gesundheits- und Medizininformatik](https://open.spotify.com/episode/5UAzelxPlP7Gj2na1Tjx8a?si=tQ3qplCpTQG1DfI91D7zlA) hat einen Überblick über Interoperabilität gegeben. Die wichtigste Begriffe werden hier zusammengestellt.
+
+```{mermaid}
+mindmap
+  root((Interops))
+    Systeme
+      Terminologieserver
+      Kommunikationsserver
+      KIS
+      RIS
+      LIS
+      PACS
+      CDR
+      PIS
+    Standards
+      openEHR
+        Maximal ausdefiniert
+        Archetyp
+      HL7 V2
+        Nachrichtentypen
+      FHIR
+        Ressource
+        80/20
+      DICOM
+        Worklist
+      IHE
+        XDS
+      CDA
+      EPD
+    Arten
+      Semantisch
+        Annotation
+        Ordnungssyteme
+        Klassifikation
+        Wichtig
+          ICD
+          Snomed CT
+          NANDA
+          NIC
+          NOC
+          LOINC
+          UCUM
+          CHOP
+          ATC
+      Syntaktisch
+        xDT
+```
+
+Dabei handelt es sich um ein Mermaid-Diagramm (Mindmap). Weitere Infos zu Mermaid findet Ihr unter <https://mermaid.js.org>.

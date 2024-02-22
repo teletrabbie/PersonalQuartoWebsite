@@ -1,0 +1,96 @@
+---
+title: "Pubmed mit R abfragen"
+author: "Christian Franke"
+date: "2024-02-16"
+image: "pubmed.png"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+Im Rahmen einer Seminararbeit wurden eine Literaturrecherche auf Pubmed
+durchgeführt. Unterschiedliche Search-String-Kombinationen wurden mit R
+automatisch ausgeführt. Dadurch haben wir ein Mengengerüst erhalten, um
+die Bedeutung von Subthemen besser einzuschätzen und unsere eigene
+Such-Strategie zu optimieren.
+
+Das Poster zu unserer Seminararbeit findet ihr
+[hier](https://teletrabbie.github.io/poster/seminar2.pdf).
+
+Das R-Skript hatte ich erstellt, als ich noch keine Erfahrung mit API
+hatte. Heute würde ich das Skript vermutlich anders (eleganter)
+gestalten und in den nächsten Wochen sicherlich auch als verbesserte
+Variante ausprobieren.
+
+## Vorbereitung
+
+Als erstes wurde die API-Adresse als String nachgebildet mit jeweils
+zwei Begriffen, die im Titel oder im Abstract auf Pubmed gesucht wurden.
+
+```{r}
+library(xml2)
+library(tidyr)
+library(knitr)
+
+# set static values of the url
+url_part_1 <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=("
+url_part_3 <- "[Title/Abstract])AND("
+url_part_5 <- "[Title/Abstract])"
+
+# empty vector to store the Count-values
+result_vector <- integer()
+search_string_combination_1 <- character()
+search_string_combination_2 <- character()
+
+# search-strings
+search_string_1 <- c(
+  "COPD", "asthma", "diabetes", "heart", "hypertension", "ophthalmology"
+  #, "surgery", "covid", "rehabilitation", "chronic", "acute", "icu"
+)
+search_string_2 <- c("telemedicine","telehealth","telemonitoring", "remote")
+```
+
+Bis hierhin wurde noch keine Pubmed-Abfrage durchgeführt.
+
+## Abfrage auf Pubmed
+
+In einem doppelten Loop wurden die Such-String-Kombinationen mit
+paste0() zusammengesetzt, die URL aufgerufen und die Anzahl Treffer
+("Count") extrahiert.
+
+```{r}
+for (i in 1:length(search_string_1)) {
+  for (j in 1:length(search_string_2)) {
+    # define search string
+    url <- paste0(url_part_1, search_string_1[i], url_part_3, search_string_2[j], url_part_5)
+    pubmed_count <- xml_integer(xml_find_all(read_xml(url), ".//Count"))
+    # safe count values
+    result_vector <- c(result_vector, pubmed_count)
+    search_string_combination_1 <- c(search_string_combination_1, search_string_1[i])
+    search_string_combination_2 <- c(search_string_combination_2, search_string_2[j])
+    }
+  }
+```
+
+Schliesslich kann das Gesamtergebnis als Tabelle ausgegeben werden.
+
+```{r}
+result_set <- tibble(search_string_combination_1, search_string_combination_2, result_vector) %>%
+  pivot_wider(names_from = "search_string_combination_2", values_from = "result_vector")
+colnames(result_set)[1] <- "Search string combination"
+kable(result_set)
+```
+
+Der doppelte Loop und die ursprünglichen Pubmed-Abfragen führten zu 205
+unterschiedlichen Such-String-Kombinationen. Bis die Daten geladen
+wurden, dauert es knapp 2 Minuten. Das tönt zwar lange, aber geht
+schneller, als die Suchen manuell durchzuführen. Im Beispiel oben habe
+ich die Such-String-Kombinationen nun reduziert, sodass das Deployen
+schneller vonstattengeht.
+
+Dennoch sehe ich noch Verbesserungspotential in meinem Skript. Das nehme
+ich mir für die nächste Zeit vor...
+
+```{r include=FALSE}
+rm(list=ls())
+```

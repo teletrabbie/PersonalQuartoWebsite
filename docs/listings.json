@@ -2,6 +2,11 @@
   {
     "listing": "/quarto.html",
     "items": [
+      "/projects/R API und FHIR/r api fhir.html",
+      "/projects/interops/interops.html",
+      "/projects/book/mal ein buch schreiben.html",
+      "/projects/query pubmed data/query pubmed data.html",
+      "/projects/R Markdown direkt einbinden.html",
       "/projects/mathe2/Mathe2Notebook.html",
       "/projects/Von Rmd zu qmd/Von Rmd zu qmd.html",
       "/projects/es kann losgehen/es kann losgehen.html"

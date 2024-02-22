@@ -1,0 +1,14 @@
+---
+title: "Einfach Schriftsteller werden"
+author: "Christian Franke"
+date: "2024-02-20"
+image: "grosseskino.jpg"
+---
+
+Nach dem Motto "Ein Blatt, richtig beschriftet, macht aus Pennern Millionäre" von [Blumentopf](https://open.spotify.com/intl-de/track/50wsfzWe9eIoMWfJ6Lax3u?si=05779ef89ce84a8e) schreibe ich nun ein Buch, ein [Quarto-Buch](https://christianfranke.quarto.pub/mathe2).
+
+Zugegeben, ein grosser Schriftsteller werde ich wohl nicht. Ich möchte nur die Unterlage des Moduls "Mathematics for data analysis" zusammenfassen und gleichzeitig Python üben. Der Vorteil eines Buches ist die Unterteilung in Kapitel und ausserdem könnte ich R nutzen, falls ich mit Python nicht weiterkomme. [Let's go!](https://christianfranke.quarto.pub/mathe2)
+
+![Cover: Blumentopf - Grosses Kino](grosseskino.jpg)
+
+Weitere Infos findet Ihr auf der [offiziellen Quarto-Seite](https://quarto.org/docs/books/)

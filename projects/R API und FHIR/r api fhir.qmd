@@ -1,0 +1,127 @@
+---
+title: "RestAPI mit R"
+author: "Christian Franke"
+date: "2024-02-22"
+image: "HL7_FHIR_logo.webp"
+toc: true
+---
+
+Als vorerst letztes Mini-Projekt frage ich mit R die Daten eines FHIR-Test-Servers ab und erstelle dort einen Patienten. In nächster Zeit werde ich mich wieder auf das Frühlingssemester konzentieren und habe vermutlich keine Zeit mehr für diese kleine Quarto-Website. Es hat aber Spass gemacht.
+
+## Hintergrund
+
+Im Rahmen einer [Seminararbeit](https://teletrabbie.github.io/poster/lc1.pdf) zum Thema Schnittstellen habe ich unter anderem eine [FHIR-Patienten-Ressource](https://www.hl7.org/fhir/patient.html) erstellt und diese zu Lern- und Entwicklungszwecken an einen FHIR-Test-Server geschickt. Damals verwendete ich Postman und Java.
+
+## Vorbereitung
+
+In R kann man mit dem Package "httr2" auf RestAPI zugreifen. Das Paket [httr2](https://httr2.r-lib.org) wurden von [Hadley Wickham](https://hadley.nz/) entwickelt und ersetzt httr.
+
+```{r, eval=FALSE}
+library(httr2)
+```
+
+Zunächst definieren wir den Server sowie den Endpunkt (hier "Patient").
+
+```{r, eval=FALSE}
+url <- "https://hapi.fhir.org/baseR5/"
+req <- request(url) %>% 
+  req_url_path_append("Patient")
+```
+
+## Get
+
+Da wir nur einen Patienten nach Namen (hier: "Franke") suchen möchten, fügen wir den Namen als Variable "name_str" dem Request hinzu. Mit req_perform() führen wir die Abfrage aus.
+
+```{r, eval=FALSE}
+name_str <- "Franke"
+get_request <- req %>%
+  req_url_query(name=name_str) %>% 
+  req_perform()
+```
+
+Den Status können wir uns anzeigen lassen und hoffen, dass er 200 ist.
+
+```{r, eval=FALSE}
+get_request %>% resp_status()
+```
+
+Die Antwort des Resquest erhalten wir in JSON Format und speichern diese als get_response ab. Auf die einzelnen Elemente (z.B. den Vornamen "given") können wir mit den üblichen Listen-Operationen zugreifen.
+
+```{r, eval=FALSE}
+get_response <- resp_body_json(get_request)
+get_response$entry[[1]]$resource$name[[1]]$given
+```
+
+Falls wir nicht einen, sondern alle Patienten suchen, können wir uns natürlich auch auf alle Patientendaten zugreifen. Dazu lassen wir einfach den req_url_query() Befehl weg.
+
+```{r, eval=FALSE}
+get_all_patients <- req %>% 
+  req_perform() %>% 
+  resp_body_json()
+```
+
+## Delete
+
+Der Aufbau der httr2-Anfragen ist eigentlich immer das "Gleiche". Wir nehmen den "Basis-Request" (hier: req), fügen Parameter ein (hier: req_url_query), wählen eine Resquest-Methode (hier: req_method) und lassen die Abfrage laufen (hier: req_perform).
+
+```{r, eval=FALSE}
+req %>%
+  req_url_query(name=name_str) %>%
+  req_method("DELETE") %>% 
+  req_perform()
+```
+
+Nun wurde der Patient "Franke" gelöscht. Dies können wir kontrollieren, in dem wir den oben durchgeführten GET-Request nochmals ausführen und keinen entsprechenden Patienten mehr angezeigt erhalten.
+
+:::{.callout-info title="Methoden" icon=false}
+In httr2 ist standardmässig die GET Methode voreingestellt. Mit req_method() können wir die Methode ändern, wie hier zu "DELETE". Falls der Request nicht direkt ausgeführt, sondern nur "simuliert" werden soll, kann man statt req_perform() die Methode req_dry_run() nutzen.
+:::
+
+## Post
+
+Zu guter Letzt erstellen wir eine Patienten. Die FHIR-Patienten-Ressource wird zunächst (als Liste) aufgebaut.
+
+```{r, eval=FALSE}
+post_request_body <- list(
+  resourceType= "Patient",
+  identifier= list(
+    use= "official",
+    value= "BE1603301284"
+  ),
+  name= list(
+    use= "official",
+    family= "Franke",
+    given= list("Christian")
+  ),
+  gender= "male",
+  birthDate= "1984-01-01"
+)
+```
+
+Alternativ können wir die Ressource aus einer [Datei](https://teletrabbie.github.io/poster/patient.fhir.json) laden.
+
+```{r, eval=FALSE}
+library(jsonlite)
+post_request_body <- fromJSON("patient.fhir.json")
+```
+
+Der Request-Body wird nun einfach als JSON dem Reqeust übergeben (req_body_json(post_request_body)) und die Abfrage ausgeführt.
+
+```{r, eval=FALSE}
+post_request <- req %>%
+  req_body_json(post_request_body) %>% 
+  req_perform()
+```
+
+Falls der Status 201 ist, dürfen wir uns freuen, denn 201 bedeutet "created".
+
+```{r, eval=FALSE}
+post_request %>% resp_status()
+```
+## Fazit
+
+Mit R und dem httr2 Package lassen sich RestAPI Request einfach durchführen. So kann man Patienten auf einem FHIR-Server abfragen, erstellen, löschen etc. Das Wichtige ist dabei lediglich, dass man sich an das FHIR-Format hält.
+
+Das soll nun der vorerst letzte Quarto-Beitrag gewesen sein. Ich werden mich in den kommenden Wochen auf meine Semester-Vorlesungen konzentrieren und freue mich auf Web & Netzwerke sowie Interoperabilität. Vielleicht bietet sich die Gruppenarbeit zu "SMART on FHIR" in Interops an, "R on FHIR" aufzugreifen, denn dafür schein es ein entsprechendes Paket zu geben.
+
+A bien-tôt...

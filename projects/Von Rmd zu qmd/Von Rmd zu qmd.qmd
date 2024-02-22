@@ -17,6 +17,12 @@ Ich habe ein altes, kleines Statistik-Projekt aus dem zweiten Semester genutzt u
 Der Aufwand, um R Markdown in Quarto zu überführen, liegt nur bei sehr wenigen Minuten. Cool!
 :::
 
+Ein Unterschied zwischen R Markdown und Quarto sind die nicht vorhandenen Chunk-Optionen bei Quarto. Diese fande ich noch praktisch, aber gut, nun muss ich sie mir endlich mal merken.
+
+:::{.callout-info title="Update" icon=false}
+Zwei Tage nach diesem Beitrag habe ich herausgefunden, dass R Markdown automatisch direkt in die Quarto Website eingebunden wird. Dadurch entfällt das Umwandeln komplett. Bei den R Markdown Dateien muss möglicherweise nur die Meta-Daten anpassen.
+:::
+
 ------------------------------------------------------------------------
 
 # Statistik Projekt (BZG1185ab)
@@ -125,7 +131,7 @@ Man könnte in Zukunft z.B. das Alter oder weitere sozio-demographische Faktoren
 
 Auf unsere Fragestellung, ob Männer häufiger Fleisch essen als Frauen, hat diese Besonderheit nur einen kleinen Einfluss. Insgesamt scheint es so zu sein, dass Männer häufiger Fleisch essen als Frauen.
 
-```{r}
+```{r include=FALSE}
 rm(data, m, w)
 ```
 

@@ -1,1 +1,1 @@
-Sitemap: https://christianfranke.quarto.pub/knoppers/sitemap.xml
+Sitemap: https://christianfranke.quarto.pub/cf/sitemap.xml

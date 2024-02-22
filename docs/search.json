@@ -4,42 +4,63 @@
     "href": "quarto.html",
     "title": "Quarto-Projekte",
     "section": "",
-    "text": "Hier findet ihr die seit 2024 erstellten Quarto-Projekte. Bei dieser Quarto-Seite handelt es sich um ein “listing”, das auch für einen Quarto-Blog verwendet wird. Die einzelnen Blog-Einträge sind separate qmd-Files, die automatisch in diese Liste hinzugefügt werden.\nWeitere Infos findet Ihr auf quarto.org.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJupiter Notebooks und Quarto\n\n\n\n\n\n\n\n\n\n\n\nFeb 15, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nVon .Rmd zu .qmd\n\n\n\n\n\n\n\n\n\n\n\nFeb 14, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nEs kann losgehen\n\n\n\n\n\n\n\n\n\n\n\nFeb 13, 2024\n\n\nChristian Franke\n\n\n\n\n\n\nNo matching items"
+    "text": "Hier findet ihr die seit 2024 erstellten Quarto-Projekte. Bei dieser Quarto-Seite handelt es sich um ein “listing”, das auch für einen Quarto-Blog verwendet wird. Die einzelnen Blog-Einträge sind separate qmd-Files, die automatisch in diese Liste hinzugefügt werden. Ausserdem werden R Markdown (.Rmd) oder Jupyter Notebooks (.ipynb) problemlos eingebunden.\nWeitere Infos findet Ihr auf quarto.org.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRestAPI mit R\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nInteroperabilität\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nEinfach Schriftsteller werden\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nPubmed mit R abfragen\n\n\n\n\n\n\n\n\n\n\n\nFeb 16, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nR Markdown in Quarto-Seite\n\n\n\n\n\n\n\n\n\n\n\nFeb 16, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nJupiter Notebooks und Quarto\n\n\n\n\n\n\n\n\n\n\n\nFeb 15, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nVon .Rmd zu .qmd\n\n\n\n\n\n\n\n\n\n\n\nFeb 14, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nEs kann losgehen\n\n\n\n\n\n\n\n\n\n\n\nFeb 13, 2024\n\n\nChristian Franke\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/mathe2/Mathe2Notebook.html",
-    "href": "projects/mathe2/Mathe2Notebook.html",
-    "title": "Jupiter Notebooks und Quarto",
+    "objectID": "projects/R Markdown direkt einbinden.html",
+    "href": "projects/R Markdown direkt einbinden.html",
+    "title": "R Markdown in Quarto-Seite",
     "section": "",
-    "text": "Eigentlich wollte ich Python besser zu lernen und Jupyter Notebook dafür nutzen. Die vorbereitete .ipynb Datei wird automatisch in die Quarto-Website eingebunden. Nice!"
+    "text": "Vor zwei Tagen habe ich eine alte R Markdown Datei manuell als Quarto-File gespeichert/umgewandelt. Das wäre garnicht nöitig gewesen, denn R Markdown wird bei der Quarto-Website als “listing” direkt eingebunden."
   },
   {
-    "objectID": "projects/mathe2/Mathe2Notebook.html#random-code",
-    "href": "projects/mathe2/Mathe2Notebook.html#random-code",
-    "title": "Jupiter Notebooks und Quarto",
-    "section": "Random Code",
-    "text": "Random Code\n\nfrom matplotlib import pyplot as plt\nimport numpy as np\n\n# Generate 100 random data points along 3 dimensions\nx, y, scale = np.random.randn(3, 100)\nfig, ax = plt.subplots()\n# Map each onto a scatterplot we'll create with Matplotlib\nax.scatter(x=x, y=y, c=scale, s=np.abs(scale)*500)\nax.set(title=\"Some random data, created with JupyterLab!\")\nplt.show()\n\n\n\n\n\n\n\n\nIch werde aber noch Python und Quarto in R Studio ausprobieren und danach entscheiden, welche Variante für mich besser geeignet ist. On va voir…"
+    "objectID": "projects/R Markdown direkt einbinden.html#r-markdown",
+    "href": "projects/R Markdown direkt einbinden.html#r-markdown",
+    "title": "R Markdown in Quarto-Seite",
+    "section": "R Markdown",
+    "text": "R Markdown\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
   },
   {
-    "objectID": "poster.html",
-    "href": "poster.html",
-    "title": "Poster",
+    "objectID": "projects/R Markdown direkt einbinden.html#including-plots",
+    "href": "projects/R Markdown direkt einbinden.html#including-plots",
+    "title": "R Markdown in Quarto-Seite",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "projects/query pubmed data/query pubmed data.html",
+    "href": "projects/query pubmed data/query pubmed data.html",
+    "title": "Pubmed mit R abfragen",
     "section": "",
-    "text": "Zugegeben, diese Poster wurden bei keiner einzigen Konferenz präsentiert. Wir dürften sie “nur” unseren Dozenten und Kommilitonen erläutern. Aber was nicht ist, kann ja noch werden…\n\n\n\n\nSchnittstellen\n\n\n\n\n\n\n\n\nTelemedizin\n\n\n\n\n\n\n\n\nVirtual Reality"
+    "text": "Im Rahmen einer Seminararbeit wurden eine Literaturrecherche auf Pubmed durchgeführt. Unterschiedliche Search-String-Kombinationen wurden mit R automatisch ausgeführt. Dadurch haben wir ein Mengengerüst erhalten, um die Bedeutung von Subthemen besser einzuschätzen und unsere eigene Such-Strategie zu optimieren.\nDas Poster zu unserer Seminararbeit findet ihr hier.\nDas R-Skript hatte ich erstellt, als ich noch keine Erfahrung mit API hatte. Heute würde ich das Skript vermutlich anders (eleganter) gestalten und in den nächsten Wochen sicherlich auch als verbesserte Variante ausprobieren."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Grüessech, hallo, salut & hello",
-    "section": "",
-    "text": "Für die meisten Menschen ist Programmieren kein “Hobby”. Und auch ich verbringe meine Zeit lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen: ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig. Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am meisten Rendite eingebracht.\nDeshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: eine kleine Website auf der ich einige meiner Projekte präsentieren kann.\nViel Spass beim Stöbern."
+    "objectID": "projects/query pubmed data/query pubmed data.html#vorbereitung",
+    "href": "projects/query pubmed data/query pubmed data.html#vorbereitung",
+    "title": "Pubmed mit R abfragen",
+    "section": "Vorbereitung",
+    "text": "Vorbereitung\nAls erstes wurde die API-Adresse als String nachgebildet mit jeweils zwei Begriffen, die im Titel oder im Abstract auf Pubmed gesucht wurden.\n\nlibrary(xml2)\n\nWarning: Paket 'xml2' wurde unter R Version 4.3.2 erstellt\n\nlibrary(tidyr)\n\nWarning: Paket 'tidyr' wurde unter R Version 4.3.2 erstellt\n\nlibrary(knitr)\n\nWarning: Paket 'knitr' wurde unter R Version 4.3.2 erstellt\n\n# set static values of the url\nurl_part_1 &lt;- \"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=(\"\nurl_part_3 &lt;- \"[Title/Abstract])AND(\"\nurl_part_5 &lt;- \"[Title/Abstract])\"\n\n# empty vector to store the Count-values\nresult_vector &lt;- integer()\nsearch_string_combination_1 &lt;- character()\nsearch_string_combination_2 &lt;- character()\n\n# search-strings\nsearch_string_1 &lt;- c(\n  \"COPD\", \"asthma\", \"diabetes\", \"heart\", \"hypertension\", \"ophthalmology\"\n  #, \"surgery\", \"covid\", \"rehabilitation\", \"chronic\", \"acute\", \"icu\"\n)\nsearch_string_2 &lt;- c(\"telemedicine\",\"telehealth\",\"telemonitoring\", \"remote\")\n\nBis hierhin wurde noch keine Pubmed-Abfrage durchgeführt."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Christian Franke",
+    "objectID": "projects/query pubmed data/query pubmed data.html#abfrage-auf-pubmed",
+    "href": "projects/query pubmed data/query pubmed data.html#abfrage-auf-pubmed",
+    "title": "Pubmed mit R abfragen",
+    "section": "Abfrage auf Pubmed",
+    "text": "Abfrage auf Pubmed\nIn einem doppelten Loop wurden die Such-String-Kombinationen mit paste0() zusammengesetzt, die URL aufgerufen und die Anzahl Treffer (“Count”) extrahiert.\n\nfor (i in 1:length(search_string_1)) {\n  for (j in 1:length(search_string_2)) {\n    # define search string\n    url &lt;- paste0(url_part_1, search_string_1[i], url_part_3, search_string_2[j], url_part_5)\n    pubmed_count &lt;- xml_integer(xml_find_all(read_xml(url), \".//Count\"))\n    # safe count values\n    result_vector &lt;- c(result_vector, pubmed_count)\n    search_string_combination_1 &lt;- c(search_string_combination_1, search_string_1[i])\n    search_string_combination_2 &lt;- c(search_string_combination_2, search_string_2[j])\n    }\n  }\n\nSchliesslich kann das Gesamtergebnis als Tabelle ausgegeben werden.\n\nresult_set &lt;- tibble(search_string_combination_1, search_string_combination_2, result_vector) %&gt;%\n  pivot_wider(names_from = \"search_string_combination_2\", values_from = \"result_vector\")\ncolnames(result_set)[1] &lt;- \"Search string combination\"\nkable(result_set)\n\n\n\n\n\n\n\n\n\n\n\nSearch string combination\ntelemedicine\ntelehealth\ntelemonitoring\nremote\n\n\n\n\nCOPD\n238\n243\n183\n266\n\n\nasthma\n248\n125\n63\n357\n\n\ndiabetes\n1648\n899\n271\n2118\n\n\nheart\n1300\n617\n831\n5309\n\n\nhypertension\n566\n307\n288\n1186\n\n\nophthalmology\n498\n111\n4\n240\n\n\n\n\n\nDer doppelte Loop und die ursprünglichen Pubmed-Abfragen führten zu 205 unterschiedlichen Such-String-Kombinationen. Bis die Daten geladen wurden, dauert es knapp 2 Minuten. Das tönt zwar lange, aber geht schneller, als die Suchen manuell durchzuführen. Im Beispiel oben habe ich die Such-String-Kombinationen nun reduziert, sodass das Deployen schneller vonstattengeht.\nDennoch sehe ich noch Verbesserungspotential in meinem Skript. Das nehme ich mir für die nächste Zeit vor…"
+  },
+  {
+    "objectID": "projects/interops/interops.html",
+    "href": "projects/interops/interops.html",
+    "title": "Interoperabilität",
     "section": "",
-    "text": "Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant, weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich ein Studium für Medizin-Informatik begann.\n\nAus- und Weiterbildungen\nSeit 2021: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (Teilzeit)\n2018: CAS in Gesundheitsökonomie und gesundheitsökonomische Evaluation (Public Health Weiterbildung der Universitäten Basel, Bern und Zürich)\n2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg\n\n\nBerufliche Tätigkeiten\nSeit 2021: SwissDRG AG, Bern\n2020/2021: Valiant Bank AG, Bern\n2016-2019: Sanitas Krankenversicherung AG, Zürich\n2013-2015: Basler Versicherungen AG, Basel\n2009-2015: Berufsgenossenschaft Holz und Metall, Mainz\n\n\nTechnische Skills\n\nMS Excel (Experte)\nSQL (sehr fortgeschritten)\nBI Tools (umfangreich)\n\nMicroStrategy\nPower BI\n\nR, Quarto, Shiny (regelmässiger Einsatz)\nJava, Python (praktische Erfahrung)"
+    "text": "..DER Podcast rund um Gesundheits- und Medizininformatik hat einen Überblick über Interoperabilität gegeben. Die wichtigste Begriffe werden hier zusammengestellt.\n\n\n\n\n\nmindmap\n  root((Interops))\n    Systeme\n      Terminologieserver\n      Kommunikationsserver\n      KIS\n      RIS\n      LIS\n      PACS\n      CDR\n      PIS\n    Standards\n      openEHR\n        Maximal ausdefiniert\n        Archetyp\n      HL7 V2\n        Nachrichtentypen\n      FHIR\n        Ressource\n        80/20\n      DICOM\n        Worklist\n      IHE\n        XDS\n      CDA\n      EPD\n    Arten\n      Semantisch\n        Annotation\n        Ordnungssyteme\n        Klassifikation\n        Wichtig\n          ICD\n          Snomed CT\n          NANDA\n          NIC\n          NOC\n          LOINC\n          UCUM\n          CHOP\n          ATC\n      Syntaktisch\n        xDT\n\n\n\n\n\n\nDabei handelt es sich um ein Mermaid-Diagramm (Mindmap). Weitere Infos zu Mermaid findet Ihr unter https://mermaid.js.org."
+  },
+  {
+    "objectID": "projects/book/mal ein buch schreiben.html",
+    "href": "projects/book/mal ein buch schreiben.html",
+    "title": "Einfach Schriftsteller werden",
+    "section": "",
+    "text": "Nach dem Motto “Ein Blatt, richtig beschriftet, macht aus Pennern Millionäre” von Blumentopf schreibe ich nun ein Buch, ein Quarto-Buch.\nZugegeben, ein grosser Schriftsteller werde ich wohl nicht. Ich möchte nur die Unterlage des Moduls “Mathematics for data analysis” zusammenfassen und gleichzeitig Python üben. Der Vorteil eines Buches ist die Unterteilung in Kapitel und ausserdem könnte ich R nutzen, falls ich mit Python nicht weiterkomme. Let’s go!\n\n\n\nCover: Blumentopf - Grosses Kino\n\n\nWeitere Infos findet Ihr auf der offiziellen Quarto-Seite"
   },
   {
     "objectID": "old.html",
@@ -77,6 +98,27 @@
     "text": "SwissDRG Wordcloud\n\n\n\n\n\n\nAls Teil des Moduls BI In Healthcare hatten wir uns mit Word-Clouds beschäftigt. Für meine Arbeitskollegen habe ich nun eine Wortcloud mit den Bewgriffen des Definitionshandbuch der SwissDRG Version 13.0 erstellt.\nDetails"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Christian Franke",
+    "section": "",
+    "text": "Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant, weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich ein Studium für Medizin-Informatik begann.\n\nAus- und Weiterbildungen\nSeit 2021: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (Teilzeit)\n2018: CAS in Gesundheitsökonomie und gesundheitsökonomische Evaluation (Public Health Weiterbildung der Universitäten Basel, Bern und Zürich)\n2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg\n\n\nBerufliche Tätigkeiten\nSeit 2021: SwissDRG AG, Bern\n2020/2021: Valiant Bank AG, Bern\n2016-2019: Sanitas Krankenversicherung AG, Zürich\n2013-2015: Basler Versicherungen AG, Basel\n2009-2015: Berufsgenossenschaft Holz und Metall, Mainz\n\n\nTechnische Skills\n\nMS Excel (Experte)\nSQL (sehr fortgeschritten)\nBI Tools (umfangreich)\n\nMicroStrategy\nPower BI\n\nR, Quarto, Shiny (regelmässiger Einsatz)\nJava, Python (praktische Erfahrung)\nausserdem\n\nDatenvisualisierung\nProjektmanagement"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Grüessech, hallo, salut & hello",
+    "section": "",
+    "text": "Für die meisten Menschen ist Programmieren kein “Hobby”. Und auch ich verbringe meine Zeit lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen: ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig. Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am meisten Rendite eingebracht.\nDeshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: eine kleine Website auf der ich einige meiner Projekte präsentieren kann.\nViel Spass beim Stöbern."
+  },
+  {
+    "objectID": "poster.html",
+    "href": "poster.html",
+    "title": "Poster",
+    "section": "",
+    "text": "Zugegeben, diese Poster wurden bei keiner einzigen Konferenz präsentiert. Wir dürften sie “nur” unseren Dozenten und Kommilitonen erläutern. Aber was nicht ist, kann ja noch werden…\n\n\n\n\nSchnittstellen\n\n\n\n\n\n\n\n\nTelemedizin\n\n\n\n\n\n\n\n\nVirtual Reality"
+  },
+  {
     "objectID": "projects/es kann losgehen/es kann losgehen.html",
     "href": "projects/es kann losgehen/es kann losgehen.html",
     "title": "Es kann losgehen",
@@ -84,11 +126,74 @@
     "text": "Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt. Ursprünglich wollte ich es im sechsten Semester nur “nebenbei” ausprobieren und ein paar Erfahrungen sammeln. Aus dieser Idee ist ein kleines Projekt entstanden. So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es …\n\n\n\nAdobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter\n\n\nWeitere Infos findet Ihr auf der offiziellen Quarto-Seite"
   },
   {
+    "objectID": "projects/mathe2/Mathe2Notebook.html",
+    "href": "projects/mathe2/Mathe2Notebook.html",
+    "title": "Jupiter Notebooks und Quarto",
+    "section": "",
+    "text": "Eigentlich wollte ich Python besser zu lernen und Jupyter Notebook dafür nutzen. Die vorbereitete .ipynb Datei wird automatisch in die Quarto-Website eingebunden. Nice!"
+  },
+  {
+    "objectID": "projects/mathe2/Mathe2Notebook.html#random-code",
+    "href": "projects/mathe2/Mathe2Notebook.html#random-code",
+    "title": "Jupiter Notebooks und Quarto",
+    "section": "Random Code",
+    "text": "Random Code\n\nfrom matplotlib import pyplot as plt\nimport numpy as np\n\n# Generate 100 random data points along 3 dimensions\nx, y, scale = np.random.randn(3, 100)\nfig, ax = plt.subplots()\n# Map each onto a scatterplot we'll create with Matplotlib\nax.scatter(x=x, y=y, c=scale, s=np.abs(scale)*500)\nax.set(title=\"Some random data, created with JupyterLab!\")\nplt.show()\n\n\n\n\n\n\n\n\nIch werde aber noch Python und Quarto in R Studio ausprobieren und danach entscheiden, welche Variante für mich besser geeignet ist. On va voir…"
+  },
+  {
+    "objectID": "projects/R API und FHIR/r api fhir.html",
+    "href": "projects/R API und FHIR/r api fhir.html",
+    "title": "RestAPI mit R",
+    "section": "",
+    "text": "Als vorerst letztes Mini-Projekt frage ich mit R die Daten eines FHIR-Test-Servers ab und erstelle dort einen Patienten. In nächster Zeit werde ich mich wieder auf das Frühlingssemester konzentieren und habe vermutlich keine Zeit mehr für diese kleine Quarto-Website. Es hat aber Spass gemacht."
+  },
+  {
+    "objectID": "projects/R API und FHIR/r api fhir.html#hintergrund",
+    "href": "projects/R API und FHIR/r api fhir.html#hintergrund",
+    "title": "RestAPI mit R",
+    "section": "Hintergrund",
+    "text": "Hintergrund\nIm Rahmen einer Seminararbeit zum Thema Schnittstellen habe ich unter anderem eine FHIR-Patienten-Ressource erstellt und diese zu Lern- und Entwicklungszwecken an einen FHIR-Test-Server geschickt. Damals verwendete ich Postman und Java."
+  },
+  {
+    "objectID": "projects/R API und FHIR/r api fhir.html#vorbereitung",
+    "href": "projects/R API und FHIR/r api fhir.html#vorbereitung",
+    "title": "RestAPI mit R",
+    "section": "Vorbereitung",
+    "text": "Vorbereitung\nIn R kann man mit dem Package “httr2” auf RestAPI zugreifen. Das Paket httr2 wurden von Hadley Wickham entwickelt und ersetzt httr.\n\nlibrary(httr2)\n\nZunächst definieren wir den Server sowie den Endpunkt (hier “Patient”).\n\nurl &lt;- \"https://hapi.fhir.org/baseR5/\"\nreq &lt;- request(url) %&gt;% \n  req_url_path_append(\"Patient\")"
+  },
+  {
+    "objectID": "projects/R API und FHIR/r api fhir.html#get",
+    "href": "projects/R API und FHIR/r api fhir.html#get",
+    "title": "RestAPI mit R",
+    "section": "Get",
+    "text": "Get\nDa wir nur einen Patienten nach Namen (hier: “Franke”) suchen möchten, fügen wir den Namen als Variable “name_str” dem Request hinzu. Mit req_perform() führen wir die Abfrage aus.\n\nname_str &lt;- \"Franke\"\nget_request &lt;- req %&gt;%\n  req_url_query(name=name_str) %&gt;% \n  req_perform()\n\nDen Status können wir uns anzeigen lassen und hoffen, dass er 200 ist.\n\nget_request %&gt;% resp_status()\n\nDie Antwort des Resquest erhalten wir in JSON Format und speichern diese als get_response ab. Auf die einzelnen Elemente (z.B. den Vornamen “given”) können wir mit den üblichen Listen-Operationen zugreifen.\n\nget_response &lt;- resp_body_json(get_request)\nget_response$entry[[1]]$resource$name[[1]]$given\n\nFalls wir nicht einen, sondern alle Patienten suchen, können wir uns natürlich auch auf alle Patientendaten zugreifen. Dazu lassen wir einfach den req_url_query() Befehl weg.\n\nget_all_patients &lt;- req %&gt;% \n  req_perform() %&gt;% \n  resp_body_json()"
+  },
+  {
+    "objectID": "projects/R API und FHIR/r api fhir.html#delete",
+    "href": "projects/R API und FHIR/r api fhir.html#delete",
+    "title": "RestAPI mit R",
+    "section": "Delete",
+    "text": "Delete\nDer Aufbau der httr2-Anfragen ist eigentlich immer das “Gleiche”. Wir nehmen den “Basis-Request” (hier: req), fügen Parameter ein (hier: req_url_query), wählen eine Resquest-Methode (hier: req_method) und lassen die Abfrage laufen (hier: req_perform).\n\nreq %&gt;%\n  req_url_query(name=name_str) %&gt;%\n  req_method(\"DELETE\") %&gt;% \n  req_perform()\n\nNun wurde der Patient “Franke” gelöscht. Dies können wir kontrollieren, in dem wir den oben durchgeführten GET-Request nochmals ausführen und keinen entsprechenden Patienten mehr angezeigt erhalten.\n\nIn httr2 ist standardmässig die GET Methode voreingestellt. Mit req_method() können wir die Methode ändern, wie hier zu “DELETE”. Falls der Request nicht direkt ausgeführt, sondern nur “simuliert” werden soll, kann man statt req_perform() die Methode req_dry_run() nutzen."
+  },
+  {
+    "objectID": "projects/R API und FHIR/r api fhir.html#post",
+    "href": "projects/R API und FHIR/r api fhir.html#post",
+    "title": "RestAPI mit R",
+    "section": "Post",
+    "text": "Post\nZu guter Letzt erstellen wir eine Patienten. Die FHIR-Patienten-Ressource wird zunächst (als Liste) aufgebaut.\n\npost_request_body &lt;- list(\n  resourceType= \"Patient\",\n  identifier= list(\n    use= \"official\",\n    value= \"BE1603301284\"\n  ),\n  name= list(\n    use= \"official\",\n    family= \"Franke\",\n    given= list(\"Christian\")\n  ),\n  gender= \"male\",\n  birthDate= \"1984-01-01\"\n)\n\nAlternativ können wir die Ressource aus einer Datei laden.\n\nlibrary(jsonlite)\npost_request_body &lt;- fromJSON(\"patient.fhir.json\")\n\nDer Request-Body wird nun einfach als JSON dem Reqeust übergeben (req_body_json(post_request_body)) und die Abfrage ausgeführt.\n\npost_request &lt;- req %&gt;%\n  req_body_json(post_request_body) %&gt;% \n  req_perform()\n\nFalls der Status 201 ist, dürfen wir uns freuen, denn 201 bedeutet “created”.\n\npost_request %&gt;% resp_status()"
+  },
+  {
+    "objectID": "projects/R API und FHIR/r api fhir.html#fazit",
+    "href": "projects/R API und FHIR/r api fhir.html#fazit",
+    "title": "RestAPI mit R",
+    "section": "Fazit",
+    "text": "Fazit\nMit R und dem httr2 Package lassen sich RestAPI Request einfach durchführen. So kann man Patienten auf einem FHIR-Server abfragen, erstellen, löschen etc. Das Wichtige ist dabei lediglich, dass man sich an das FHIR-Format hält.\nDas soll nun der vorerst letzte Quarto-Beitrag gewesen sein. Ich werden mich in den kommenden Wochen auf meine Semester-Vorlesungen konzentrieren und freue mich auf Web & Netzwerke sowie Interoperabilität. Vielleicht bietet sich die Gruppenarbeit zu “SMART on FHIR” in Interops an, “R on FHIR” aufzugreifen, denn dafür schein es ein entsprechendes Paket zu geben.\nA bien-tôt…"
+  },
+  {
     "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html",
     "href": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html",
     "title": "Von .Rmd zu .qmd",
     "section": "",
-    "text": "Ist es einfach, eine R Markdown Datei als Quarto Datei zu ersetzen? Man sagt: ja. Und ich habe es ausprobiert.\nIch habe ein altes, kleines Statistik-Projekt aus dem zweiten Semester genutzt und den R Markdown Code in die Quarto Datei hineinkopiert. Das Ergebnis war sehr gut! Nur zwei Unterschiede sind dabei aufgefallen:"
+    "text": "Ist es einfach, eine R Markdown Datei als Quarto Datei zu ersetzen? Man sagt: ja. Und ich habe es ausprobiert.\nIch habe ein altes, kleines Statistik-Projekt aus dem zweiten Semester genutzt und den R Markdown Code in die Quarto Datei hineinkopiert. Das Ergebnis war sehr gut! Nur zwei Unterschiede sind dabei aufgefallen:\nEin Unterschied zwischen R Markdown und Quarto sind die nicht vorhandenen Chunk-Optionen bei Quarto. Diese fande ich noch praktisch, aber gut, nun muss ich sie mir endlich mal merken."
   },
   {
     "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html#umfrage",

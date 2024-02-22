@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Christian Franke">
+<meta name="dcterms.date" content="2024-02-22">
 
-<title>CF - Quarto-Projekte</title>
+<title>CF - RestAPI mit R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,28 +22,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./pictures/foil_kreis.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../pictures/foil_kreis.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,70 +103,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -145,25 +121,25 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./quarto.html" aria-current="page"> 
+    <a class="nav-link" href="../../quarto.html"> 
 <span class="menu-text">Quarto-Projekte</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./old.html"> 
+    <a class="nav-link" href="../../old.html"> 
 <span class="menu-text">Frühere Projekte</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./poster.html"> 
+    <a class="nav-link" href="../../poster.html"> 
 <span class="menu-text">Poster</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Über mich</span></a>
   </li>  
 </ul>
@@ -177,20 +153,45 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#hintergrund" id="toc-hintergrund" class="nav-link active" data-scroll-target="#hintergrund">Hintergrund</a></li>
+  <li><a href="#vorbereitung" id="toc-vorbereitung" class="nav-link" data-scroll-target="#vorbereitung">Vorbereitung</a></li>
+  <li><a href="#get" id="toc-get" class="nav-link" data-scroll-target="#get">Get</a></li>
+  <li><a href="#delete" id="toc-delete" class="nav-link" data-scroll-target="#delete">Delete</a></li>
+  <li><a href="#post" id="toc-post" class="nav-link" data-scroll-target="#post">Post</a></li>
+  <li><a href="#fazit" id="toc-fazit" class="nav-link" data-scroll-target="#fazit">Fazit</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quarto-Projekte</h1>
+<h1 class="title">RestAPI mit R</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Christian Franke </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 22, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -200,244 +201,108 @@ window.Quarto = {
 </header>
 
 
-<p>Hier findet ihr die seit 2024 erstellten Quarto-Projekte. Bei dieser Quarto-Seite handelt es sich um ein “listing”, das auch für einen Quarto-Blog verwendet wird. Die einzelnen Blog-Einträge sind separate qmd-Files, die automatisch in diese Liste hinzugefügt werden. Ausserdem werden R Markdown (.Rmd) oder Jupyter Notebooks (.ipynb) problemlos eingebunden.</p>
-<p>Weitere Infos findet Ihr auf <a href="https://quarto.org">quarto.org</a>.</p>
-<hr>
+<p>Als vorerst letztes Mini-Projekt frage ich mit R die Daten eines FHIR-Test-Servers ab und erstelle dort einen Patienten. In nächster Zeit werde ich mich wieder auf das Frühlingssemester konzentieren und habe vermutlich keine Zeit mehr für diese kleine Quarto-Website. Es hat aber Spass gemacht.</p>
+<section id="hintergrund" class="level2">
+<h2 class="anchored" data-anchor-id="hintergrund">Hintergrund</h2>
+<p>Im Rahmen einer <a href="https://teletrabbie.github.io/poster/lc1.pdf">Seminararbeit</a> zum Thema Schnittstellen habe ich unter anderem eine <a href="https://www.hl7.org/fhir/patient.html">FHIR-Patienten-Ressource</a> erstellt und diese zu Lern- und Entwicklungszwecken an einen FHIR-Test-Server geschickt. Damals verwendete ich Postman und Java.</p>
+</section>
+<section id="vorbereitung" class="level2">
+<h2 class="anchored" data-anchor-id="vorbereitung">Vorbereitung</h2>
+<p>In R kann man mit dem Package “httr2” auf RestAPI zugreifen. Das Paket <a href="https://httr2.r-lib.org">httr2</a> wurden von <a href="https://hadley.nz/">Hadley Wickham</a> entwickelt und ersetzt httr.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(httr2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Zunächst definieren wir den Server sowie den Endpunkt (hier “Patient”).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">"https://hapi.fhir.org/baseR5/"</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>req <span class="ot">&lt;-</span> <span class="fu">request</span>(url) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req_url_path_append</span>(<span class="st">"Patient"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="get" class="level2">
+<h2 class="anchored" data-anchor-id="get">Get</h2>
+<p>Da wir nur einen Patienten nach Namen (hier: “Franke”) suchen möchten, fügen wir den Namen als Variable “name_str” dem Request hinzu. Mit req_perform() führen wir die Abfrage aus.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>name_str <span class="ot">&lt;-</span> <span class="st">"Franke"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>get_request <span class="ot">&lt;-</span> req <span class="sc">%&gt;%</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req_url_query</span>(<span class="at">name=</span>name_str) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req_perform</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Den Status können wir uns anzeigen lassen und hoffen, dass er 200 ist.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>get_request <span class="sc">%&gt;%</span> <span class="fu">resp_status</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Die Antwort des Resquest erhalten wir in JSON Format und speichern diese als get_response ab. Auf die einzelnen Elemente (z.B. den Vornamen “given”) können wir mit den üblichen Listen-Operationen zugreifen.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>get_response <span class="ot">&lt;-</span> <span class="fu">resp_body_json</span>(get_request)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>get_response<span class="sc">$</span>entry[[<span class="dv">1</span>]]<span class="sc">$</span>resource<span class="sc">$</span>name[[<span class="dv">1</span>]]<span class="sc">$</span>given</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Falls wir nicht einen, sondern alle Patienten suchen, können wir uns natürlich auch auf alle Patientendaten zugreifen. Dazu lassen wir einfach den req_url_query() Befehl weg.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>get_all_patients <span class="ot">&lt;-</span> req <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req_perform</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">resp_body_json</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="delete" class="level2">
+<h2 class="anchored" data-anchor-id="delete">Delete</h2>
+<p>Der Aufbau der httr2-Anfragen ist eigentlich immer das “Gleiche”. Wir nehmen den “Basis-Request” (hier: req), fügen Parameter ein (hier: req_url_query), wählen eine Resquest-Methode (hier: req_method) und lassen die Abfrage laufen (hier: req_perform).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>req <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req_url_query</span>(<span class="at">name=</span>name_str) <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req_method</span>(<span class="st">"DELETE"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req_perform</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Nun wurde der Patient “Franke” gelöscht. Dies können wir kontrollieren, in dem wir den oben durchgeführten GET-Request nochmals ausführen und keinen entsprechenden Patienten mehr angezeigt erhalten.</p>
+<div class="callout-info" title="Methoden" data-icon="false">
+<p>In httr2 ist standardmässig die GET Methode voreingestellt. Mit req_method() können wir die Methode ändern, wie hier zu “DELETE”. Falls der Request nicht direkt ausgeführt, sondern nur “simuliert” werden soll, kann man statt req_perform() die Methode req_dry_run() nutzen.</p>
+</div>
+</section>
+<section id="post" class="level2">
+<h2 class="anchored" data-anchor-id="post">Post</h2>
+<p>Zu guter Letzt erstellen wir eine Patienten. Die FHIR-Patienten-Ressource wird zunächst (als Liste) aufgebaut.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>post_request_body <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">resourceType=</span> <span class="st">"Patient"</span>,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">identifier=</span> <span class="fu">list</span>(</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">use=</span> <span class="st">"official"</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">value=</span> <span class="st">"BE1603301284"</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">name=</span> <span class="fu">list</span>(</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">use=</span> <span class="st">"official"</span>,</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">family=</span> <span class="st">"Franke"</span>,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">given=</span> <span class="fu">list</span>(<span class="st">"Christian"</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">gender=</span> <span class="st">"male"</span>,</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">birthDate=</span> <span class="st">"1984-01-01"</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Alternativ können wir die Ressource aus einer <a href="https://teletrabbie.github.io/poster/patient.fhir.json">Datei</a> laden.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(jsonlite)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>post_request_body <span class="ot">&lt;-</span> <span class="fu">fromJSON</span>(<span class="st">"patient.fhir.json"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Der Request-Body wird nun einfach als JSON dem Reqeust übergeben (req_body_json(post_request_body)) und die Abfrage ausgeführt.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>post_request <span class="ot">&lt;-</span> req <span class="sc">%&gt;%</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req_body_json</span>(post_request_body) <span class="sc">%&gt;%</span> </span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">req_perform</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Falls der Status 201 ist, dürfen wir uns freuen, denn 201 bedeutet “created”.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>post_request <span class="sc">%&gt;%</span> <span class="fu">resp_status</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="fazit" class="level2">
+<h2 class="anchored" data-anchor-id="fazit">Fazit</h2>
+<p>Mit R und dem httr2 Package lassen sich RestAPI Request einfach durchführen. So kann man Patienten auf einem FHIR-Server abfragen, erstellen, löschen etc. Das Wichtige ist dabei lediglich, dass man sich an das FHIR-Format hält.</p>
+<p>Das soll nun der vorerst letzte Quarto-Beitrag gewesen sein. Ich werden mich in den kommenden Wochen auf meine Semester-Vorlesungen konzentrieren und freue mich auf Web &amp; Netzwerke sowie Interoperabilität. Vielleicht bietet sich die Gruppenarbeit zu “SMART on FHIR” in Interops an, “R on FHIR” aufzugreifen, denn dafür schein es ein entsprechendes Paket zu geben.</p>
+<p>A bien-tôt…</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1708556400000" data-listing-file-modified-sort="1708591119509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="543">
-<div class="thumbnail">
-<p><a href="./projects/R API und FHIR/r api fhir.html" class="no-external"></a></p><a href="./projects/R API und FHIR/r api fhir.html" class="no-external">
-<p><img src="./projects/R API und FHIR/HL7_FHIR_logo.webp" class="thumbnail-image"></p>
-</a><p><a href="./projects/R API und FHIR/r api fhir.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/R API und FHIR/r api fhir.html" class="no-external">RestAPI mit R</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/R API und FHIR/r api fhir.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./projects/R API und FHIR/r api fhir.html" class="no-external">Als vorerst letztes Mini-Projekt frage ich mit R die Daten eines FHIR-Test-Servers ab und erstelle dort einen Patienten. In nächster Zeit werde ich mich wieder auf das…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/R API und FHIR/r api fhir.html" class="no-external">
-<div class="listing-date">
-Feb 22, 2024
-</div>
-<div class="listing-author">
-Christian Franke
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1708470000000" data-listing-file-modified-sort="1708525197297" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
-<div class="thumbnail">
-<p><a href="./projects/interops/interops.html" class="no-external"></a></p><a href="./projects/interops/interops.html" class="no-external">
-<p><img src="./projects/interops/mindmap.png" class="thumbnail-image"></p>
-</a><p><a href="./projects/interops/interops.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/interops/interops.html" class="no-external">Interoperabilität</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/interops/interops.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./projects/interops/interops.html" class="no-external">..DER Podcast rund um Gesundheits- und Medizininformatik hat einen Überblick über Interoperabilität gegeben. Die wichtigste Begriffe werden hier zusammengestellt.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/interops/interops.html" class="no-external">
-<div class="listing-date">
-Feb 21, 2024
-</div>
-<div class="listing-author">
-Christian Franke
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1708383600000" data-listing-file-modified-sort="1708460050942" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="77">
-<div class="thumbnail">
-<p><a href="./projects/book/mal ein buch schreiben.html" class="no-external"></a></p><a href="./projects/book/mal ein buch schreiben.html" class="no-external">
-<p><img src="./projects/book/grosseskino.jpg" class="thumbnail-image"></p>
-</a><p><a href="./projects/book/mal ein buch schreiben.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/book/mal ein buch schreiben.html" class="no-external">Einfach Schriftsteller werden</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/book/mal ein buch schreiben.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./projects/book/mal ein buch schreiben.html" class="no-external">Nach dem Motto “Ein Blatt, richtig beschriftet, macht aus Pennern Millionäre” von Blumentopf schreibe ich nun ein Buch, ein Quarto-Buch.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/book/mal ein buch schreiben.html" class="no-external">
-<div class="listing-date">
-Feb 20, 2024
-</div>
-<div class="listing-author">
-Christian Franke
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1708038000000" data-listing-file-modified-sort="1708083180095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
-<div class="thumbnail">
-<p><a href="./projects/query pubmed data/query pubmed data.html" class="no-external"></a></p><a href="./projects/query pubmed data/query pubmed data.html" class="no-external">
-<p><img src="./projects/query pubmed data/pubmed.png" class="thumbnail-image"></p>
-</a><p><a href="./projects/query pubmed data/query pubmed data.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/query pubmed data/query pubmed data.html" class="no-external">Pubmed mit R abfragen</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/query pubmed data/query pubmed data.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./projects/query pubmed data/query pubmed data.html" class="no-external">Im Rahmen einer Seminararbeit wurden eine Literaturrecherche auf Pubmed durchgeführt. Unterschiedliche Search-String-Kombinationen wurden mit R automatisch ausgeführt.…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/query pubmed data/query pubmed data.html" class="no-external">
-<div class="listing-date">
-Feb 16, 2024
-</div>
-<div class="listing-author">
-Christian Franke
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1708038000000" data-listing-file-modified-sort="1708082968978" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="150">
-<div class="thumbnail">
-<p><a href="./projects/R Markdown direkt einbinden.html" class="no-external"></a></p><a href="./projects/R Markdown direkt einbinden.html" class="no-external">
-<p class="card-img-top"><img src="projects\R-Markdown-direkt-einbinden_files\figure-html\pressure-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./projects/R Markdown direkt einbinden.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/R Markdown direkt einbinden.html" class="no-external">R Markdown in Quarto-Seite</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/R Markdown direkt einbinden.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./projects/R Markdown direkt einbinden.html" class="no-external">Vor zwei Tagen habe ich eine alte R Markdown Datei manuell als Quarto-File gespeichert/umgewandelt. Das wäre garnicht nöitig gewesen, denn R Markdown wird bei der…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/R Markdown direkt einbinden.html" class="no-external">
-<div class="listing-date">
-Feb 16, 2024
-</div>
-<div class="listing-author">
-Christian Franke
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1707951600000" data-listing-file-modified-sort="1708017772722" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
-<div class="thumbnail">
-<p><a href="./projects/mathe2/Mathe2Notebook.html" class="no-external"></a></p><a href="./projects/mathe2/Mathe2Notebook.html" class="no-external">
-<p class="card-img-top"><img src="projects\mathe2\Mathe2Notebook_files\figure-html\cell-2-output-1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./projects/mathe2/Mathe2Notebook.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/mathe2/Mathe2Notebook.html" class="no-external">Jupiter Notebooks und Quarto</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/mathe2/Mathe2Notebook.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./projects/mathe2/Mathe2Notebook.html" class="no-external">Eigentlich wollte ich Python besser zu lernen und Jupyter Notebook dafür nutzen. Die vorbereitete .ipynb Datei wird automatisch in die Quarto-Website eingebunden. Nice!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/mathe2/Mathe2Notebook.html" class="no-external">
-<div class="listing-date">
-Feb 15, 2024
-</div>
-<div class="listing-author">
-Christian Franke
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1707865200000" data-listing-file-modified-sort="1708450612799" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="989">
-<div class="thumbnail">
-<p><a href="./projects/Von Rmd zu qmd/Von Rmd zu qmd.html" class="no-external"></a></p><a href="./projects/Von Rmd zu qmd/Von Rmd zu qmd.html" class="no-external">
-<p><img src="./projects/Von Rmd zu qmd/rmarkdown.jpeg" class="thumbnail-image"></p>
-</a><p><a href="./projects/Von Rmd zu qmd/Von Rmd zu qmd.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/Von Rmd zu qmd/Von Rmd zu qmd.html" class="no-external">Von .Rmd zu .qmd</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/Von Rmd zu qmd/Von Rmd zu qmd.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./projects/Von Rmd zu qmd/Von Rmd zu qmd.html" class="no-external">Ist es einfach, eine R Markdown Datei als Quarto Datei zu ersetzen? Man sagt: ja. Und ich habe es ausprobiert.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/Von Rmd zu qmd/Von Rmd zu qmd.html" class="no-external">
-<div class="listing-date">
-Feb 14, 2024
-</div>
-<div class="listing-author">
-Christian Franke
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1707778800000" data-listing-file-modified-sort="1707905965635" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="76">
-<div class="thumbnail">
-<p><a href="./projects/es kann losgehen/es kann losgehen.html" class="no-external"></a></p><a href="./projects/es kann losgehen/es kann losgehen.html" class="no-external">
-<p><img src="./projects/es kann losgehen/FireflyFirstPost.jpg" class="thumbnail-image"></p>
-</a><p><a href="./projects/es kann losgehen/es kann losgehen.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/es kann losgehen/es kann losgehen.html" class="no-external">Es kann losgehen</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./projects/es kann losgehen/es kann losgehen.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./projects/es kann losgehen/es kann losgehen.html" class="no-external">Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt. Ursprünglich wollte ich es im sechsten Semester nur “nebenbei” ausprobieren und ein paar Erfahrungen sammeln.…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./projects/es kann losgehen/es kann losgehen.html" class="no-external">
-<div class="listing-date">
-Feb 13, 2024
-</div>
-<div class="listing-author">
-Christian Franke
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
