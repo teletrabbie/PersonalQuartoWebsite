@@ -24,7 +24,7 @@ ein Studium für Medizin-Informatik begann.
 
 # Aus- und Weiterbildungen
 
-Seit 2021: Bachelor-Studium für 
+2021-2024: Bachelor-Studium für 
 [Medizin-Informatik](https://www.bfh.ch/de/studium/bachelor/medizininformatik/) 
 an der Berner Fachhochschule (Teilzeit)
 
@@ -46,6 +46,7 @@ Seit 2021: [SwissDRG](https://www.swissdrg.org) AG, Bern
 
 # Technische Skills
 
+* Neo4j ([Neo4j GraphAcademy Zertifikate](https://graphacademy.neo4j.com/u/981bb7bd-02c6-42a8-9c2e-b2d7c21b9b3e/))
 * MS Excel (Experte)
 * SQL (sehr fortgeschritten)
 * BI Tools (umfangreich)

@@ -1,0 +1,154 @@
+---
+title: "Install Mirth Connect (Step-by-step)"
+author: "Christian Franke"
+date: "2024-09-10"
+image: "login.png"
+---
+
+In einem Projekt im 7. Semester arbeiten wir mit dem Kommunikationsserver Mirth Connect. Diese Anleitung zeigt einen möglichen Installationsprozess für Linux in einer VM.
+
+## Voraussetzungen
+
+Der Kommunikationsserver "Mirth® Connect by NextGen Healthcare" (kurz: Mirth) kann unter Linux, Windows oder iOS betrieben werden. Die [offizielle Dokumentation von NextGen Healthcare](https://docs.nextgen.com/bundle/Mirth_User_Guide_4_5_0/page/connect/connect/topics/c_Getting_Started_mirth_connect_ug.html){target="_blank"} zeigt den Installationsprozess mit Hilfe eines GUI oder CLI Installers.
+
+In unserem späteren Projekt-Use-Case wird höchst wahrscheinlich Linux zum Einsatz kommen, sodass zunächst ein Linux System benötigt wird. Wir arbeiten hier mit einer virtuellen Maschine mit [Debian](https://www.debian.org){target="_blank"}. Für die virtuelle Maschine wird [Virtual Box von Oracle](https://www.virtualbox.org){target="_blank"} verwendet. An dieser Stelle soll weder die Installation von Virtual Box noch von Linux in einer VM gezeigt werden. Dafür gibt es bereits diverse [Ressourcen im Internet](https://www.howtogeek.com/796988/how-to-install-linux-in-virtualbox/){target="_blank"}.
+
+::: {.callout-tip title="Wichtig: Netzwerkbrücke"}
+Um später auf Mirth und die VM zugreifen zu können, sollte bei (oder nach) dem Erstellen der VM die Netzwerkbrücke unter dem Netzwerkadaptern ausgewählt werden.
+:::
+
+![Netzwerkbrücke](VM Netzwerk.png)
+
+Optional sollte das Linux System SSH unterstützen oder beim Installationsprozess sollte SSH ebenfalls installiert werden. Eine Anleitung für SSH findet man [beispielweise hier](https://linuxgenie.net/how-to-configure-and-enable-ssh-on-debian-12/){target="_blank"}. Mit SSH kann man von einem anderen Rechner direkt auf dem Linux System arbeiten (per Kommandozeile). Es kann dafür einfacher sein, am Rechner mit Internetbowser zu arbeiten und (z.B. für MS Windows) via PowerShell auf das Linux System zuzugreifen. Das spart durchaus Arbeit zum "Abtippen" von URLs oder Code, den man stattdessen einfach Copy&Paste vom Internet Brwoser ins Terminal kopieren kann.
+
+![SSH installieren](Install SSH.png)
+
+``` default
+sudo apt install openssh-server
+```
+
+Anstatt einer Linux VM könnten Windows-User alternativ [WSL](https://learn.microsoft.com/en-us/windows/wsl/install){target="_blank"} (Windows Subsystem for Linux) nutzen. Wenn Debian / Linux installiert wurde, können wir uns um die Installation von Mirth kümmern.
+
+## Gleicht geht es los
+
+Startet das Linux System und öffnet das Terminal. Alternativ kann man sich via SSH in die Linux VM über den normalen Rechner einloggen. In meinem Beispiel habe ich mich mit MS Windows  PowerShell auf Debian eingeloggt.
+
+``` default
+ssh mirth@debian
+```
+
+![Mit Windows PowerShell und SSH auf Debian einloggen](ssh login success.png)
+
+Zunächst sollte das Linux System aktualisiert werden. Beim ersten Update muss man möglicherweise den eigenen User als Sudouser hinterlegn.
+
+``` default
+su
+[enter root password]
+sudo usermod -aG sudo [username]
+```
+Die [ausführliche Anleitung](
+https://itslinuxfoss.com/add-user-sudoers-debian-12/){target="_blank"} zeigt mehrere Varianten, um den User als Sudouser zu definieren.
+
+Danach wird die Systemaktualisierung durchgeführt.
+
+``` default
+sudo apt update
+sudo apt upgrade
+```
+
+Das Systemupdate findet man in vielen Anleitungen und scheint sinnvoll, aber nicht zwingend nötig zu sein.
+
+## Mirth herunterladen
+
+Die Installation soll hier möglichst nur im Terminal erfolgen. Für den Download kann [unter anderem](https://www.zdnet.com/article/3-linux-commands-i-use-for-downloading-files-and-how-theyre-different/){target="_blank"} *wget* genutzt werden. Das Programm muss möglicherweise zunächst noch intstalliert werden.
+
+``` default
+sudo apt-get install wget
+```
+
+Danach wird die neuste *tar.gz Datei heruntergeladen und als mirthconnect.tar.gz im eigenen Home-Ordner gespeichert. Man kann den Download natürlich auch in einen anderen Ordner herunterladen.
+
+``` default
+wget -O mirthconnect.tar.gz https://s3.amazonaws.com/downloads.mirthcorp.com/connect/4.5.1.b332/mirthconnect-4.5.1.b332-unix.tar.gz
+```
+
+Der Download startet, zeigt einen Fortschrittsbalken an und bestätigt den (hoffentlich) erfolgreichen Abschluss. Optional kann man manuell nachschauen, ob die Datei tatsächlich im Home-Verzeichnis angekommen ist.
+
+``` default
+ls
+```
+
+![Download von Mirth und Kontrolle](download mirth with wget.png)
+
+Damit ist der erste Schritt erledigt und die Installation von Mirth und Java kann folgen.
+
+## Mirth und Java installieren
+
+Mirth benötigt Java, sodass dies zunächst installiert werden muss. Wie üblich, gibt es dafür  [mehrere Varianten](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-debian-11){target="_blank"}, aber letztlich werden nur zwei Befehle benötigt.
+
+``` default
+sudo apt install default-jre
+sudo apt install default-jdk
+```
+
+Der Mirth-Download wird einfach entpackt, sodass ein weiterer Ordner Namens "Mirth Connect" erstellt wird. Dieser enthält bereit alle relevanten Dateien, die der Kommunikationsserver benötigt.
+
+``` default
+tar xf mirthconnect.tar.gz
+cd Mirth\ Connect/
+ls
+```
+
+Mirth muss nur noch gestartet werden.
+
+``` default
+./mcservice start
+```
+
+![Starten des Mirth Connect Service](starting mcservice.png)
+
+Der Status des Mirth Connect Service lässt sich einfach anzeigen.
+
+``` default
+./mcservice status
+```
+
+![Status des Mirth Connect Service](status.png)
+
+Innerhalb des gleichen Netzwerkes kann nun mittels eines Webbrowsers auf Mirth zugegriffen werden. Eurer lokaler Rechner muss ebenfalls Java installiert haben. Die IP-Adresse des Linux Systems lässt sich leicht herausfinden.
+
+``` default
+ip a
+```
+
+![Wo man die IP-Adresse findet](ip.png)
+
+Die IP-Adresse wird zusammen mit dem Port 8080 (mit Doppelpunkt voneinander getrennt), in die Browser-Adresszeile eingegeben. Der Mirth Startbildschirm wird gezeigt und man kann den Mirth Connect Administrator starten.
+
+![Browseransicht](browser.png)
+
+::: {.callout-tip title="Wirewall"}
+Falls noch eine Firewall (ufw: Ubuntu Firewall) aktiv ist, muss der entsprechende Port möglicherwiese geöffnet werden. Man kann beispielweise Port 8080 [öffnen](https://www.configserverfirewall.com/ufw-ubuntu-firewall/ubuntu-firewall-open-port/){target="_blank"} mit dem Befehl `sudo ufw allow 8080`.
+:::
+
+Der Weblaucher wird im Browser heruntergelden, installiert und gestartet. Gegebenfalls muss man die Installation auf dem lokalen Rechner bestätigen, wie man es von anderen Applikationen gewohnt ist. Je nach Netzwerk muss der Port 8843 noch freigegeben werden `sudo ufw allow 8443`.
+
+Das Login-Fenster öffnet sich mit der bereits hinterlegten Serverdaten. Mit `admin` als Username und `admin` als Passwort kann man sich initial einloggen in Mirth Connect Administrator.
+
+![](admin login.png){style="border:1px solid black"}
+
+Die persönlichen Daten sowie ein neues Passwort wird im nächsten Schritt einmalig eingegeben. Danach ist Mirth Connect fertig installiert und bereit für mehr.
+
+![](initial login.png){style="border:1px solid black"}
+
+::: {.callout-tip title="Praktischer Hinweis"}
+Es könnte sinnvoll sein, den `Mirth Connect` Ordner umzubenennen, weil Leerzeichen evtl. gewisse spätere Aspekte verkomplizieren. Im Terminal mit dem Befehl `mv Mirth\ Connect/ mirthconnect` ist die neue Ordnerbezeichnung leicht umgesetzt.
+:::
+
+## Referenzen
+
+Viele weitere Informationen über Mirth findet man in der [offiziellen Dokumentation von NextGen Healthcare](https://docs.nextgen.com/bundle/Mirth_User_Guide_4_5_0/page/connect/connect/topics/c_intro_mirth_connect_ug.html){target="_blank"} oder vielen weiteren Seiten / Foren sowie [Video-Tutorials](https://www.youtube.com/watch?v=hcb5GQa-SL0){target="_blank"}.
+
+## Alternativen
+
+Alternativ zu einer Linux Installation kann man Mirth connect auch in einem Docker-Container betreiben. Wie das funktioniert, wird im [Mirth Project Forum](https://forums.mirthproject.io/articles/175025-using-connect-with-docker){target="_blank"} gezeigt. Zudem lässt sich auf PostgreSQL und PG-Admin in einem [Container betreiben](https://medium.com/@marvinjungre/get-postgresql-and-pgadmin-4-up-and-running-with-docker-4a8d81048aea){target="_blank"}. Wenn Ihr noch keine Erfahrung mit Docker habt, so gibt es viele [Tutorials](https://www.youtube.com/watch?v=pg19Z8LL06w){target="_blank"} zu diesem Thema.

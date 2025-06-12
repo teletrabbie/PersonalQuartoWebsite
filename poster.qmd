@@ -7,7 +7,18 @@ Wir dürften sie "nur" unseren Dozenten und Kommilitonen erläutern.
 Aber was nicht ist, kann ja noch werden...
 
 :::: columns
-::: {.column width="30%"}
+::: {.column width="47%"}
+::: {.card}
+<center>Medikamenten-Graph-Datenbank</center>
+
+[![ ](pictures/graph.png)](https://teletrabbie.github.io/poster/graph.pdf)
+:::
+:::
+
+::: {.column width="6%"}
+:::
+
+::: {.column width="47%"}
 ::: {.card}
 <center>Schnittstellen</center>
 
@@ -15,10 +26,13 @@ Aber was nicht ist, kann ja noch werden...
 :::
 :::
 
-::: {.column width="3%"}
-:::
 
-::: {.column width="30%"}
+::::
+
+<br>
+
+:::: columns
+::: {.column width="47%"}
 ::: {.card}
 <center>Telemedizin</center>
 
@@ -26,10 +40,10 @@ Aber was nicht ist, kann ja noch werden...
 :::
 :::
 
-::: {.column width="3%"}
+::: {.column width="6%"}
 :::
 
-::: {.column width="30%"}
+::: {.column width="47%"}
 ::: {.card}
 <center>Virtual Reality</center>
 

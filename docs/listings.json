@@ -2,6 +2,12 @@
   {
     "listing": "/quarto.html",
     "items": [
+      "/projects/MIT Intro to DL/mit intro.html",
+      "/projects/rsa/RSA mit modpower.html",
+      "/projects/zeppelin/zeppelin.html",
+      "/projects/mirth autostart/mirth autostart.html",
+      "/projects/mirth/mirth_step_by_step.html",
+      "/projects/atc/parseATC.html",
       "/projects/R API und FHIR/r api fhir.html",
       "/projects/interops/interops.html",
       "/projects/book/mal ein buch schreiben.html",

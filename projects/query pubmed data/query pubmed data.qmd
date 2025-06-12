@@ -6,6 +6,7 @@ image: "pubmed.png"
 editor: 
   markdown: 
     wrap: 72
+freeze: true
 ---
 
 Im Rahmen einer Seminararbeit wurden eine Literaturrecherche auf Pubmed

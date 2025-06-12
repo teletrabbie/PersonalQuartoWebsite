@@ -1,0 +1,17 @@
+---
+title: "Quarto Präsentationen"
+author: "Christian Franke"
+date: "2024-10-07"
+image: "zepLogo.png"
+---
+
+Im Modul Advanced Data Management durfte ich einen [Vortrag über Apache Zeppelin](https://teletrabbie.github.io/presentationZeppelin/presentationZeppelin.html){target="_blank"} halten. Die Präsentation habe ich zur Abwechselung mit Quarto/RStudio als reveal.js Dokument erstellt. Hier fasse ich die praktischen Erkenntnisse zusammen.
+
+1. Mit Quarto lassen sich moderne Präsentationen erstellen, die responsiv sind und auf jedem Browser anschaut werden können.
+1. Es gibt eine umfangreiche Dokumentation
+1. Animationenen, Code-Snippets und weiteren Standardelemente (Bilder, Logo, Fusszeile) sind einfach möglich resp. vorhanden
+1. Am unteren Bildschirmrand gibt es einen dezenten Fortschrittsbalken, sodass Referent und Zuhörer schnell wissen, wie viel Prozent der Folien / Slideanimations abgeschlossen sind bzw. noch folgen
+1. Ein Export als PDF ist über die spezifische Ansicht im Burger-Menü und dem Druck als PDF-Datei möglich.
+1. Normale Quarto-Dokumente lassen sich einfach in Präsentationen umwandeln, denn die Syntax ist grundsätlich die gleiche. Man muss jedoch aufpassen, dass nicht allzuviel Inhalt auf eine Folie "gepresst" wird. Neue Folien werden mit H2-Elementen (##) generiert.
+
+Auf der Website von [Quarto](https://quarto.org/docs/presentations/){target="_blank"} findet man sehr viele grundlegende sowie detaillierte Informationen, um Präsentationen mit Quarto zu erstellen.

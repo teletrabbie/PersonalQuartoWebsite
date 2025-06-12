@@ -1,0 +1,72 @@
+---
+title: "Mirth starten nach dem Booten"
+author: "Christian Franke"
+date: "2024-09-13"
+image: "start stop.jpg"
+---
+
+Nachdem Mirth Connect grundsätzlich in Debian installiert ist, soll es automatisch starten nach dem Booten. Dafür kann eine Service-Datei erstellt werden. Falls Euch das Thema sehr interessiert, könnt in z.B. [diese ausführliche Einfühung](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_systemd_unit_files_to_customize_and_optimize_your_system/assembly_working-with-systemd-unit-files_working-with-systemd){target="_blank"} lesen.
+
+::: {.callout-tip title="Praktischer Hinweis"}
+Aus praktischen Gründen wurde der Ordner `Mirth Connect` umbenannt ohne Leerzeichen und Grossbuchstaben. Im Terminal geht das einfach mit dem Befehl `mv Mirth\ Connect/ mirthconnect`
+:::
+
+## Die Service-Datei
+
+Zunächst muss eine .service Datei erstellt werden. Diese kann man zunächst im Home-Verzeichnis erstellen (mit `touch`). Später wird die Datei in ein System-Verzeichnis verschoben. Die .service Datei kann mit dem Terminal-Befehl `nano` bearbeitet werden.
+
+```default
+touch mirthconnect.service
+nano mirthconnect.service
+```
+Im Bearbeitungsmodus kann folgendes Skript hineinkopiert werden ([Quelle und weitere Details](https://www.youtube.com/watch?v=O2kTAOpo5zM){target="_blank"}).
+
+
+```default
+[Unit]
+Description=MirthConnect
+After=network.target
+
+[Service]
+Type=forking
+
+User=mirth
+Group=mirth
+ExecStart=/home/mirth/mirthconnect/mcservice start
+ExecStop=/home/mirth/mirthconnect/mcservice stop
+ExecRestart=/home/mirth/mirthconnect/mcservice restart
+
+TimeoutSec=60
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Mit `Ctrl + x` verlässt man den Bearbeitungmodus und speichert die Änderung mit `y` ab. Die erstellte Datei `mirthconnect.service` muss nun mit Admin-Privilegien in einen Systemordner verschoben werden. Wir wechseln zunächst zum `su` User.
+
+```default
+su
+[Password:]
+```
+
+Danach wählen wir das Zielverzeichnis aus.
+```default
+cd /usr/lib/systemd/system
+```
+
+Die mirthconnect.service Datei wird mit `cp` in das Zielverzeichnis verschoben. Der Punkt am Ende der Zeile unten gehört noch zum Befehl dazu und sollte nicht vergessen werden. 
+
+```default
+cp /home/mirth/mirthconnect.service .
+```
+
+Der Autostart kann aktiviert werden.
+```default
+systemctl enable mirthconnect.service
+```
+
+Nach einem Reboot sollte Mirth Connect regulär laufen, sodass man sich via Webbrowser oder Mirth Connect Administrator in den Kommunikationsserver einloggen kann.
+
+::: {.callout-tip title="su Password vergessen?"}
+Falls das `su` Passwort vergessen ging, [diese Anleitung](https://de.linux-console.net/?p=1690){target="_blank"} hilft beim Zurücksetzen.
+:::

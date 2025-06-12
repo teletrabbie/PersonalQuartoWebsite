@@ -22,7 +22,7 @@ website:
         text: Über mich
   page-footer:
     background: primary
-    left: "Created in 2024"
+    left: "Created in 2025"
     center:
       - href: https://github.com/teletrabbie
         icon: github

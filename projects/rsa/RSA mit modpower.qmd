@@ -1,0 +1,151 @@
+---
+title: "RSA und Modulo-exponentiation"
+author: "Christian Franke"
+date: "2025-01-03"
+image: "keys.jpg"
+---
+
+Im Modul Informationssicherheit lernten wir unter anderem den RSA Schlüsselaustausch kennen. Dieses asymetrische kryptographische Verfahren ist eine wichtige Basis für den verschlüsselten Datenaustausch in der vernetzen Welt. Für effiziente Berechnungen der Schlüssel wird die Moduloexponentiation genutzt. Beides wird hier kurz erläutert und der R-Code präsentiert für ein einfaches Beispiel.
+
+## Hintergründe
+
+-   RSA: Rivest, Sharmi, Adleman
+-   1977 publizierte
+-   asymetrisches kryptographisches Verfahren
+-   Privater Schlüssel zum Entschlüsseln und Signieren (bleibt geheim)
+-   Öffentlicher Schüssel zum Verschlüsseln und Verifizieren
+
+## Grundidee
+
+-   Alice generiert ein Schlüsselpaar (privat/public)
+-   privat bleibt immer lokal bei Alice
+-   public kann an Bob (oder die ganze Welt) gesendet werden
+-   Bob nutzt den öffentlichen Schlüssel von Alice, verschlüsselt ein Dokument und sendet es an Alice
+-   Alice kann das Dokument mit dem privaten Schlüssel entschlüsseln
+
+## Mathematisch
+
+Es gilt
+
+$$(m^e)^d \bmod n = m$$
+
+wobei der öffentliche Schlüssel $(e,n)$ enthält und der private Schlüssel $(d,n)$. D.h. die Exponenten sind Teile des privaten oder öffentlichen Schlüssls. $n$ ist in beiden Schlüsseln enthalten und $m$ ist die Nachricht.
+
+Alice erzeugt nun das Schlüsselpaar. Für den Modulo nutzt sie das Produkt aus zwei zufällig ausgewählte grosse Primazahlen $p$ und $q$.
+
+$$n = p*q$$
+
+```{r}
+p = 11
+q = 13
+n = p*q
+n
+```
+
+Danach wird die Eulersche Phi-Funktion $\varphi$ ermittelt, die zur Ermittlung des privaten Schüssels benötigt wird. Dies ist somit ein wichtiger Zwischenschritt, aber Phi wird nicht weiter verwendet.
+
+$$\varphi = (p-1)*(q-1)$$
+
+```{r}
+phi = (p-1)*(q-1)
+phi
+```
+
+Weiter wird eine teilerfremde Zahl $e$ definiert (Exponent im öffentlichen Schlüssel), die zwischen 1 und $\varphi$ liegt. Wie $e$ exakt festgelegt wird, habe ich in R jedoch nicht weiter berechnet resp. verifiziert.
+
+```{r}
+e = 23
+```
+
+Als letztes muss noch die Zahl $d$ (Exponent im privaten Schlüssel) ermittelt werden. Für $d$ gilt
+
+$$e*d \bmod \varphi = 1$$
+
+```{r}
+fun_d <- function(x, y) {
+  d <- 1
+  while ((x*d) %% y != 1) {
+    d <- d + 1
+  }
+  return(d)
+  }
+d <- fun_d(e, phi)
+d
+```
+
+Somit haben wir die drei komponenten des öffentlichen und privaten Schlüssels festgelegt.
+
+```{r}
+#| echo: false
+print(paste0("public key = (", e,",", n,")"))
+print(paste0("private key = (", d,",", n,")"))
+```
+
+Es gibt nun zwei Use-Cases, um die Schlüssel zu nutzen. Für beide Use-Cases wird die Moduloexponentiation verwendet, d.h. mit grossen Zahlen gerechnet. Hierfür benötigen wir in R die Library "numbers".
+
+### Verschlüsseln und Entschlüsseln von Nachrichten
+
+Die Nachricht $m$ wird zunächst ASCII Codiert, d.h. es sind nur noch Zahlen vorhanden, mit denen wir die mathematischen Operationen durchführen können. Wir möchten beispielsweise den Buchstaben "S" verschlüsseln, was in ASCII der Zahl 83 entspricht.
+
+```{r}
+library(numbers)
+m <- 83
+```
+
+Um die Nachricht zu verschlüsseln, nutzt Bob nun den öffentlichen Schlüssel.
+
+$$c = m^e \bmod n$$
+
+```{r}
+c <- modpower(m, e, n)
+c
+```
+
+Alice verwendet nun den privaten Schlüssel, um die Nachricht wieder lesbar zu machen.
+
+$$m' = c^d \bmod n $$
+
+```{r}
+m_ <- modpower(c, d, n)
+m_
+```
+
+### Signieren und Verifizieren von Nachrichten
+
+Es ist wichtig, dass Nachrichten auf dem Weg zum Kommunikationspartner nicht verändert werde. Beispielweise könnte Alice die Nachricht (z.B. Überweisung) an Bob (z.B. Bank) signieren und Bob kann die Echtheit der Nachticht verifizieren.
+
+Alice signiert die Nachticht "42" mit Ihrem privaten Schlüssel.
+
+$$s=m^d \bmod n$$
+
+```{r}
+s <- 42
+s <- modpower(m, d, n)
+```
+
+Bob nutzt den öffentlichen Schlüssel von Alice und wendet den öffentlichen Schlüssel auf die Signatur an. Wenn die Signatur und die Verifizierung identisch sind, ist die Nachticht unverändert.
+
+$$v=s^e \bmod n \equiv m$$
+
+```{r}
+v <- modpower(s, e, n)
+print(paste0("m is ",ifelse(v!=m, "not valid", "valid")))
+```
+
+Das ganze funktioniert in der Realität mit sehr grosen Zahlen. Die Moduloexponentiation kann beispielsweise mit dem "Square-and-multiply" Algorithmus schnell und einfach ausgeführt werden.
+
+## Square-and-multiply
+
+Der Square-and-multiply Algorithmus und verwandte Methoden (z.B. Sliding Window) ermöglichen eine schnelle und einfache Berechnung der Modulo einer Exponentiation. Dabei gilt
+
+$$m^e \bmod n = (m \bmod n)^e \bmod n$$
+
+Dies hat praktische Auswirkung, weil wir mit "kleinen" Zahlen rechnen können. Zudem wird der Exponent in Binärzahlen umcodiert und bei jeden Zwischenschritt quadiert und, falls der bit eine 1 ist, auch noch mit der Basis multipliziert. Somit reduziert sich die Laufzeit des Algortihmus.
+
+![](Screenshot.png)
+
+Hier noch die Prüfung in R.
+
+```{r}
+modpower(3, 1955, 51)
+```

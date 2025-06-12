@@ -1,0 +1,46 @@
+---
+title: "Zusammenfassung 'Introduction to Deep Learning'"
+author: "Christian Franke"
+date: "2025-03-15"
+image: "network.jpg"
+---
+
+Künstliche Intelligenz ist derzeit überall. Ich habe [Googles NotebookLM](https://notebooklm.google.com/){target="_blank"} gebeten, die Youtube-Aufzeichnung des Kurses ['MIT Introduction to Deep Learning | 6.S191'](https://www.youtube.com/watch?v=alfdI7S6wCY&list=PPSV){target="_blank"} vom Januar 2025 zusammenzufassen mit 5 Minuten Lesezeit. Es ist erstaunlich, wie gut die Inhalte erfasst und beschrieben wurden. Aber lest selbst...
+
+## Ab hier folgt der KI-generierte Text
+
+Gerne erstelle ich eine Zusammenfassung des Vorlesungsausschnitts, die Sie in etwa 5 Minuten lesen können.
+
+### Einleitung und Überblick über Deep Learning
+
+Die Vorlesung "MIT Introduction to Deep Learning" (6.S191) ist ein einwöchiger Intensivkurs über alle Aspekte des Deep Learning. Die Dozenten Alexander Amini und Ava heißen die Teilnehmer willkommen und betonen die rasante Entwicklung des Feldes. Einleitend wird der Fortschritt der Gesichtserzeugung mittels Deep Learning in den letzten zehn Jahren anhand von Beispielen demonstriert, von einfachen Ergebnissen vor einem Jahrzehnt zu fotorealistischen und dynamischen Videos. Ein 2020 in der Klasse erstelltes Video, das eine geklonte Stimme und ein Gesicht zeigte, benötigte erhebliche Ressourcen (155.000 US-Dollar Compute für ein zweiminütiges Video) und war statisch. 2025 wird eine Live-Demonstration gezeigt, bei der eine Stimme in Echtzeit geklont und für eine dynamische Konversation genutzt wird, was die enormen Fortschritte verdeutlicht. Der Kurs zielt darauf ab, die fundamentalen Techniken zu vermitteln, die diesen Fortschritt ermöglichen, indem Computer lernen, Aufgaben direkt aus Beobachtungen und Daten zu lösen. Der Kurs besteht aus technischen Vorlesungen und praktischen Software-Labs mit TensorFlow und PyTorch, einschließlich Wettbewerben mit Preisen und Gastvorträgen von Industrieexperten.
+
+### Grundlegende Konzepte
+
+**Intelligenz** wird als die Fähigkeit definiert, Informationen zu verarbeiten, um zukünftige Entscheidungen zu treffen. **Künstliche Intelligenz (KI)** ist die Praxis, künstliche Algorithmen zu entwickeln, um diesen Prozess nachzubilden. **Maschinelles Lernen** ist ein Teilbereich der KI, der sich darauf konzentriert, Muster in Daten zu lernen, um Entscheidungen zu treffen, ohne explizit programmiert zu werden. **Deep Learning** ist ein Teilbereich des maschinellen Lernens, der diesen Prozess mithilfe von tiefen neuronalen Netzen durchführt.
+
+### Neuronale Netze: Das Perzeptron
+
+Der grundlegende Baustein eines neuronalen Netzes ist das **Perzeptron** oder Neuron. Es nimmt Eingaben auf, multipliziert diese mit entsprechenden **Gewichten**, addiert einen **Bias** und wendet dann eine **nichtlineare Aktivierungsfunktion** an, um eine Ausgabe zu erzeugen. Die Aktivierungsfunktion, wie die **Sigmoid-Funktion** (Ausgabe zwischen 0 und 1, nützlich für Wahrscheinlichkeiten) oder die **Rectified Linear Unit (ReLU)** (Ausgabe ist das Maximum von 0 und der Eingabe), ist entscheidend, um **Nichtlinearitäten** in das Modell einzuführen. Ohne Nichtlinearitäten wäre das Modell linear und könnte keine komplexen realen Daten abbilden.
+
+### Netzwerkarchitektur
+
+Ein **neuronales Netzwerk** besteht aus mehreren miteinander verbundenen Perzeptronen, die in **Schichten** organisiert sind. Eine **dichte Schicht** (Dense Layer) ist eine Schicht, in der jede Eingabe mit jeder Ausgabe verbunden ist. Tiefe neuronale Netze bestehen aus dem sequenziellen Stapeln mehrerer linearer Schichten gefolgt von Nichtlinearitäten in einer hierarchischen Weise.
+
+### Training Neuronaler Netze
+
+Das Ziel des Trainings ist es, die **Gewichte** des Netzwerks so anzupassen, dass der **Verlust** (loss), ein Maß für die Diskrepanz zwischen den Vorhersagen des Modells und den tatsächlichen Werten (Ground Truth), minimiert wird. Die **Verlustfunktion** quantifiziert diesen Fehler; Beispiele sind die Softmax-Kreuzentropie-Verlustfunktion für binäre Klassifikation und der mittlere quadratische Fehler (MSE) für Regression.
+
+Der Prozess zur Minimierung des Verlusts wird **Gradientenabstieg** genannt. Dabei wird der **Gradient** des Verlusts in Bezug auf die Gewichte berechnet. Der Gradient zeigt die Richtung des steilsten Anstiegs des Verlusts, und die Gewichte werden in die entgegengesetzte Richtung angepasst, um den Verlust zu verringern. Die Berechnung des Gradienten in neuronalen Netzen erfolgt durch **Backpropagation**, eine Anwendung der Kettenregel, die die Gradienten vom Ausgang zurück durch das Netzwerk propagiert. Die **Lernrate** (Learning Rate) bestimmt die Schrittgröße bei der Anpassung der Gewichte. Eine zu kleine Lernrate kann zu langsamer Konvergenz oder dem Steckenbleiben in lokalen Minima führen, während eine zu große Lernrate zu instabilem Verhalten führen kann. **Adaptive Lernratenalgorithmen** wie Adam passen die Lernrate während des Trainings dynamisch an.
+
+### Optimierungstechniken
+
+Der **stochastische Gradientenabstieg (SGD)** berechnet den Gradienten nur für einen einzelnen zufällig ausgewählten Datenpunkt und ist daher schneller, aber verrauschter als der herkömmliche Gradientenabstieg, der den Gradienten über den gesamten Datensatz berechnet. Der **Mini-Batch-Gradientenabstieg** ist ein Kompromiss, bei dem der Gradient für eine kleine Menge (Batch) von Datenpunkten berechnet und gemittelt wird, was eine stabilere und effizientere Optimierung ermöglicht und die Parallelisierung auf GPUs erlaubt.
+
+### Overfitting und Regularisierung
+
+**Overfitting** tritt auf, wenn ein Modell auf den Trainingsdaten sehr gut funktioniert, aber schlecht auf neuen, unbekannten Daten generalisiert. Dies geschieht, wenn das Modell die Trainingsdaten zu stark auswendig lernt. **Regularisierungstechniken** zielen darauf ab, Overfitting zu verhindern. **Dropout** ist eine Technik, bei der während des Trainings zufällig einige Aktivierungen von Neuronen auf Null gesetzt werden, um zu verhindern, dass sich das Netzwerk zu stark auf einzelne Neuronen verlässt. **Early Stopping** ist eine Methode, bei der der Trainingsprozess beendet wird, wenn die Leistung des Modells auf einem separaten Validierungsdatensatz (ein Proxy für Testdaten) zu sinken beginnt, obwohl der Verlust auf den Trainingsdaten weiterhin abnimmt.
+
+### Ausblick
+
+Die nächste Vorlesung wird sich mit Deep Sequence Modeling befassen, der Grundlage von Large Language Models.

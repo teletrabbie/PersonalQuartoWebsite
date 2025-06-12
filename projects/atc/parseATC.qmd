@@ -1,0 +1,106 @@
+---
+title: "Webscraping mit Python"
+author: "Christian Franke"
+date: "2024-05-31"
+image: "Firefly.jpg"
+toc: false
+execute:
+  eval: false
+---
+
+Der Index der anatomischen, therapeutischen und chemischen Strukturen (ATC) wird von der WHO resp. dem [norwegischen Institut für Public Health](https://atcddd.fhi.no) verwaltet und veröffentlicht. Die jährlich aktualisierten Daten sind im öffentlich verfügbaren ATC-Index auf der Website einsehbar. Der manuelle Websiteaufruf ist für gewisse Usecases nicht sinnvoll. Hier wird eine Möglichkeit gezeigt, wie das Webscraping resp. Parsen der ATC-Codes und deren Beschreibung mit Python umgesetzt werden kann. Der Output ist eine csv-Datei mit den drei pipegetrennten Spalten `atc_name, atc_code, level`.
+
+Zunächst werden die relevanten Packages geladen. Mit `BeautifulSoup` kann das retournierte HTML-Skript bearbeitet werden.
+
+```{python}
+import numpy as np
+import pandas as pd
+import datetime
+from bs4 import BeautifulSoup
+import urllib.request
+import re
+```
+
+Wenn man den ATC-Index-Wesite betrachtet und die Seite analysiert, erkennt man schnell die URL-Struktur. Dem Endpunkt wird im ersten Parameter `code` der gesuchte ATC-Code übergeben. Mit einem zweiten Parameter kann man die ausführliche Beschreibung anzeigen lassen, die hier nicht benötigt wird und auf `no` gesetzt ist.
+
+```{python}
+endpoint = "https://atcddd.fhi.no/atc_ddd_index"
+para1 = "/?code="
+para2 = "&showdescription=no"
+```
+
+Die Hilfsfunktion `extract_value` dient später dazu, die ATC-Codes und deren Schreibung aus eine Liste (vom DOM-Elementen) zu extrahieren. 
+
+```{python}
+def extract_value(s):
+    return s.split('=')[1].split('&')[0]
+```
+
+Der Hauptfunktion `parseATC` wird ein ATC-Code-Parameter übergeben Diese Funktion wird auf ein iterierbares Dataframe angewandt und somit später der komplette Index durchforstet. Im ersten Teil dieser Funktion wird die Request-URL zusammengesetzt, abgefragt und die "html-Suppe" gekocht. Der DOM des ATC-Index ist so aufgebaut, dass die ATC-Codes und die Beschreibung aus A-Elementen herausgelesen werden können, in denen der Begriff `code` vorkommt. Die extrahierten Inhalte werden in einem lokalen Dataframe zwischengespeichert und dort das Level (String-Länge) des ATC-Codes ermittelt.
+
+
+```{python}
+def parseATC(atc_as_para):
+  # Parse HTML content
+  url = endpoint + para1 + atc_as_para + para2
+  html_content = urllib.request.urlopen(url).read()
+  soup = BeautifulSoup(html_content, "html.parser")
+  
+  # Find all "a" elements in DOM with "code" inside
+  codes = soup.find_all(href=re.compile("code"))
+  
+  # Extract the data
+  atc_names = [a.text for a in codes]
+  href_string = [str(a.attrs) for a in codes]
+  
+  # Create local data frame
+  data = {"atc_name": atc_names, "href": href_string}
+  df_data = pd.DataFrame(data)
+  
+  # Extract atc code from href and delete href column
+  df_data['atc_code'] = df_data['href'].apply(lambda x: extract_value(x))
+  del df_data['href']
+  df_data = df_data[df_data['atc_name']!='Show text from Guidelines']
+  
+  # calculate atc-level (length of atc code)
+  df_data['level'] = df_data['atc_code'].apply(lambda x: len(x))
+  print(datetime.datetime.now()) # just showing script is running
+  return df_data
+
+```
+
+Zwei initiale Dataframes werden erstellt. Über `df` wird später iteriert und in `df_combined` werden alle Ergebnisse gespeichert.
+
+```{python}
+df_combined = df = pd.DataFrame()
+df_combined = df = parseATC("")
+```
+
+Nun folgt die zentrale Abfrage aller Daten. Die Levels 1, 3, 4 und 5 werden itrerativ abgefragt und die parseATC-Funktion nach und nach auf alle Codes und Subcodes angewendet. Diese doppelte Loop dauert rund 5 Minuten, wobei der innere Loop hier am wichtigsten ist.
+
+```{python}
+#| evel: false
+level_iterator = np.array([1,3,4,5])
+
+for li in level_iterator:
+  print("level: "+str(li))
+  df = df_combined[df_combined.level==li]
+  
+  for row in df.itertuples():
+    df_data = parseATC(row.atc_code) # global data frame
+    df_combined = pd.concat([df_combined, df_data], ignore_index=True)
+  
+  # drop duplicates 
+  df_combined = df_combined.drop_duplicates()
+```
+
+Zu Guter letzt werden die Daten sortiert nach dem ATC-Code und die finale Liste als `atc_list.csv` exporiert.
+
+```{python}
+df_combined = df_combined.sort_values('atc_code')
+df_combined.to_csv('atc_list.csv', index=False, sep='|')
+```
+
+Bei diesem Thema sollte man jedoch die Lizenzbestimmungen beachten. Der rechtliche Aspekt wurde hier nicht geklärt, sondern nur die technsiche Machbarkeit dargestellt.
+
+Hier findet man weitere Infos zu [BeautifulSoup](https://beautiful-soup-4.readthedocs.io/en/latest/).
