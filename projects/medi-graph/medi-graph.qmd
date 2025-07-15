@@ -1,0 +1,30 @@
+---
+title: "Medikamenten-Graph"
+author: "Christian Franke"
+date: "2025-07-15"
+image: "neo4j.png"
+---
+
+Ein Graph-Modell mit Medikamenten-Daten in der Graph-Datenbank Neo4j war das Ergebnis meiner Bachelor-Thesis. 
+
+## Summary
+
+Die Graph-Datenbank mit öffentlich verfügbaren Informationen über hochteure Medikamente soll der SwissDRG AG helfen, Zusammenhänge 
+zwischen Medikamenten und deren Indikationen einfacher zu erkennen. Die Daten wurden in Neo4j integriert und sollen bei der Weiterentwicklung der stationären Tarifsysteme im Schweizer Gesundheitswesen unterstützen. Ein [kurzes Video](https://www.youtube.com/watch?v=O9zG9YAfm5g){target="_blank"} gibt einen kompakten Einblick in das Projekt.
+
+## Problemstellung
+
+Die Anzahl hochteurer Medikamente ist in den vergangenen Jahren deutlich gestiegen. Dabei ist es herausfordernd, ähnliche Indikationen für unterschiedliche Substanzen und die Verbindungen zwischen den Medikamenten im Überblick zu behalten. Besonders Graph-Datenbanken sind geeignet, um genau solche Relationen abzubilden. Mit Hilfe von Neo4j sollte ein Graph-Datenmodell erstellt werden. Die Daten stammen von der SwissDRG AG, der Spezialitätenliste (SL) des BAG, dem ATC-Index der WHO, der Europäischen Arzneimittelagentur sowie den strukturierten Arzneimittelinformationen der Stiftung Refdata. Dabei sollte es möglich sein, die öffentlichen Daten monatlich zu 
+aktualisieren und bei Bedarf weitere Informationsquellen zu integrieren.
+
+## Ergebnis
+
+Die Medikamentendaten wurden in 13 Labels gespeichert, die mit 14 unterschiedlichen Relationen-Typen miteinander verbunden sind. Es wurden über 27’000 Knoten und über 41’000 Relationen kreiert. Die Schemalosigkeit und Flexibilität von Graph-Datenbanken war speziell für die Knoten Substanz und Produkt wichtig. Zwischen diesen Knoten wurde die Relation HAT_ATC auch dann erstellt, wenn sich deren 
+direkte ATC-Codes zwar unterschieden, aber gleichzeitig der indirekte ATC-Code der SL übereinstimmte. Defizitäre Datenqualität kann damit teilweise ausgeglichen werden. Die Datenbank wird in der SwissDRG AG zukünftig in einer Cloud-Umgebung eingesetzt, um 
+beispielsweise Substanzen mit «gleicher» Indikation einfacher zu identifizieren und das Tarifsystem gezielt weiterzuentwickeln.
+
+![Medikamenten Datenmodell](model.png)
+
+## Details
+
+Den Source-Code findet Ihr in meinem [GitHub-Repo](https://github.com/teletrabbie/medi_graph/tree/main){target="_blank"}. Wenn Ihr Details wissen möchtet, könnt ihr diese im [Abschlussbericht ](https://teletrabbie.github.io/poster/Abschlussbericht.pdf){target="_blank"} in Ruhe nachlesen.
