@@ -4,7 +4,7 @@
     "href": "quarto.html",
     "title": "Quarto-Projekte",
     "section": "",
-    "text": "Hier findet ihr die seit 2024 erstellten Quarto-Projekte. Bei dieser Quarto-Seite handelt es sich um ein “listing”, das auch für einen Quarto-Blog verwendet wird. Die einzelnen Blog-Einträge sind separate qmd-Files, die automatisch in diese Liste hinzugefügt werden. Ausserdem werden R Markdown (.Rmd) oder Jupyter Notebooks (.ipynb) problemlos eingebunden.\nWeitere Infos findet Ihr auf quarto.org.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMedikamenten-Graph\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2025\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nZusammenfassung ‘Introduction to Deep Learning’\n\n\n\n\n\n\n\n\n\n\n\nMar 15, 2025\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nRSA und Modulo-exponentiation\n\n\n\n\n\n\n\n\n\n\n\nJan 3, 2025\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto Präsentationen\n\n\n\n\n\n\n\n\n\n\n\nOct 7, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nMirth starten nach dem Booten\n\n\n\n\n\n\n\n\n\n\n\nSep 13, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nInstall Mirth Connect (Step-by-step)\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nWebscraping mit Python\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nRestAPI mit R\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nInteroperabilität\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nEinfach Schriftsteller werden\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nPubmed mit R abfragen\n\n\n\n\n\n\n\n\n\n\n\nFeb 16, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nR Markdown in Quarto-Seite\n\n\n\n\n\n\n\n\n\n\n\nFeb 16, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nJupiter Notebooks und Quarto\n\n\n\n\n\n\n\n\n\n\n\nFeb 15, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nVon .Rmd zu .qmd\n\n\n\n\n\n\n\n\n\n\n\nFeb 14, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nEs kann losgehen\n\n\n\n\n\n\n\n\n\n\n\nFeb 13, 2024\n\n\nChristian Franke\n\n\n\n\n\n\nNo matching items"
+    "text": "Hier findet ihr die seit 2024 erstellten Quarto-Projekte. Bei dieser Quarto-Seite handelt es sich um ein “listing”, das auch für einen Quarto-Blog verwendet wird. Die einzelnen Blog-Einträge sind separate qmd-Files, die automatisch in diese Liste hinzugefügt werden. Ausserdem werden R Markdown (.Rmd) oder Jupyter Notebooks (.ipynb) problemlos eingebunden.\nWeitere Infos findet Ihr auf quarto.org.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNodes 2025\n\n\n\n\n\n\n\n\n\n\n\nAug 2, 2025\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nMedikamenten-Graph\n\n\n\n\n\n\n\n\n\n\n\nJul 15, 2025\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nZusammenfassung ‘Introduction to Deep Learning’\n\n\n\n\n\n\n\n\n\n\n\nMar 15, 2025\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nRSA und Modulo-exponentiation\n\n\n\n\n\n\n\n\n\n\n\nJan 3, 2025\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto Präsentationen\n\n\n\n\n\n\n\n\n\n\n\nOct 7, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nMirth starten nach dem Booten\n\n\n\n\n\n\n\n\n\n\n\nSep 13, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nInstall Mirth Connect (Step-by-step)\n\n\n\n\n\n\n\n\n\n\n\nSep 10, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nWebscraping mit Python\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nRestAPI mit R\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nInteroperabilität\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nEinfach Schriftsteller werden\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nPubmed mit R abfragen\n\n\n\n\n\n\n\n\n\n\n\nFeb 16, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nR Markdown in Quarto-Seite\n\n\n\n\n\n\n\n\n\n\n\nFeb 16, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nJupiter Notebooks und Quarto\n\n\n\n\n\n\n\n\n\n\n\nFeb 15, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nVon .Rmd zu .qmd\n\n\n\n\n\n\n\n\n\n\n\nFeb 14, 2024\n\n\nChristian Franke\n\n\n\n\n\n\n\n\n\n\n\n\nEs kann losgehen\n\n\n\n\n\n\n\n\n\n\n\nFeb 13, 2024\n\n\nChristian Franke\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/Von Rmd zu qmd/Von Rmd zu qmd.html",
@@ -98,151 +98,18 @@
     "text": "Abfrage auf Pubmed\nIn einem doppelten Loop wurden die Such-String-Kombinationen mit paste0() zusammengesetzt, die URL aufgerufen und die Anzahl Treffer (“Count”) extrahiert.\n\nfor (i in 1:length(search_string_1)) {\n  for (j in 1:length(search_string_2)) {\n    # define search string\n    url &lt;- paste0(url_part_1, search_string_1[i], url_part_3, search_string_2[j], url_part_5)\n    pubmed_count &lt;- xml_integer(xml_find_all(read_xml(url), \".//Count\"))\n    # safe count values\n    result_vector &lt;- c(result_vector, pubmed_count)\n    search_string_combination_1 &lt;- c(search_string_combination_1, search_string_1[i])\n    search_string_combination_2 &lt;- c(search_string_combination_2, search_string_2[j])\n    }\n  }\n\nSchliesslich kann das Gesamtergebnis als Tabelle ausgegeben werden.\n\nresult_set &lt;- tibble(search_string_combination_1, search_string_combination_2, result_vector) %&gt;%\n  pivot_wider(names_from = \"search_string_combination_2\", values_from = \"result_vector\")\ncolnames(result_set)[1] &lt;- \"Search string combination\"\nkable(result_set)\n\n\n\n\n\n\n\n\n\n\n\nSearch string combination\ntelemedicine\ntelehealth\ntelemonitoring\nremote\n\n\n\n\nCOPD\n255\n253\n194\n284\n\n\nasthma\n261\n133\n65\n379\n\n\ndiabetes\n1750\n977\n286\n2235\n\n\nheart\n1386\n669\n874\n5569\n\n\nhypertension\n601\n346\n297\n1260\n\n\nophthalmology\n525\n119\n4\n263\n\n\n\n\n\nDer doppelte Loop und die ursprünglichen Pubmed-Abfragen führten zu 205 unterschiedlichen Such-String-Kombinationen. Bis die Daten geladen wurden, dauert es knapp 2 Minuten. Das tönt zwar lange, aber geht schneller, als die Suchen manuell durchzuführen. Im Beispiel oben habe ich die Such-String-Kombinationen nun reduziert, sodass das Deployen schneller vonstattengeht.\nDennoch sehe ich noch Verbesserungspotential in meinem Skript. Das nehme ich mir für die nächste Zeit vor…"
   },
   {
-    "objectID": "projects/mirth autostart/mirth autostart.html",
-    "href": "projects/mirth autostart/mirth autostart.html",
-    "title": "Mirth starten nach dem Booten",
+    "objectID": "projects/MIT Intro to DL/mit intro.html",
+    "href": "projects/MIT Intro to DL/mit intro.html",
+    "title": "Zusammenfassung ‘Introduction to Deep Learning’",
     "section": "",
-    "text": "Nachdem Mirth Connect grundsätzlich in Debian installiert ist, soll es automatisch starten nach dem Booten. Dafür kann eine Service-Datei erstellt werden. Falls Euch das Thema sehr interessiert, könnt in z.B. diese ausführliche Einfühung lesen."
+    "text": "Künstliche Intelligenz ist derzeit überall. Ich habe Googles NotebookLM gebeten, die Youtube-Aufzeichnung des Kurses ‘MIT Introduction to Deep Learning | 6.S191’ vom Januar 2025 zusammenzufassen mit 5 Minuten Lesezeit. Es ist erstaunlich, wie gut die Inhalte erfasst und beschrieben wurden. Aber lest selbst…"
   },
   {
-    "objectID": "projects/mirth autostart/mirth autostart.html#die-service-datei",
-    "href": "projects/mirth autostart/mirth autostart.html#die-service-datei",
-    "title": "Mirth starten nach dem Booten",
-    "section": "Die Service-Datei",
-    "text": "Die Service-Datei\nZunächst muss eine .service Datei erstellt werden. Diese kann man zunächst im Home-Verzeichnis erstellen (mit touch). Später wird die Datei in ein System-Verzeichnis verschoben. Die .service Datei kann mit dem Terminal-Befehl nano bearbeitet werden.\ntouch mirthconnect.service\nnano mirthconnect.service\nIm Bearbeitungsmodus kann folgendes Skript hineinkopiert werden (Quelle und weitere Details).\n[Unit]\nDescription=MirthConnect\nAfter=network.target\n\n[Service]\nType=forking\n\nUser=mirth\nGroup=mirth\nExecStart=/home/mirth/mirthconnect/mcservice start\nExecStop=/home/mirth/mirthconnect/mcservice stop\nExecRestart=/home/mirth/mirthconnect/mcservice restart\n\nTimeoutSec=60\n\n[Install]\nWantedBy=multi-user.target\nMit Ctrl + x verlässt man den Bearbeitungmodus und speichert die Änderung mit y ab. Die erstellte Datei mirthconnect.service muss nun mit Admin-Privilegien in einen Systemordner verschoben werden. Wir wechseln zunächst zum su User.\nsu\n[Password:]\nDanach wählen wir das Zielverzeichnis aus.\ncd /usr/lib/systemd/system\nDie mirthconnect.service Datei wird mit cp in das Zielverzeichnis verschoben. Der Punkt am Ende der Zeile unten gehört noch zum Befehl dazu und sollte nicht vergessen werden.\ncp /home/mirth/mirthconnect.service .\nDer Autostart kann aktiviert werden.\nsystemctl enable mirthconnect.service\nNach einem Reboot sollte Mirth Connect regulär laufen, sodass man sich via Webbrowser oder Mirth Connect Administrator in den Kommunikationsserver einloggen kann.\n\n\n\n\n\n\nsu Password vergessen?\n\n\n\nFalls das su Passwort vergessen ging, diese Anleitung hilft beim Zurücksetzen."
-  },
-  {
-    "objectID": "projects/medi-graph/medi-graph.html",
-    "href": "projects/medi-graph/medi-graph.html",
-    "title": "Medikamenten-Graph",
-    "section": "",
-    "text": "Ein Graph-Modell mit Medikamenten-Daten in der Graph-Datenbank Neo4j war das Ergebnis meiner Bachelor-Thesis."
-  },
-  {
-    "objectID": "projects/medi-graph/medi-graph.html#summary",
-    "href": "projects/medi-graph/medi-graph.html#summary",
-    "title": "Medikamenten-Graph",
-    "section": "Summary",
-    "text": "Summary\nDie Graph-Datenbank mit öffentlich verfügbaren Informationen über hochteure Medikamente soll der SwissDRG AG helfen, Zusammenhänge zwischen Medikamenten und deren Indikationen einfacher zu erkennen. Die Daten wurden in Neo4j integriert und sollen bei der Weiterentwicklung der stationären Tarifsysteme im Schweizer Gesundheitswesen unterstützen. Ein kurzes Video gibt einen kompakten Einblick in das Projekt."
-  },
-  {
-    "objectID": "projects/medi-graph/medi-graph.html#problemstellung",
-    "href": "projects/medi-graph/medi-graph.html#problemstellung",
-    "title": "Medikamenten-Graph",
-    "section": "Problemstellung",
-    "text": "Problemstellung\nDie Anzahl hochteurer Medikamente ist in den vergangenen Jahren deutlich gestiegen. Dabei ist es herausfordernd, ähnliche Indikationen für unterschiedliche Substanzen und die Verbindungen zwischen den Medikamenten im Überblick zu behalten. Besonders Graph-Datenbanken sind geeignet, um genau solche Relationen abzubilden. Mit Hilfe von Neo4j sollte ein Graph-Datenmodell erstellt werden. Die Daten stammen von der SwissDRG AG, der Spezialitätenliste (SL) des BAG, dem ATC-Index der WHO, der Europäischen Arzneimittelagentur sowie den strukturierten Arzneimittelinformationen der Stiftung Refdata. Dabei sollte es möglich sein, die öffentlichen Daten monatlich zu aktualisieren und bei Bedarf weitere Informationsquellen zu integrieren."
-  },
-  {
-    "objectID": "projects/medi-graph/medi-graph.html#ergebnis",
-    "href": "projects/medi-graph/medi-graph.html#ergebnis",
-    "title": "Medikamenten-Graph",
-    "section": "Ergebnis",
-    "text": "Ergebnis\nDie Medikamentendaten wurden in 13 Labels gespeichert, die mit 14 unterschiedlichen Relationen-Typen miteinander verbunden sind. Es wurden über 27’000 Knoten und über 41’000 Relationen kreiert. Die Schemalosigkeit und Flexibilität von Graph-Datenbanken war speziell für die Knoten Substanz und Produkt wichtig. Zwischen diesen Knoten wurde die Relation HAT_ATC auch dann erstellt, wenn sich deren direkte ATC-Codes zwar unterschieden, aber gleichzeitig der indirekte ATC-Code der SL übereinstimmte. Defizitäre Datenqualität kann damit teilweise ausgeglichen werden. Die Datenbank wird in der SwissDRG AG zukünftig in einer Cloud-Umgebung eingesetzt, um beispielsweise Substanzen mit «gleicher» Indikation einfacher zu identifizieren und das Tarifsystem gezielt weiterzuentwickeln.\n\n\n\nMedikamenten Datenmodell"
-  },
-  {
-    "objectID": "projects/medi-graph/medi-graph.html#details",
-    "href": "projects/medi-graph/medi-graph.html#details",
-    "title": "Medikamenten-Graph",
-    "section": "Details",
-    "text": "Details\nDen Source-Code findet Ihr in meinem GitHub-Repo. Wenn Ihr Details wissen möchtet, könnt ihr diese im Abschlussbericht in Ruhe nachlesen."
-  },
-  {
-    "objectID": "projects/interops/interops.html",
-    "href": "projects/interops/interops.html",
-    "title": "Interoperabilität",
-    "section": "",
-    "text": "..DER Podcast rund um Gesundheits- und Medizininformatik hat einen Überblick über Interoperabilität gegeben. Die wichtigste Begriffe werden hier zusammengestellt.\n\n\n\n\n\nmindmap\n  root((Interops))\n    Systeme\n      Terminologieserver\n      Kommunikationsserver\n      KIS\n      RIS\n      LIS\n      PACS\n      CDR\n      PIS\n    Standards\n      openEHR\n        Maximal ausdefiniert\n        Archetyp\n      HL7 V2\n        Nachrichtentypen\n      FHIR\n        Ressource\n        80/20\n      DICOM\n        Worklist\n      IHE\n        XDS\n      CDA\n      EPD\n    Arten\n      Semantisch\n        Annotation\n        Ordnungssyteme\n        Klassifikation\n        Wichtig\n          ICD\n          Snomed CT\n          NANDA\n          NIC\n          NOC\n          LOINC\n          UCUM\n          CHOP\n          ATC\n      Syntaktisch\n        xDT\n\n\n\n\n\n\nDabei handelt es sich um ein Mermaid-Diagramm (Mindmap). Weitere Infos zu Mermaid findet Ihr unter https://mermaid.js.org."
-  },
-  {
-    "objectID": "projects/book/mal ein buch schreiben.html",
-    "href": "projects/book/mal ein buch schreiben.html",
-    "title": "Einfach Schriftsteller werden",
-    "section": "",
-    "text": "Nach dem Motto “Ein Blatt, richtig beschriftet, macht aus Pennern Millionäre” von Blumentopf schreibe ich nun ein Buch, ein Quarto-Buch.\nZugegeben, ein grosser Schriftsteller werde ich wohl nicht. Ich möchte nur die Unterlage des Moduls “Mathematics for data analysis” zusammenfassen und gleichzeitig Python üben. Der Vorteil eines Buches ist die Unterteilung in Kapitel und ausserdem könnte ich R nutzen, falls ich mit Python nicht weiterkomme. Let’s go!\n\n\n\nCover: Blumentopf - Grosses Kino\n\n\nWeitere Infos findet Ihr auf der offiziellen Quarto-Seite"
-  },
-  {
-    "objectID": "poster.html",
-    "href": "poster.html",
-    "title": "Poster",
-    "section": "",
-    "text": "Zugegeben, diese Poster wurden bei keiner einzigen Konferenz präsentiert. Wir dürften sie “nur” unseren Dozenten und Kommilitonen erläutern. Aber was nicht ist, kann ja noch werden…\n\n\n\n\nMedikamenten-Graph-Datenbank\n\n\n\n\n\n\n\n\nSchnittstellen\n\n\n\n\n\n\n\n\n\n\nTelemedizin\n\n\n\n\n\n\n\n\nVirtual Reality"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Grüessech, hallo, salut & hello",
-    "section": "",
-    "text": "Für die meisten Menschen ist Programmieren kein “Hobby”. Und auch ich verbringe meine Zeit lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen: ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig. Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am meisten Rendite eingebracht.\nDeshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: eine kleine Website auf der ich einige meiner Projekte präsentieren kann.\nViel Spass beim Stöbern."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Christian Franke",
-    "section": "",
-    "text": "Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant, weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich ein Studium für Medizin-Informatik begann.\n\nAus- und Weiterbildungen\n2021-2025: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (in Teilzeit)\n2018: CAS in Gesundheitsökonomie und gesundheitsökonomische Evaluation (Public Health Weiterbildung der Universitäten Basel, Bern und Zürich)\n2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg\n\n\nBerufliche Tätigkeiten\nSeit 2021: SwissDRG AG, Bern\n2020/2021: Valiant Bank AG, Bern\n2016-2019: Sanitas Krankenversicherung AG, Zürich\n2013-2015: Basler Versicherungen AG, Basel\n2009-2015: Berufsgenossenschaft Holz und Metall, Mainz\n\n\nTechnische Skills\n\nNeo4j (Neo4j GraphAcademy Zertifikate)\nMS Excel (Experte)\nSQL (Experte)\nBI Tools (umfangreich)\n\nMicroStrategy\nPower BI\n\nR, Quarto, Shiny (regelmässiger Einsatz)\nJava, Python (praktische Erfahrung)\nausserdem\n\nDatenvisualisierung\nProjektmanagement"
-  },
-  {
-    "objectID": "old.html",
-    "href": "old.html",
-    "title": "Frühere Projekte",
-    "section": "",
-    "text": "Bevor ich mit Quarto begann, hatte ich andere kleine Projekte ausprobiert."
-  },
-  {
-    "objectID": "old.html#living-case-eyewin-interfaces",
-    "href": "old.html#living-case-eyewin-interfaces",
-    "title": "Frühere Projekte",
-    "section": "Living Case: EyeWin Interfaces",
-    "text": "Living Case: EyeWin Interfaces\n\n\nSchnittstelle von der Patientenverwaltung Eyewin zu drei Diagnostikgeräten: diese Arbeit wurde im Studienmodul «Living Case 1» während des Herbstsemesters 2023/24 erstellt. Projektpartner und Auftraggeberin war die Firma Eschmann Contactlinsen AG in Bern, die optometrische Dienstleistungen anbietet.\nDetails"
-  },
-  {
-    "objectID": "old.html#analyse-von-sensordaten-über-stürze",
-    "href": "old.html#analyse-von-sensordaten-über-stürze",
-    "title": "Frühere Projekte",
-    "section": "Analyse von Sensordaten über Stürze",
-    "text": "Analyse von Sensordaten über Stürze\n\n\n\n\n\n\nIm vierten Semester besuchten wir das Modul “R”. Dort durften wir ein R Markdown Dokument zum Thema “Simulated Falls and Daily Living Activities” erstellen. Der Datensatz wurde von A.T. Özdemir und B. Barshan erstellt.\nDetails"
-  },
-  {
-    "objectID": "old.html#bi-in-healthcare",
-    "href": "old.html#bi-in-healthcare",
-    "title": "Frühere Projekte",
-    "section": "BI in Healthcare",
-    "text": "BI in Healthcare\n\n\nIm fünften Semester lernen wir weiteres über den Einsatz von R im Bereich Business Intelligence. Der Dozent führte den Unterricht als Flipped Classroom durch, sodass wir viele Haus- und Übungsaufgaben sowie Selbststudium absolvierten. Die erarbeiteten Ergebnisse habe ich als R Markdown zusammengefasst.\nDetails"
-  },
-  {
-    "objectID": "old.html#swissdrg-wordcloud",
-    "href": "old.html#swissdrg-wordcloud",
-    "title": "Frühere Projekte",
-    "section": "SwissDRG Wordcloud",
-    "text": "SwissDRG Wordcloud\n\n\n\n\n\n\nAls Teil des Moduls BI In Healthcare hatten wir uns mit Word-Clouds beschäftigt. Für meine Arbeitskollegen habe ich nun eine Wortcloud mit den Bewgriffen des Definitionshandbuch der SwissDRG Version 13.0 erstellt.\nDetails"
-  },
-  {
-    "objectID": "projects/atc/parseATC.html",
-    "href": "projects/atc/parseATC.html",
-    "title": "Webscraping mit Python",
-    "section": "",
-    "text": "Der Index der anatomischen, therapeutischen und chemischen Strukturen (ATC) wird von der WHO resp. dem norwegischen Institut für Public Health verwaltet und veröffentlicht. Die jährlich aktualisierten Daten sind im öffentlich verfügbaren ATC-Index auf der Website einsehbar. Der manuelle Websiteaufruf ist für gewisse Usecases nicht sinnvoll. Hier wird eine Möglichkeit gezeigt, wie das Webscraping resp. Parsen der ATC-Codes und deren Beschreibung mit Python umgesetzt werden kann. Der Output ist eine csv-Datei mit den drei pipegetrennten Spalten atc_name, atc_code, level.\nZunächst werden die relevanten Packages geladen. Mit BeautifulSoup kann das retournierte HTML-Skript bearbeitet werden.\n\nimport numpy as np\nimport pandas as pd\nimport datetime\nfrom bs4 import BeautifulSoup\nimport urllib.request\nimport re\n\nWenn man den ATC-Index-Wesite betrachtet und die Seite analysiert, erkennt man schnell die URL-Struktur. Dem Endpunkt wird im ersten Parameter code der gesuchte ATC-Code übergeben. Mit einem zweiten Parameter kann man die ausführliche Beschreibung anzeigen lassen, die hier nicht benötigt wird und auf no gesetzt ist.\n\nendpoint = \"https://atcddd.fhi.no/atc_ddd_index\"\npara1 = \"/?code=\"\npara2 = \"&showdescription=no\"\n\nDie Hilfsfunktion extract_value dient später dazu, die ATC-Codes und deren Schreibung aus eine Liste (vom DOM-Elementen) zu extrahieren.\n\ndef extract_value(s):\n    return s.split('=')[1].split('&')[0]\n\nDer Hauptfunktion parseATC wird ein ATC-Code-Parameter übergeben Diese Funktion wird auf ein iterierbares Dataframe angewandt und somit später der komplette Index durchforstet. Im ersten Teil dieser Funktion wird die Request-URL zusammengesetzt, abgefragt und die “html-Suppe” gekocht. Der DOM des ATC-Index ist so aufgebaut, dass die ATC-Codes und die Beschreibung aus A-Elementen herausgelesen werden können, in denen der Begriff code vorkommt. Die extrahierten Inhalte werden in einem lokalen Dataframe zwischengespeichert und dort das Level (String-Länge) des ATC-Codes ermittelt.\n\ndef parseATC(atc_as_para):\n  # Parse HTML content\n  url = endpoint + para1 + atc_as_para + para2\n  html_content = urllib.request.urlopen(url).read()\n  soup = BeautifulSoup(html_content, \"html.parser\")\n  \n  # Find all \"a\" elements in DOM with \"code\" inside\n  codes = soup.find_all(href=re.compile(\"code\"))\n  \n  # Extract the data\n  atc_names = [a.text for a in codes]\n  href_string = [str(a.attrs) for a in codes]\n  \n  # Create local data frame\n  data = {\"atc_name\": atc_names, \"href\": href_string}\n  df_data = pd.DataFrame(data)\n  \n  # Extract atc code from href and delete href column\n  df_data['atc_code'] = df_data['href'].apply(lambda x: extract_value(x))\n  del df_data['href']\n  df_data = df_data[df_data['atc_name']!='Show text from Guidelines']\n  \n  # calculate atc-level (length of atc code)\n  df_data['level'] = df_data['atc_code'].apply(lambda x: len(x))\n  print(datetime.datetime.now()) # just showing script is running\n  return df_data\n\nZwei initiale Dataframes werden erstellt. Über df wird später iteriert und in df_combined werden alle Ergebnisse gespeichert.\n\ndf_combined = df = pd.DataFrame()\ndf_combined = df = parseATC(\"\")\n\nNun folgt die zentrale Abfrage aller Daten. Die Levels 1, 3, 4 und 5 werden itrerativ abgefragt und die parseATC-Funktion nach und nach auf alle Codes und Subcodes angewendet. Diese doppelte Loop dauert rund 5 Minuten, wobei der innere Loop hier am wichtigsten ist.\n\nlevel_iterator = np.array([1,3,4,5])\n\nfor li in level_iterator:\n  print(\"level: \"+str(li))\n  df = df_combined[df_combined.level==li]\n  \n  for row in df.itertuples():\n    df_data = parseATC(row.atc_code) # global data frame\n    df_combined = pd.concat([df_combined, df_data], ignore_index=True)\n  \n  # drop duplicates \n  df_combined = df_combined.drop_duplicates()\n\nZu Guter letzt werden die Daten sortiert nach dem ATC-Code und die finale Liste als atc_list.csv exporiert.\n\ndf_combined = df_combined.sort_values('atc_code')\ndf_combined.to_csv('atc_list.csv', index=False, sep='|')\n\nBei diesem Thema sollte man jedoch die Lizenzbestimmungen beachten. Der rechtliche Aspekt wurde hier nicht geklärt, sondern nur die technsiche Machbarkeit dargestellt.\nHier findet man weitere Infos zu BeautifulSoup."
-  },
-  {
-    "objectID": "projects/es kann losgehen/es kann losgehen.html",
-    "href": "projects/es kann losgehen/es kann losgehen.html",
-    "title": "Es kann losgehen",
-    "section": "",
-    "text": "Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt. Ursprünglich wollte ich es im sechsten Semester nur “nebenbei” ausprobieren und ein paar Erfahrungen sammeln. Aus dieser Idee ist ein kleines Projekt entstanden. So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es …\n\n\n\nAdobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter\n\n\nWeitere Infos findet Ihr auf der offiziellen Quarto-Seite"
-  },
-  {
-    "objectID": "projects/mathe2/Mathe2Notebook.html",
-    "href": "projects/mathe2/Mathe2Notebook.html",
-    "title": "Jupiter Notebooks und Quarto",
-    "section": "",
-    "text": "Eigentlich wollte ich Python besser zu lernen und Jupyter Notebook dafür nutzen. Die vorbereitete .ipynb Datei wird automatisch in die Quarto-Website eingebunden. Nice!"
-  },
-  {
-    "objectID": "projects/mathe2/Mathe2Notebook.html#random-code",
-    "href": "projects/mathe2/Mathe2Notebook.html#random-code",
-    "title": "Jupiter Notebooks und Quarto",
-    "section": "Random Code",
-    "text": "Random Code\n\nfrom matplotlib import pyplot as plt\nimport numpy as np\n\n# Generate 100 random data points along 3 dimensions\nx, y, scale = np.random.randn(3, 100)\nfig, ax = plt.subplots()\n# Map each onto a scatterplot we'll create with Matplotlib\nax.scatter(x=x, y=y, c=scale, s=np.abs(scale)*500)\nax.set(title=\"Some random data, created with JupyterLab!\")\nplt.show()\n\n\n\n\n\n\n\n\nIch werde aber noch Python und Quarto in R Studio ausprobieren und danach entscheiden, welche Variante für mich besser geeignet ist. On va voir…"
+    "objectID": "projects/MIT Intro to DL/mit intro.html#ab-hier-folgt-der-ki-generierte-text",
+    "href": "projects/MIT Intro to DL/mit intro.html#ab-hier-folgt-der-ki-generierte-text",
+    "title": "Zusammenfassung ‘Introduction to Deep Learning’",
+    "section": "Ab hier folgt der KI-generierte Text",
+    "text": "Ab hier folgt der KI-generierte Text\nGerne erstelle ich eine Zusammenfassung des Vorlesungsausschnitts, die Sie in etwa 5 Minuten lesen können.\n\nEinleitung und Überblick über Deep Learning\nDie Vorlesung “MIT Introduction to Deep Learning” (6.S191) ist ein einwöchiger Intensivkurs über alle Aspekte des Deep Learning. Die Dozenten Alexander Amini und Ava heißen die Teilnehmer willkommen und betonen die rasante Entwicklung des Feldes. Einleitend wird der Fortschritt der Gesichtserzeugung mittels Deep Learning in den letzten zehn Jahren anhand von Beispielen demonstriert, von einfachen Ergebnissen vor einem Jahrzehnt zu fotorealistischen und dynamischen Videos. Ein 2020 in der Klasse erstelltes Video, das eine geklonte Stimme und ein Gesicht zeigte, benötigte erhebliche Ressourcen (155.000 US-Dollar Compute für ein zweiminütiges Video) und war statisch. 2025 wird eine Live-Demonstration gezeigt, bei der eine Stimme in Echtzeit geklont und für eine dynamische Konversation genutzt wird, was die enormen Fortschritte verdeutlicht. Der Kurs zielt darauf ab, die fundamentalen Techniken zu vermitteln, die diesen Fortschritt ermöglichen, indem Computer lernen, Aufgaben direkt aus Beobachtungen und Daten zu lösen. Der Kurs besteht aus technischen Vorlesungen und praktischen Software-Labs mit TensorFlow und PyTorch, einschließlich Wettbewerben mit Preisen und Gastvorträgen von Industrieexperten.\n\n\nGrundlegende Konzepte\nIntelligenz wird als die Fähigkeit definiert, Informationen zu verarbeiten, um zukünftige Entscheidungen zu treffen. Künstliche Intelligenz (KI) ist die Praxis, künstliche Algorithmen zu entwickeln, um diesen Prozess nachzubilden. Maschinelles Lernen ist ein Teilbereich der KI, der sich darauf konzentriert, Muster in Daten zu lernen, um Entscheidungen zu treffen, ohne explizit programmiert zu werden. Deep Learning ist ein Teilbereich des maschinellen Lernens, der diesen Prozess mithilfe von tiefen neuronalen Netzen durchführt.\n\n\nNeuronale Netze: Das Perzeptron\nDer grundlegende Baustein eines neuronalen Netzes ist das Perzeptron oder Neuron. Es nimmt Eingaben auf, multipliziert diese mit entsprechenden Gewichten, addiert einen Bias und wendet dann eine nichtlineare Aktivierungsfunktion an, um eine Ausgabe zu erzeugen. Die Aktivierungsfunktion, wie die Sigmoid-Funktion (Ausgabe zwischen 0 und 1, nützlich für Wahrscheinlichkeiten) oder die Rectified Linear Unit (ReLU) (Ausgabe ist das Maximum von 0 und der Eingabe), ist entscheidend, um Nichtlinearitäten in das Modell einzuführen. Ohne Nichtlinearitäten wäre das Modell linear und könnte keine komplexen realen Daten abbilden.\n\n\nNetzwerkarchitektur\nEin neuronales Netzwerk besteht aus mehreren miteinander verbundenen Perzeptronen, die in Schichten organisiert sind. Eine dichte Schicht (Dense Layer) ist eine Schicht, in der jede Eingabe mit jeder Ausgabe verbunden ist. Tiefe neuronale Netze bestehen aus dem sequenziellen Stapeln mehrerer linearer Schichten gefolgt von Nichtlinearitäten in einer hierarchischen Weise.\n\n\nTraining Neuronaler Netze\nDas Ziel des Trainings ist es, die Gewichte des Netzwerks so anzupassen, dass der Verlust (loss), ein Maß für die Diskrepanz zwischen den Vorhersagen des Modells und den tatsächlichen Werten (Ground Truth), minimiert wird. Die Verlustfunktion quantifiziert diesen Fehler; Beispiele sind die Softmax-Kreuzentropie-Verlustfunktion für binäre Klassifikation und der mittlere quadratische Fehler (MSE) für Regression.\nDer Prozess zur Minimierung des Verlusts wird Gradientenabstieg genannt. Dabei wird der Gradient des Verlusts in Bezug auf die Gewichte berechnet. Der Gradient zeigt die Richtung des steilsten Anstiegs des Verlusts, und die Gewichte werden in die entgegengesetzte Richtung angepasst, um den Verlust zu verringern. Die Berechnung des Gradienten in neuronalen Netzen erfolgt durch Backpropagation, eine Anwendung der Kettenregel, die die Gradienten vom Ausgang zurück durch das Netzwerk propagiert. Die Lernrate (Learning Rate) bestimmt die Schrittgröße bei der Anpassung der Gewichte. Eine zu kleine Lernrate kann zu langsamer Konvergenz oder dem Steckenbleiben in lokalen Minima führen, während eine zu große Lernrate zu instabilem Verhalten führen kann. Adaptive Lernratenalgorithmen wie Adam passen die Lernrate während des Trainings dynamisch an.\n\n\nOptimierungstechniken\nDer stochastische Gradientenabstieg (SGD) berechnet den Gradienten nur für einen einzelnen zufällig ausgewählten Datenpunkt und ist daher schneller, aber verrauschter als der herkömmliche Gradientenabstieg, der den Gradienten über den gesamten Datensatz berechnet. Der Mini-Batch-Gradientenabstieg ist ein Kompromiss, bei dem der Gradient für eine kleine Menge (Batch) von Datenpunkten berechnet und gemittelt wird, was eine stabilere und effizientere Optimierung ermöglicht und die Parallelisierung auf GPUs erlaubt.\n\n\nOverfitting und Regularisierung\nOverfitting tritt auf, wenn ein Modell auf den Trainingsdaten sehr gut funktioniert, aber schlecht auf neuen, unbekannten Daten generalisiert. Dies geschieht, wenn das Modell die Trainingsdaten zu stark auswendig lernt. Regularisierungstechniken zielen darauf ab, Overfitting zu verhindern. Dropout ist eine Technik, bei der während des Trainings zufällig einige Aktivierungen von Neuronen auf Null gesetzt werden, um zu verhindern, dass sich das Netzwerk zu stark auf einzelne Neuronen verlässt. Early Stopping ist eine Methode, bei der der Trainingsprozess beendet wird, wenn die Leistung des Modells auf einem separaten Validierungsdatensatz (ein Proxy für Testdaten) zu sinken beginnt, obwohl der Verlust auf den Trainingsdaten weiterhin abnimmt.\n\n\nAusblick\nDie nächste Vorlesung wird sich mit Deep Sequence Modeling befassen, der Grundlage von Large Language Models."
   },
   {
     "objectID": "projects/mirth/mirth_step_by_step.html",
@@ -294,18 +161,158 @@
     "text": "Alternativen\nAlternativ zu einer Linux Installation kann man Mirth connect auch in einem Docker-Container betreiben. Wie das funktioniert, wird im Mirth Project Forum gezeigt. Zudem lässt sich auf PostgreSQL und PG-Admin in einem Container betreiben. Wenn Ihr noch keine Erfahrung mit Docker habt, so gibt es viele Tutorials zu diesem Thema."
   },
   {
-    "objectID": "projects/MIT Intro to DL/mit intro.html",
-    "href": "projects/MIT Intro to DL/mit intro.html",
-    "title": "Zusammenfassung ‘Introduction to Deep Learning’",
+    "objectID": "projects/mathe2/Mathe2Notebook.html",
+    "href": "projects/mathe2/Mathe2Notebook.html",
+    "title": "Jupiter Notebooks und Quarto",
     "section": "",
-    "text": "Künstliche Intelligenz ist derzeit überall. Ich habe Googles NotebookLM gebeten, die Youtube-Aufzeichnung des Kurses ‘MIT Introduction to Deep Learning | 6.S191’ vom Januar 2025 zusammenzufassen mit 5 Minuten Lesezeit. Es ist erstaunlich, wie gut die Inhalte erfasst und beschrieben wurden. Aber lest selbst…"
+    "text": "Eigentlich wollte ich Python besser zu lernen und Jupyter Notebook dafür nutzen. Die vorbereitete .ipynb Datei wird automatisch in die Quarto-Website eingebunden. Nice!"
   },
   {
-    "objectID": "projects/MIT Intro to DL/mit intro.html#ab-hier-folgt-der-ki-generierte-text",
-    "href": "projects/MIT Intro to DL/mit intro.html#ab-hier-folgt-der-ki-generierte-text",
-    "title": "Zusammenfassung ‘Introduction to Deep Learning’",
-    "section": "Ab hier folgt der KI-generierte Text",
-    "text": "Ab hier folgt der KI-generierte Text\nGerne erstelle ich eine Zusammenfassung des Vorlesungsausschnitts, die Sie in etwa 5 Minuten lesen können.\n\nEinleitung und Überblick über Deep Learning\nDie Vorlesung “MIT Introduction to Deep Learning” (6.S191) ist ein einwöchiger Intensivkurs über alle Aspekte des Deep Learning. Die Dozenten Alexander Amini und Ava heißen die Teilnehmer willkommen und betonen die rasante Entwicklung des Feldes. Einleitend wird der Fortschritt der Gesichtserzeugung mittels Deep Learning in den letzten zehn Jahren anhand von Beispielen demonstriert, von einfachen Ergebnissen vor einem Jahrzehnt zu fotorealistischen und dynamischen Videos. Ein 2020 in der Klasse erstelltes Video, das eine geklonte Stimme und ein Gesicht zeigte, benötigte erhebliche Ressourcen (155.000 US-Dollar Compute für ein zweiminütiges Video) und war statisch. 2025 wird eine Live-Demonstration gezeigt, bei der eine Stimme in Echtzeit geklont und für eine dynamische Konversation genutzt wird, was die enormen Fortschritte verdeutlicht. Der Kurs zielt darauf ab, die fundamentalen Techniken zu vermitteln, die diesen Fortschritt ermöglichen, indem Computer lernen, Aufgaben direkt aus Beobachtungen und Daten zu lösen. Der Kurs besteht aus technischen Vorlesungen und praktischen Software-Labs mit TensorFlow und PyTorch, einschließlich Wettbewerben mit Preisen und Gastvorträgen von Industrieexperten.\n\n\nGrundlegende Konzepte\nIntelligenz wird als die Fähigkeit definiert, Informationen zu verarbeiten, um zukünftige Entscheidungen zu treffen. Künstliche Intelligenz (KI) ist die Praxis, künstliche Algorithmen zu entwickeln, um diesen Prozess nachzubilden. Maschinelles Lernen ist ein Teilbereich der KI, der sich darauf konzentriert, Muster in Daten zu lernen, um Entscheidungen zu treffen, ohne explizit programmiert zu werden. Deep Learning ist ein Teilbereich des maschinellen Lernens, der diesen Prozess mithilfe von tiefen neuronalen Netzen durchführt.\n\n\nNeuronale Netze: Das Perzeptron\nDer grundlegende Baustein eines neuronalen Netzes ist das Perzeptron oder Neuron. Es nimmt Eingaben auf, multipliziert diese mit entsprechenden Gewichten, addiert einen Bias und wendet dann eine nichtlineare Aktivierungsfunktion an, um eine Ausgabe zu erzeugen. Die Aktivierungsfunktion, wie die Sigmoid-Funktion (Ausgabe zwischen 0 und 1, nützlich für Wahrscheinlichkeiten) oder die Rectified Linear Unit (ReLU) (Ausgabe ist das Maximum von 0 und der Eingabe), ist entscheidend, um Nichtlinearitäten in das Modell einzuführen. Ohne Nichtlinearitäten wäre das Modell linear und könnte keine komplexen realen Daten abbilden.\n\n\nNetzwerkarchitektur\nEin neuronales Netzwerk besteht aus mehreren miteinander verbundenen Perzeptronen, die in Schichten organisiert sind. Eine dichte Schicht (Dense Layer) ist eine Schicht, in der jede Eingabe mit jeder Ausgabe verbunden ist. Tiefe neuronale Netze bestehen aus dem sequenziellen Stapeln mehrerer linearer Schichten gefolgt von Nichtlinearitäten in einer hierarchischen Weise.\n\n\nTraining Neuronaler Netze\nDas Ziel des Trainings ist es, die Gewichte des Netzwerks so anzupassen, dass der Verlust (loss), ein Maß für die Diskrepanz zwischen den Vorhersagen des Modells und den tatsächlichen Werten (Ground Truth), minimiert wird. Die Verlustfunktion quantifiziert diesen Fehler; Beispiele sind die Softmax-Kreuzentropie-Verlustfunktion für binäre Klassifikation und der mittlere quadratische Fehler (MSE) für Regression.\nDer Prozess zur Minimierung des Verlusts wird Gradientenabstieg genannt. Dabei wird der Gradient des Verlusts in Bezug auf die Gewichte berechnet. Der Gradient zeigt die Richtung des steilsten Anstiegs des Verlusts, und die Gewichte werden in die entgegengesetzte Richtung angepasst, um den Verlust zu verringern. Die Berechnung des Gradienten in neuronalen Netzen erfolgt durch Backpropagation, eine Anwendung der Kettenregel, die die Gradienten vom Ausgang zurück durch das Netzwerk propagiert. Die Lernrate (Learning Rate) bestimmt die Schrittgröße bei der Anpassung der Gewichte. Eine zu kleine Lernrate kann zu langsamer Konvergenz oder dem Steckenbleiben in lokalen Minima führen, während eine zu große Lernrate zu instabilem Verhalten führen kann. Adaptive Lernratenalgorithmen wie Adam passen die Lernrate während des Trainings dynamisch an.\n\n\nOptimierungstechniken\nDer stochastische Gradientenabstieg (SGD) berechnet den Gradienten nur für einen einzelnen zufällig ausgewählten Datenpunkt und ist daher schneller, aber verrauschter als der herkömmliche Gradientenabstieg, der den Gradienten über den gesamten Datensatz berechnet. Der Mini-Batch-Gradientenabstieg ist ein Kompromiss, bei dem der Gradient für eine kleine Menge (Batch) von Datenpunkten berechnet und gemittelt wird, was eine stabilere und effizientere Optimierung ermöglicht und die Parallelisierung auf GPUs erlaubt.\n\n\nOverfitting und Regularisierung\nOverfitting tritt auf, wenn ein Modell auf den Trainingsdaten sehr gut funktioniert, aber schlecht auf neuen, unbekannten Daten generalisiert. Dies geschieht, wenn das Modell die Trainingsdaten zu stark auswendig lernt. Regularisierungstechniken zielen darauf ab, Overfitting zu verhindern. Dropout ist eine Technik, bei der während des Trainings zufällig einige Aktivierungen von Neuronen auf Null gesetzt werden, um zu verhindern, dass sich das Netzwerk zu stark auf einzelne Neuronen verlässt. Early Stopping ist eine Methode, bei der der Trainingsprozess beendet wird, wenn die Leistung des Modells auf einem separaten Validierungsdatensatz (ein Proxy für Testdaten) zu sinken beginnt, obwohl der Verlust auf den Trainingsdaten weiterhin abnimmt.\n\n\nAusblick\nDie nächste Vorlesung wird sich mit Deep Sequence Modeling befassen, der Grundlage von Large Language Models."
+    "objectID": "projects/mathe2/Mathe2Notebook.html#random-code",
+    "href": "projects/mathe2/Mathe2Notebook.html#random-code",
+    "title": "Jupiter Notebooks und Quarto",
+    "section": "Random Code",
+    "text": "Random Code\n\nfrom matplotlib import pyplot as plt\nimport numpy as np\n\n# Generate 100 random data points along 3 dimensions\nx, y, scale = np.random.randn(3, 100)\nfig, ax = plt.subplots()\n# Map each onto a scatterplot we'll create with Matplotlib\nax.scatter(x=x, y=y, c=scale, s=np.abs(scale)*500)\nax.set(title=\"Some random data, created with JupyterLab!\")\nplt.show()\n\n\n\n\n\n\n\n\nIch werde aber noch Python und Quarto in R Studio ausprobieren und danach entscheiden, welche Variante für mich besser geeignet ist. On va voir…"
+  },
+  {
+    "objectID": "projects/es kann losgehen/es kann losgehen.html",
+    "href": "projects/es kann losgehen/es kann losgehen.html",
+    "title": "Es kann losgehen",
+    "section": "",
+    "text": "Am 07.02.2024 habe ich mich erstmals mit Quarto beschäftigt. Ursprünglich wollte ich es im sechsten Semester nur “nebenbei” ausprobieren und ein paar Erfahrungen sammeln. Aus dieser Idee ist ein kleines Projekt entstanden. So romantisch wie im KI generierten Foto von Adobe Firefly waren meine ersten Quarto-Abende zwar nicht. Aber ein schöner Gedanke ist es …\n\n\n\nAdobe Firefly: An einem See sitzend arbeite ich am Laptop und im Hintergrund geht die Sonne unter\n\n\nWeitere Infos findet Ihr auf der offiziellen Quarto-Seite"
+  },
+  {
+    "objectID": "projects/atc/parseATC.html",
+    "href": "projects/atc/parseATC.html",
+    "title": "Webscraping mit Python",
+    "section": "",
+    "text": "Der Index der anatomischen, therapeutischen und chemischen Strukturen (ATC) wird von der WHO resp. dem norwegischen Institut für Public Health verwaltet und veröffentlicht. Die jährlich aktualisierten Daten sind im öffentlich verfügbaren ATC-Index auf der Website einsehbar. Der manuelle Websiteaufruf ist für gewisse Usecases nicht sinnvoll. Hier wird eine Möglichkeit gezeigt, wie das Webscraping resp. Parsen der ATC-Codes und deren Beschreibung mit Python umgesetzt werden kann. Der Output ist eine csv-Datei mit den drei pipegetrennten Spalten atc_name, atc_code, level.\nZunächst werden die relevanten Packages geladen. Mit BeautifulSoup kann das retournierte HTML-Skript bearbeitet werden.\n\nimport numpy as np\nimport pandas as pd\nimport datetime\nfrom bs4 import BeautifulSoup\nimport urllib.request\nimport re\n\nWenn man den ATC-Index-Wesite betrachtet und die Seite analysiert, erkennt man schnell die URL-Struktur. Dem Endpunkt wird im ersten Parameter code der gesuchte ATC-Code übergeben. Mit einem zweiten Parameter kann man die ausführliche Beschreibung anzeigen lassen, die hier nicht benötigt wird und auf no gesetzt ist.\n\nendpoint = \"https://atcddd.fhi.no/atc_ddd_index\"\npara1 = \"/?code=\"\npara2 = \"&showdescription=no\"\n\nDie Hilfsfunktion extract_value dient später dazu, die ATC-Codes und deren Schreibung aus eine Liste (vom DOM-Elementen) zu extrahieren.\n\ndef extract_value(s):\n    return s.split('=')[1].split('&')[0]\n\nDer Hauptfunktion parseATC wird ein ATC-Code-Parameter übergeben Diese Funktion wird auf ein iterierbares Dataframe angewandt und somit später der komplette Index durchforstet. Im ersten Teil dieser Funktion wird die Request-URL zusammengesetzt, abgefragt und die “html-Suppe” gekocht. Der DOM des ATC-Index ist so aufgebaut, dass die ATC-Codes und die Beschreibung aus A-Elementen herausgelesen werden können, in denen der Begriff code vorkommt. Die extrahierten Inhalte werden in einem lokalen Dataframe zwischengespeichert und dort das Level (String-Länge) des ATC-Codes ermittelt.\n\ndef parseATC(atc_as_para):\n  # Parse HTML content\n  url = endpoint + para1 + atc_as_para + para2\n  html_content = urllib.request.urlopen(url).read()\n  soup = BeautifulSoup(html_content, \"html.parser\")\n  \n  # Find all \"a\" elements in DOM with \"code\" inside\n  codes = soup.find_all(href=re.compile(\"code\"))\n  \n  # Extract the data\n  atc_names = [a.text for a in codes]\n  href_string = [str(a.attrs) for a in codes]\n  \n  # Create local data frame\n  data = {\"atc_name\": atc_names, \"href\": href_string}\n  df_data = pd.DataFrame(data)\n  \n  # Extract atc code from href and delete href column\n  df_data['atc_code'] = df_data['href'].apply(lambda x: extract_value(x))\n  del df_data['href']\n  df_data = df_data[df_data['atc_name']!='Show text from Guidelines']\n  \n  # calculate atc-level (length of atc code)\n  df_data['level'] = df_data['atc_code'].apply(lambda x: len(x))\n  print(datetime.datetime.now()) # just showing script is running\n  return df_data\n\nZwei initiale Dataframes werden erstellt. Über df wird später iteriert und in df_combined werden alle Ergebnisse gespeichert.\n\ndf_combined = df = pd.DataFrame()\ndf_combined = df = parseATC(\"\")\n\nNun folgt die zentrale Abfrage aller Daten. Die Levels 1, 3, 4 und 5 werden itrerativ abgefragt und die parseATC-Funktion nach und nach auf alle Codes und Subcodes angewendet. Diese doppelte Loop dauert rund 5 Minuten, wobei der innere Loop hier am wichtigsten ist.\n\nlevel_iterator = np.array([1,3,4,5])\n\nfor li in level_iterator:\n  print(\"level: \"+str(li))\n  df = df_combined[df_combined.level==li]\n  \n  for row in df.itertuples():\n    df_data = parseATC(row.atc_code) # global data frame\n    df_combined = pd.concat([df_combined, df_data], ignore_index=True)\n  \n  # drop duplicates \n  df_combined = df_combined.drop_duplicates()\n\nZu Guter letzt werden die Daten sortiert nach dem ATC-Code und die finale Liste als atc_list.csv exporiert.\n\ndf_combined = df_combined.sort_values('atc_code')\ndf_combined.to_csv('atc_list.csv', index=False, sep='|')\n\nBei diesem Thema sollte man jedoch die Lizenzbestimmungen beachten. Der rechtliche Aspekt wurde hier nicht geklärt, sondern nur die technsiche Machbarkeit dargestellt.\nHier findet man weitere Infos zu BeautifulSoup."
+  },
+  {
+    "objectID": "old.html",
+    "href": "old.html",
+    "title": "Frühere Projekte",
+    "section": "",
+    "text": "Bevor ich mit Quarto begann, hatte ich andere kleine Projekte ausprobiert."
+  },
+  {
+    "objectID": "old.html#living-case-eyewin-interfaces",
+    "href": "old.html#living-case-eyewin-interfaces",
+    "title": "Frühere Projekte",
+    "section": "Living Case: EyeWin Interfaces",
+    "text": "Living Case: EyeWin Interfaces\n\n\nSchnittstelle von der Patientenverwaltung Eyewin zu drei Diagnostikgeräten: diese Arbeit wurde im Studienmodul «Living Case 1» während des Herbstsemesters 2023/24 erstellt. Projektpartner und Auftraggeberin war die Firma Eschmann Contactlinsen AG in Bern, die optometrische Dienstleistungen anbietet.\nDetails"
+  },
+  {
+    "objectID": "old.html#analyse-von-sensordaten-über-stürze",
+    "href": "old.html#analyse-von-sensordaten-über-stürze",
+    "title": "Frühere Projekte",
+    "section": "Analyse von Sensordaten über Stürze",
+    "text": "Analyse von Sensordaten über Stürze\n\n\n\n\n\n\nIm vierten Semester besuchten wir das Modul “R”. Dort durften wir ein R Markdown Dokument zum Thema “Simulated Falls and Daily Living Activities” erstellen. Der Datensatz wurde von A.T. Özdemir und B. Barshan erstellt.\nDetails"
+  },
+  {
+    "objectID": "old.html#bi-in-healthcare",
+    "href": "old.html#bi-in-healthcare",
+    "title": "Frühere Projekte",
+    "section": "BI in Healthcare",
+    "text": "BI in Healthcare\n\n\nIm fünften Semester lernen wir weiteres über den Einsatz von R im Bereich Business Intelligence. Der Dozent führte den Unterricht als Flipped Classroom durch, sodass wir viele Haus- und Übungsaufgaben sowie Selbststudium absolvierten. Die erarbeiteten Ergebnisse habe ich als R Markdown zusammengefasst.\nDetails"
+  },
+  {
+    "objectID": "old.html#swissdrg-wordcloud",
+    "href": "old.html#swissdrg-wordcloud",
+    "title": "Frühere Projekte",
+    "section": "SwissDRG Wordcloud",
+    "text": "SwissDRG Wordcloud\n\n\n\n\n\n\nAls Teil des Moduls BI In Healthcare hatten wir uns mit Word-Clouds beschäftigt. Für meine Arbeitskollegen habe ich nun eine Wortcloud mit den Bewgriffen des Definitionshandbuch der SwissDRG Version 13.0 erstellt.\nDetails"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Christian Franke",
+    "section": "",
+    "text": "Als Volkswirt habe ich zwölf Jahre für Unfall- und Krankenversicherungen im Bereich der Datenanalyse und Controlling gearbeitet. Das war sehr lehrreich und interessant, weil ich an den Schnittstellen zwischen IT und Fachabteilungen tätig war. Dennoch wollte ich mich nochmals weiterentwickeln. Und so kam es, dass ich ein Studium für Medizin-Informatik begann.\n\nAus- und Weiterbildungen\n2021-2025: Bachelor-Studium für Medizin-Informatik an der Berner Fachhochschule (in Teilzeit)\n2018: CAS in Gesundheitsökonomie und gesundheitsökonomische Evaluation (Public Health Weiterbildung der Universitäten Basel, Bern und Zürich)\n2004-2009: Diplom-Studium für Volkswirtschafslehre an der Julius-Maximilians-Universität Würzburg\n\n\nBerufliche Tätigkeiten\nSeit 2021: SwissDRG AG, Bern\n2020/2021: Valiant Bank AG, Bern\n2016-2019: Sanitas Krankenversicherung AG, Zürich\n2013-2015: Basler Versicherungen AG, Basel\n2009-2015: Berufsgenossenschaft Holz und Metall, Mainz\n\n\nTechnische Skills\n\nNeo4j (Neo4j GraphAcademy Zertifikate)\nMS Excel (Experte)\nSQL (Experte)\nBI Tools (umfangreich)\n\nMicroStrategy\nPower BI\n\nR, Quarto, Shiny (regelmässiger Einsatz)\nJava, Python (praktische Erfahrung)\nausserdem\n\nDatenvisualisierung\nProjektmanagement"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Grüessech, hallo, salut & hello",
+    "section": "",
+    "text": "Für die meisten Menschen ist Programmieren kein “Hobby”. Und auch ich verbringe meine Zeit lieber Outdoor und sause mit dem Kite und Foil über das Wasser. Trotzdem muss ich gestehen: ein wenig Spass macht IT schon und ausserdem sind die Berufsaussichten rosig. Oder wie ich gern sage: das Investment im mein eigenes Humankapital hat mir bisher am meisten Rendite eingebracht.\nDeshalb möchte ich Quarto besser kennenlernen und etwas Praktisches machen: eine kleine Website auf der ich einige meiner Projekte präsentieren kann.\nViel Spass beim Stöbern."
+  },
+  {
+    "objectID": "poster.html",
+    "href": "poster.html",
+    "title": "Poster",
+    "section": "",
+    "text": "Zugegeben, diese Poster wurden bei keiner einzigen Konferenz präsentiert. Wir dürften sie “nur” unseren Dozenten und Kommilitonen erläutern. Aber was nicht ist, kann ja noch werden…\n\n\n\n\nMedikamenten-Graph-Datenbank\n\n\n\n\n\n\n\n\nSchnittstellen\n\n\n\n\n\n\n\n\n\n\nTelemedizin\n\n\n\n\n\n\n\n\nVirtual Reality"
+  },
+  {
+    "objectID": "projects/book/mal ein buch schreiben.html",
+    "href": "projects/book/mal ein buch schreiben.html",
+    "title": "Einfach Schriftsteller werden",
+    "section": "",
+    "text": "Nach dem Motto “Ein Blatt, richtig beschriftet, macht aus Pennern Millionäre” von Blumentopf schreibe ich nun ein Buch, ein Quarto-Buch.\nZugegeben, ein grosser Schriftsteller werde ich wohl nicht. Ich möchte nur die Unterlage des Moduls “Mathematics for data analysis” zusammenfassen und gleichzeitig Python üben. Der Vorteil eines Buches ist die Unterteilung in Kapitel und ausserdem könnte ich R nutzen, falls ich mit Python nicht weiterkomme. Let’s go!\n\n\n\nCover: Blumentopf - Grosses Kino\n\n\nWeitere Infos findet Ihr auf der offiziellen Quarto-Seite"
+  },
+  {
+    "objectID": "projects/interops/interops.html",
+    "href": "projects/interops/interops.html",
+    "title": "Interoperabilität",
+    "section": "",
+    "text": "..DER Podcast rund um Gesundheits- und Medizininformatik hat einen Überblick über Interoperabilität gegeben. Die wichtigste Begriffe werden hier zusammengestellt.\n\n\n\n\n\nmindmap\n  root((Interops))\n    Systeme\n      Terminologieserver\n      Kommunikationsserver\n      KIS\n      RIS\n      LIS\n      PACS\n      CDR\n      PIS\n    Standards\n      openEHR\n        Maximal ausdefiniert\n        Archetyp\n      HL7 V2\n        Nachrichtentypen\n      FHIR\n        Ressource\n        80/20\n      DICOM\n        Worklist\n      IHE\n        XDS\n      CDA\n      EPD\n    Arten\n      Semantisch\n        Annotation\n        Ordnungssyteme\n        Klassifikation\n        Wichtig\n          ICD\n          Snomed CT\n          NANDA\n          NIC\n          NOC\n          LOINC\n          UCUM\n          CHOP\n          ATC\n      Syntaktisch\n        xDT\n\n\n\n\n\n\nDabei handelt es sich um ein Mermaid-Diagramm (Mindmap). Weitere Infos zu Mermaid findet Ihr unter https://mermaid.js.org."
+  },
+  {
+    "objectID": "projects/medi-graph/medi-graph.html",
+    "href": "projects/medi-graph/medi-graph.html",
+    "title": "Medikamenten-Graph",
+    "section": "",
+    "text": "Ein Graph-Modell mit Medikamenten-Daten in der Graph-Datenbank Neo4j war das Ergebnis meiner Bachelor-Thesis."
+  },
+  {
+    "objectID": "projects/medi-graph/medi-graph.html#summary",
+    "href": "projects/medi-graph/medi-graph.html#summary",
+    "title": "Medikamenten-Graph",
+    "section": "Summary",
+    "text": "Summary\nDie Graph-Datenbank mit öffentlich verfügbaren Informationen über hochteure Medikamente soll der SwissDRG AG helfen, Zusammenhänge zwischen Medikamenten und deren Indikationen einfacher zu erkennen. Die Daten wurden in Neo4j integriert und sollen bei der Weiterentwicklung der stationären Tarifsysteme im Schweizer Gesundheitswesen unterstützen. Ein kurzes Video gibt einen kompakten Einblick in das Projekt."
+  },
+  {
+    "objectID": "projects/medi-graph/medi-graph.html#problemstellung",
+    "href": "projects/medi-graph/medi-graph.html#problemstellung",
+    "title": "Medikamenten-Graph",
+    "section": "Problemstellung",
+    "text": "Problemstellung\nDie Anzahl hochteurer Medikamente ist in den vergangenen Jahren deutlich gestiegen. Dabei ist es herausfordernd, ähnliche Indikationen für unterschiedliche Substanzen und die Verbindungen zwischen den Medikamenten im Überblick zu behalten. Besonders Graph-Datenbanken sind geeignet, um genau solche Relationen abzubilden. Mit Hilfe von Neo4j sollte ein Graph-Datenmodell erstellt werden. Die Daten stammen von der SwissDRG AG, der Spezialitätenliste (SL) des BAG, dem ATC-Index der WHO, der Europäischen Arzneimittelagentur sowie den strukturierten Arzneimittelinformationen der Stiftung Refdata. Dabei sollte es möglich sein, die öffentlichen Daten monatlich zu aktualisieren und bei Bedarf weitere Informationsquellen zu integrieren."
+  },
+  {
+    "objectID": "projects/medi-graph/medi-graph.html#ergebnis",
+    "href": "projects/medi-graph/medi-graph.html#ergebnis",
+    "title": "Medikamenten-Graph",
+    "section": "Ergebnis",
+    "text": "Ergebnis\nDie Medikamentendaten wurden in 13 Labels gespeichert, die mit 14 unterschiedlichen Relationen-Typen miteinander verbunden sind. Es wurden über 27’000 Knoten und über 41’000 Relationen kreiert. Die Schemalosigkeit und Flexibilität von Graph-Datenbanken war speziell für die Knoten Substanz und Produkt wichtig. Zwischen diesen Knoten wurde die Relation HAT_ATC auch dann erstellt, wenn sich deren direkte ATC-Codes zwar unterschieden, aber gleichzeitig der indirekte ATC-Code der SL übereinstimmte. Defizitäre Datenqualität kann damit teilweise ausgeglichen werden. Die Datenbank wird in der SwissDRG AG zukünftig in einer Cloud-Umgebung eingesetzt, um beispielsweise Substanzen mit «gleicher» Indikation einfacher zu identifizieren und das Tarifsystem gezielt weiterzuentwickeln.\n\n\n\nMedikamenten Datenmodell"
+  },
+  {
+    "objectID": "projects/medi-graph/medi-graph.html#details",
+    "href": "projects/medi-graph/medi-graph.html#details",
+    "title": "Medikamenten-Graph",
+    "section": "Details",
+    "text": "Details\nDen Source-Code findet Ihr in meinem GitHub-Repo. Wenn Ihr Details wissen möchtet, könnt ihr diese im Abschlussbericht in Ruhe nachlesen."
+  },
+  {
+    "objectID": "projects/mirth autostart/mirth autostart.html",
+    "href": "projects/mirth autostart/mirth autostart.html",
+    "title": "Mirth starten nach dem Booten",
+    "section": "",
+    "text": "Nachdem Mirth Connect grundsätzlich in Debian installiert ist, soll es automatisch starten nach dem Booten. Dafür kann eine Service-Datei erstellt werden. Falls Euch das Thema sehr interessiert, könnt in z.B. diese ausführliche Einfühung lesen."
+  },
+  {
+    "objectID": "projects/mirth autostart/mirth autostart.html#die-service-datei",
+    "href": "projects/mirth autostart/mirth autostart.html#die-service-datei",
+    "title": "Mirth starten nach dem Booten",
+    "section": "Die Service-Datei",
+    "text": "Die Service-Datei\nZunächst muss eine .service Datei erstellt werden. Diese kann man zunächst im Home-Verzeichnis erstellen (mit touch). Später wird die Datei in ein System-Verzeichnis verschoben. Die .service Datei kann mit dem Terminal-Befehl nano bearbeitet werden.\ntouch mirthconnect.service\nnano mirthconnect.service\nIm Bearbeitungsmodus kann folgendes Skript hineinkopiert werden (Quelle und weitere Details).\n[Unit]\nDescription=MirthConnect\nAfter=network.target\n\n[Service]\nType=forking\n\nUser=mirth\nGroup=mirth\nExecStart=/home/mirth/mirthconnect/mcservice start\nExecStop=/home/mirth/mirthconnect/mcservice stop\nExecRestart=/home/mirth/mirthconnect/mcservice restart\n\nTimeoutSec=60\n\n[Install]\nWantedBy=multi-user.target\nMit Ctrl + x verlässt man den Bearbeitungmodus und speichert die Änderung mit y ab. Die erstellte Datei mirthconnect.service muss nun mit Admin-Privilegien in einen Systemordner verschoben werden. Wir wechseln zunächst zum su User.\nsu\n[Password:]\nDanach wählen wir das Zielverzeichnis aus.\ncd /usr/lib/systemd/system\nDie mirthconnect.service Datei wird mit cp in das Zielverzeichnis verschoben. Der Punkt am Ende der Zeile unten gehört noch zum Befehl dazu und sollte nicht vergessen werden.\ncp /home/mirth/mirthconnect.service .\nDer Autostart kann aktiviert werden.\nsystemctl enable mirthconnect.service\nNach einem Reboot sollte Mirth Connect regulär laufen, sodass man sich via Webbrowser oder Mirth Connect Administrator in den Kommunikationsserver einloggen kann.\n\n\n\n\n\n\nsu Password vergessen?\n\n\n\nFalls das su Passwort vergessen ging, diese Anleitung hilft beim Zurücksetzen."
+  },
+  {
+    "objectID": "projects/node25.html",
+    "href": "projects/node25.html",
+    "title": "Nodes 2025",
+    "section": "",
+    "text": "Yeah, ich darf meine wichtigsten Erkenntnisse der Bachelorthesis bei der Nodes 2025 online Konferenz präsentieren."
   },
   {
     "objectID": "projects/R API und FHIR/r api fhir.html",

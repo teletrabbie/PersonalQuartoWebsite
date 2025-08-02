@@ -1,0 +1,11 @@
+---
+title: "Nodes 2025"
+author: "Christian Franke"
+date: "2025-08-02"
+image: "../pictures/nodes25.jpeg"
+---
+
+Yeah, ich darf meine wichtigsten Erkenntnisse der Bachelorthesis bei der 
+[Nodes 2025](https://neo4j.com/nodes-2025/){target="_blank"} online Konferenz präsentieren.
+
+![](../pictures/nodes25.jpeg)

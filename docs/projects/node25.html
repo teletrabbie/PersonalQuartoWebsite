@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Christian Franke">
-<meta name="dcterms.date" content="2024-05-31">
+<meta name="dcterms.date" content="2025-08-02">
 
-<title>CF - Webscraping mit Python</title>
+<title>CF - Nodes 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,60 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../pictures/foil_kreis.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../pictures/foil_kreis.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -105,7 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -121,25 +87,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../quarto.html"> 
+    <a class="nav-link" href="../quarto.html"> 
 <span class="menu-text">Quarto-Projekte</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../old.html"> 
+    <a class="nav-link" href="../old.html"> 
 <span class="menu-text">Frühere Projekte</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../poster.html"> 
+    <a class="nav-link" href="../poster.html"> 
 <span class="menu-text">Poster</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Über mich</span></a>
   </li>  
 </ul>
@@ -159,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Webscraping mit Python</h1>
+<h1 class="title">Nodes 2025</h1>
 </div>
 
 
@@ -176,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 31, 2024</p>
+      <p class="date">August 2, 2025</p>
     </div>
   </div>
   
@@ -188,83 +154,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Der Index der anatomischen, therapeutischen und chemischen Strukturen (ATC) wird von der WHO resp. dem <a href="https://atcddd.fhi.no">norwegischen Institut für Public Health</a> verwaltet und veröffentlicht. Die jährlich aktualisierten Daten sind im öffentlich verfügbaren ATC-Index auf der Website einsehbar. Der manuelle Websiteaufruf ist für gewisse Usecases nicht sinnvoll. Hier wird eine Möglichkeit gezeigt, wie das Webscraping resp. Parsen der ATC-Codes und deren Beschreibung mit Python umgesetzt werden kann. Der Output ist eine csv-Datei mit den drei pipegetrennten Spalten <code>atc_name, atc_code, level</code>.</p>
-<p>Zunächst werden die relevanten Packages geladen. Mit <code>BeautifulSoup</code> kann das retournierte HTML-Skript bearbeitet werden.</p>
-<div id="e64e0544" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bs4 <span class="im">import</span> BeautifulSoup</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> urllib.request</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Wenn man den ATC-Index-Wesite betrachtet und die Seite analysiert, erkennt man schnell die URL-Struktur. Dem Endpunkt wird im ersten Parameter <code>code</code> der gesuchte ATC-Code übergeben. Mit einem zweiten Parameter kann man die ausführliche Beschreibung anzeigen lassen, die hier nicht benötigt wird und auf <code>no</code> gesetzt ist.</p>
-<div id="e01890d0" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>endpoint <span class="op">=</span> <span class="st">"https://atcddd.fhi.no/atc_ddd_index"</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>para1 <span class="op">=</span> <span class="st">"/?code="</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>para2 <span class="op">=</span> <span class="st">"&amp;showdescription=no"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Die Hilfsfunktion <code>extract_value</code> dient später dazu, die ATC-Codes und deren Schreibung aus eine Liste (vom DOM-Elementen) zu extrahieren.</p>
-<div id="204bad72" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_value(s):</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s.split(<span class="st">'='</span>)[<span class="dv">1</span>].split(<span class="st">'&amp;'</span>)[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Der Hauptfunktion <code>parseATC</code> wird ein ATC-Code-Parameter übergeben Diese Funktion wird auf ein iterierbares Dataframe angewandt und somit später der komplette Index durchforstet. Im ersten Teil dieser Funktion wird die Request-URL zusammengesetzt, abgefragt und die “html-Suppe” gekocht. Der DOM des ATC-Index ist so aufgebaut, dass die ATC-Codes und die Beschreibung aus A-Elementen herausgelesen werden können, in denen der Begriff <code>code</code> vorkommt. Die extrahierten Inhalte werden in einem lokalen Dataframe zwischengespeichert und dort das Level (String-Länge) des ATC-Codes ermittelt.</p>
-<div id="8f59e580" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> parseATC(atc_as_para):</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Parse HTML content</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  url <span class="op">=</span> endpoint <span class="op">+</span> para1 <span class="op">+</span> atc_as_para <span class="op">+</span> para2</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  html_content <span class="op">=</span> urllib.request.urlopen(url).read()</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  soup <span class="op">=</span> BeautifulSoup(html_content, <span class="st">"html.parser"</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all "a" elements in DOM with "code" inside</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  codes <span class="op">=</span> soup.find_all(href<span class="op">=</span>re.<span class="bu">compile</span>(<span class="st">"code"</span>))</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Extract the data</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  atc_names <span class="op">=</span> [a.text <span class="cf">for</span> a <span class="kw">in</span> codes]</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  href_string <span class="op">=</span> [<span class="bu">str</span>(a.attrs) <span class="cf">for</span> a <span class="kw">in</span> codes]</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Create local data frame</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  data <span class="op">=</span> {<span class="st">"atc_name"</span>: atc_names, <span class="st">"href"</span>: href_string}</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  df_data <span class="op">=</span> pd.DataFrame(data)</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Extract atc code from href and delete href column</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  df_data[<span class="st">'atc_code'</span>] <span class="op">=</span> df_data[<span class="st">'href'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: extract_value(x))</span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">del</span> df_data[<span class="st">'href'</span>]</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  df_data <span class="op">=</span> df_data[df_data[<span class="st">'atc_name'</span>]<span class="op">!=</span><span class="st">'Show text from Guidelines'</span>]</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># calculate atc-level (length of atc code)</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  df_data[<span class="st">'level'</span>] <span class="op">=</span> df_data[<span class="st">'atc_code'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="bu">len</span>(x))</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(datetime.datetime.now()) <span class="co"># just showing script is running</span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> df_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Zwei initiale Dataframes werden erstellt. Über <code>df</code> wird später iteriert und in <code>df_combined</code> werden alle Ergebnisse gespeichert.</p>
-<div id="bd52d357" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_combined <span class="op">=</span> df <span class="op">=</span> pd.DataFrame()</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df_combined <span class="op">=</span> df <span class="op">=</span> parseATC(<span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Nun folgt die zentrale Abfrage aller Daten. Die Levels 1, 3, 4 und 5 werden itrerativ abgefragt und die parseATC-Funktion nach und nach auf alle Codes und Subcodes angewendet. Diese doppelte Loop dauert rund 5 Minuten, wobei der innere Loop hier am wichtigsten ist.</p>
-<div id="78dcfd88" class="cell" data-evel="false" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>level_iterator <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>])</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> li <span class="kw">in</span> level_iterator:</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">"level: "</span><span class="op">+</span><span class="bu">str</span>(li))</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  df <span class="op">=</span> df_combined[df_combined.level<span class="op">==</span>li]</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> row <span class="kw">in</span> df.itertuples():</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    df_data <span class="op">=</span> parseATC(row.atc_code) <span class="co"># global data frame</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    df_combined <span class="op">=</span> pd.concat([df_combined, df_data], ignore_index<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># drop duplicates </span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  df_combined <span class="op">=</span> df_combined.drop_duplicates()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Zu Guter letzt werden die Daten sortiert nach dem ATC-Code und die finale Liste als <code>atc_list.csv</code> exporiert.</p>
-<div id="590618db" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_combined <span class="op">=</span> df_combined.sort_values(<span class="st">'atc_code'</span>)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df_combined.to_csv(<span class="st">'atc_list.csv'</span>, index<span class="op">=</span><span class="va">False</span>, sep<span class="op">=</span><span class="st">'|'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Bei diesem Thema sollte man jedoch die Lizenzbestimmungen beachten. Der rechtliche Aspekt wurde hier nicht geklärt, sondern nur die technsiche Machbarkeit dargestellt.</p>
-<p>Hier findet man weitere Infos zu <a href="https://beautiful-soup-4.readthedocs.io/en/latest/">BeautifulSoup</a>.</p>
+<p>Yeah, ich darf meine wichtigsten Erkenntnisse der Bachelorthesis bei der <a href="https://neo4j.com/nodes-2025/" target="_blank">Nodes 2025</a> online Konferenz präsentieren.</p>
+<p><img src="../pictures/nodes25.jpeg" class="img-fluid"></p>
 
 
 
