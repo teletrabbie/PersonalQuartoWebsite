@@ -6,6 +6,6 @@ image: "../pictures/nodes25.jpeg"
 ---
 
 Yeah, ich darf meine wichtigsten Erkenntnisse der Bachelorthesis bei der 
-[Nodes 2025](https://neo4j.com/nodes-2025/){target="_blank"} online Konferenz präsentieren.
+[Nodes 2025](https://neo4j.com/nodes-2025/agenda/knowledge-graph-of-drugs-data-for-swiss-healthcare-system/){target="_blank"} online Konferenz am 06. November 2025 präsentieren. Start: 14:15 Uhr (Dauer: 15 Minuten).
 
-![](../pictures/nodes25.jpeg)
+[![](../pictures/nodes25.jpeg){width=70%}](https://neo4j.com/nodes-2025/agenda/knowledge-graph-of-drugs-data-for-swiss-healthcare-system/)

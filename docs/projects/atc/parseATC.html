@@ -190,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>Der Index der anatomischen, therapeutischen und chemischen Strukturen (ATC) wird von der WHO resp. dem <a href="https://atcddd.fhi.no">norwegischen Institut für Public Health</a> verwaltet und veröffentlicht. Die jährlich aktualisierten Daten sind im öffentlich verfügbaren ATC-Index auf der Website einsehbar. Der manuelle Websiteaufruf ist für gewisse Usecases nicht sinnvoll. Hier wird eine Möglichkeit gezeigt, wie das Webscraping resp. Parsen der ATC-Codes und deren Beschreibung mit Python umgesetzt werden kann. Der Output ist eine csv-Datei mit den drei pipegetrennten Spalten <code>atc_name, atc_code, level</code>.</p>
 <p>Zunächst werden die relevanten Packages geladen. Mit <code>BeautifulSoup</code> kann das retournierte HTML-Skript bearbeitet werden.</p>
-<div id="e64e0544" class="cell" data-execution_count="1">
+<div id="74884d89" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime</span>
@@ -199,18 +199,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> re</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Wenn man den ATC-Index-Wesite betrachtet und die Seite analysiert, erkennt man schnell die URL-Struktur. Dem Endpunkt wird im ersten Parameter <code>code</code> der gesuchte ATC-Code übergeben. Mit einem zweiten Parameter kann man die ausführliche Beschreibung anzeigen lassen, die hier nicht benötigt wird und auf <code>no</code> gesetzt ist.</p>
-<div id="e01890d0" class="cell" data-execution_count="2">
+<div id="987bfaec" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>endpoint <span class="op">=</span> <span class="st">"https://atcddd.fhi.no/atc_ddd_index"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>para1 <span class="op">=</span> <span class="st">"/?code="</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>para2 <span class="op">=</span> <span class="st">"&amp;showdescription=no"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Die Hilfsfunktion <code>extract_value</code> dient später dazu, die ATC-Codes und deren Schreibung aus eine Liste (vom DOM-Elementen) zu extrahieren.</p>
-<div id="204bad72" class="cell" data-execution_count="3">
+<div id="ec38c7ba" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> extract_value(s):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s.split(<span class="st">'='</span>)[<span class="dv">1</span>].split(<span class="st">'&amp;'</span>)[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Der Hauptfunktion <code>parseATC</code> wird ein ATC-Code-Parameter übergeben Diese Funktion wird auf ein iterierbares Dataframe angewandt und somit später der komplette Index durchforstet. Im ersten Teil dieser Funktion wird die Request-URL zusammengesetzt, abgefragt und die “html-Suppe” gekocht. Der DOM des ATC-Index ist so aufgebaut, dass die ATC-Codes und die Beschreibung aus A-Elementen herausgelesen werden können, in denen der Begriff <code>code</code> vorkommt. Die extrahierten Inhalte werden in einem lokalen Dataframe zwischengespeichert und dort das Level (String-Länge) des ATC-Codes ermittelt.</p>
-<div id="8f59e580" class="cell" data-execution_count="4">
+<div id="759878cd" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> parseATC(atc_as_para):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Parse HTML content</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  url <span class="op">=</span> endpoint <span class="op">+</span> para1 <span class="op">+</span> atc_as_para <span class="op">+</span> para2</span>
@@ -239,12 +239,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> df_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Zwei initiale Dataframes werden erstellt. Über <code>df</code> wird später iteriert und in <code>df_combined</code> werden alle Ergebnisse gespeichert.</p>
-<div id="bd52d357" class="cell" data-execution_count="5">
+<div id="04c0f7d0" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_combined <span class="op">=</span> df <span class="op">=</span> pd.DataFrame()</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df_combined <span class="op">=</span> df <span class="op">=</span> parseATC(<span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Nun folgt die zentrale Abfrage aller Daten. Die Levels 1, 3, 4 und 5 werden itrerativ abgefragt und die parseATC-Funktion nach und nach auf alle Codes und Subcodes angewendet. Diese doppelte Loop dauert rund 5 Minuten, wobei der innere Loop hier am wichtigsten ist.</p>
-<div id="78dcfd88" class="cell" data-evel="false" data-execution_count="6">
+<div id="363e2fee" class="cell" data-evel="false" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>level_iterator <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>])</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> li <span class="kw">in</span> level_iterator:</span>
@@ -259,7 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  df_combined <span class="op">=</span> df_combined.drop_duplicates()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Zu Guter letzt werden die Daten sortiert nach dem ATC-Code und die finale Liste als <code>atc_list.csv</code> exporiert.</p>
-<div id="590618db" class="cell" data-execution_count="7">
+<div id="957c7e13" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_combined <span class="op">=</span> df_combined.sort_values(<span class="st">'atc_code'</span>)</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>df_combined.to_csv(<span class="st">'atc_list.csv'</span>, index<span class="op">=</span><span class="va">False</span>, sep<span class="op">=</span><span class="st">'|'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
